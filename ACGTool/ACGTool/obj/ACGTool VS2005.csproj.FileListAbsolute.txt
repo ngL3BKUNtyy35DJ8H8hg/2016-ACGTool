@@ -1,0 +1,24 @@
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ResolveAssemblyReference.cache
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool VS2005.csproj.ResolveComReference.cache
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.ACGMain.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.BDTCTool.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.BDTCTimeLine.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmConfigDiaHinhFile.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmCopyPasteBDTC.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmMAIN.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmRebuildBDTC.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmWorkflowManagement.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.PowerDesigner.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool VS2005.csproj.GenerateResource.Cache
+F:\Programming\ACGTool Project\ACGTool\ACGTool\bin\Debug\ACGTool.exe
+F:\Programming\ACGTool Project\ACGTool\ACGTool\bin\Debug\ACGTool.pdb
+F:\Programming\ACGTool Project\ACGTool\ACGTool\bin\Debug\MITI.BaseDB.dll
+F:\Programming\ACGTool Project\ACGTool\ACGTool\bin\Debug\System.Data.SqlServerCe.dll
+F:\Programming\ACGTool Project\ACGTool\ACGTool\bin\Debug\MITI.BaseDB.pdb
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.exe
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.pdb
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.exe.licenses
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.frmPDF.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\Debug\ACGTool.BDTCAction.resources
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\x86\Debug\ACGTool.exe
+F:\Programming\ACGTool Project\ACGTool\ACGTool\obj\x86\Debug\ACGTool.pdb

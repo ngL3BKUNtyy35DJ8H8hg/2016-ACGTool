@@ -1,0 +1,9 @@
+H:\PROGRAMMING\2016\ACGProject\ACGTool\FolderLib\bin\Debug\FolderLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\FolderLib\bin\Debug\FolderLib.pdb
+H:\PROGRAMMING\2016\ACGProject\ACGTool\FolderLib\obj\Debug\FolderLib.csprojResolveAssemblyReference.cache
+H:\PROGRAMMING\2016\ACGProject\ACGTool\FolderLib\obj\Debug\FolderLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\FolderLib\obj\Debug\FolderLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.pdb

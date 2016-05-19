@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="Braincase.GanttChart.Task">
+    <Position X="0.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACACAAIEAAAAAAQAAAAAAAAAAAAAAAIACAA=</HashCode>
+      <FileName>IProject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Braincase.GanttChart.IProjectManager&lt;T, R&gt;">
+    <Position X="3.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>CkIigERAIOBACAgAgAAChKIEAWMAAQARAAIYgEAIAAA=</HashCode>
+      <FileName>IProject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Braincase.GanttChart.TimeScale">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>IProject.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

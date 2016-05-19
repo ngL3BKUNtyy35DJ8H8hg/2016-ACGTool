@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="BDTCLib.Scripts.Actions.AbstractAction" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAABAgABBCBSgAwAGgAAAMABABCQAAAAAQIEAABAAQA=</HashCode>
+      <FileName>Scripts\Actions\AbstractAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.TargetAction" Collapsed="true">
+    <Position X="50.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>Scripts\Actions\TargetAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AbstractAppearAction" Collapsed="true">
+    <Position X="28.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AppearAction" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AppearLeftAction" Collapsed="true">
+    <Position X="32" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AppearDownAction" Collapsed="true">
+    <Position X="34.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AppearTopAction" Collapsed="true">
+    <Position X="23" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AppearAAction" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.UnhideAction" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\AppearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.BlinkAction" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACACgAAAAgAAAAABAAAQAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\BlinkAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.BombardAction" Collapsed="true">
+    <Position X="41" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\BombardAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.CommentAction" Collapsed="true">
+    <Position X="45.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\CommentAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.CornerTitleAction" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\CornerTitleAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DescriptionAction" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DescriptionAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AbstractDisappearAction" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DisappearAction" Collapsed="true">
+    <Position X="16.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DisappearLeftAction" Collapsed="true">
+    <Position X="18.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DisappearDownAction" Collapsed="true">
+    <Position X="20.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DisappearTopAction" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.DisappearAAction" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.HideAction" Collapsed="true">
+    <Position X="14" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\DisappearAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.ExplodeDclAction" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\ExplodeDclAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.FlyAction" Collapsed="true">
+    <Position X="43.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\FlyAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.FocusAtAction" Collapsed="true">
+    <Position X="47.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\FocusAtAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.MoveAction">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\MoveAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.ShootAction" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\Actions\ShootAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

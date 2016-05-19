@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F830C52-C2CF-49A1-AA7B-471A9E66E4F3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HTMapLib</RootNamespace>
+    <AssemblyName>HTMapLib</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\Draw3DAsix.cs" />
+    <Compile Include="Classes\DrawEllipse.cs" />
+    <Compile Include="Classes\DrawObject.cs" />
+    <Compile Include="Classes\DrawRectangle.cs" />
+    <Compile Include="Classes\HTCollectionHelper.cs" />
+    <Compile Include="ucVectShapes_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVectShapes_Form.Designer.cs">
+      <DependentUpon>ucVectShapes_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVectShapes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVectShapes.Designer.cs">
+      <DependentUpon>ucVectShapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MapHelper.cs" />
+    <Compile Include="MitSymbols\Symbol.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucMitSymbols.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMitSymbols.Designer.cs">
+      <DependentUpon>ucMitSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVectShapeToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVectShapeToolBox.Designer.cs">
+      <DependentUpon>ucVectShapeToolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDrawingToolStrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDrawingToolStrip.Designer.cs">
+      <DependentUpon>ucDrawingToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucMap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMap.Designer.cs">
+      <DependentUpon>ucMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucToolStrip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucToolStrip.Designer.cs">
+      <DependentUpon>ucToolStrip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\Anteprima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\Anteprima.Designer.cs">
+      <DependentUpon>Anteprima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\Handle.cs" />
+    <Compile Include="VectorShapes\myTypeEditor.cs" />
+    <Compile Include="VectorShapes\PenPropEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\PenPropEditForm.Designer.cs">
+      <DependentUpon>PenPropEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\PenWR.cs" />
+    <Compile Include="VectorShapes\PropEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\PropEditForm.Designer.cs">
+      <DependentUpon>PropEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\richForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\richForm2.Designer.cs">
+      <DependentUpon>richForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\RichTextBoxPrintCtrl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\Shapes.cs" />
+    <Compile Include="VectorShapes\Shapes\AbSel.cs" />
+    <Compile Include="VectorShapes\Shapes\Arc.cs" />
+    <Compile Include="VectorShapes\Shapes\BoxTesto.cs" />
+    <Compile Include="VectorShapes\Shapes\Ele.cs" />
+    <Compile Include="VectorShapes\Shapes\Ell.cs" />
+    <Compile Include="VectorShapes\Shapes\Graph.cs" />
+    <Compile Include="VectorShapes\Shapes\GrArc.cs" />
+    <Compile Include="VectorShapes\Shapes\Group.cs" />
+    <Compile Include="VectorShapes\Shapes\ImgBox.cs" />
+    <Compile Include="VectorShapes\Shapes\Linea.cs" />
+    <Compile Include="VectorShapes\Shapes\Link.cs" />
+    <Compile Include="VectorShapes\Shapes\OLine.cs" />
+    <Compile Include="VectorShapes\Shapes\PointColor.cs" />
+    <Compile Include="VectorShapes\Shapes\PointColorSet.cs" />
+    <Compile Include="VectorShapes\Shapes\PointSet.cs" />
+    <Compile Include="VectorShapes\Shapes\PointWr.cs" />
+    <Compile Include="VectorShapes\Shapes\Rect.cs" />
+    <Compile Include="VectorShapes\Shapes\RRect.cs" />
+    <Compile Include="VectorShapes\Shapes\SelRectBK.cs" />
+    <Compile Include="VectorShapes\Shapes\Stext.cs" />
+    <Compile Include="VectorShapes\Shapes\VLine.cs" />
+    <Compile Include="VectorShapes\toolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\toolBox.Designer.cs">
+      <DependentUpon>toolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VectorShapes\vectShapes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="VectorShapes\vectShapes.Designer.cs">
+      <DependentUpon>vectShapes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucVectShapes_Map.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucVectShapes_Map.Designer.cs">
+      <DependentUpon>ucVectShapes_Map.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ucVectShapes_Form.resx">
+      <DependentUpon>ucVectShapes_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVectShapes.resx">
+      <DependentUpon>ucVectShapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMitSymbols.resx">
+      <DependentUpon>ucMitSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVectShapeToolBox.resx">
+      <DependentUpon>ucVectShapeToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDrawingToolStrip.resx">
+      <DependentUpon>ucDrawingToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMap.resx">
+      <DependentUpon>ucMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucToolStrip.resx">
+      <DependentUpon>ucToolStrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\Anteprima.resx">
+      <DependentUpon>Anteprima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\PenPropEditForm.resx">
+      <DependentUpon>PenPropEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\PropEditForm.resx">
+      <DependentUpon>PropEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\richForm2.resx">
+      <DependentUpon>richForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\toolBox.resx">
+      <DependentUpon>toolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VectorShapes\vectShapes.resx">
+      <DependentUpon>vectShapes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucVectShapes_Map.resx">
+      <DependentUpon>ucVectShapes_Map.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\buttons.bmp" />
+    <None Include="Classes\DrawClassDiagram.cd" />
+    <None Include="VectorShapes\Shapes\ShapeClassDiagram.cd" />
+    <None Include="VectShapeDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMapXLib">
+      <Guid>{E760686B-BC9E-4802-9ECF-175FDF4062CE}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MapXLib">
+      <Guid>{E760686B-BC9E-4802-9ECF-175FDF4062CE}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

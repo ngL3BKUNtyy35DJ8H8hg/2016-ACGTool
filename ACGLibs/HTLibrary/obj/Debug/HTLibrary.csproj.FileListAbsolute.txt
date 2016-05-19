@@ -1,0 +1,4 @@
+C:\GitHub\2016-ACGTool\ACGLibs\HTLibrary\bin\Debug\HTLibrary.dll
+C:\GitHub\2016-ACGTool\ACGLibs\HTLibrary\bin\Debug\HTLibrary.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\HTLibrary\obj\Debug\HTLibrary.dll
+C:\GitHub\2016-ACGTool\ACGLibs\HTLibrary\obj\Debug\HTLibrary.pdb

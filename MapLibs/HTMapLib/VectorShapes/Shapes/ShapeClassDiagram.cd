@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="HTMapLib.VectorShapes.Shapes.AbSel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAQIAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\AbSel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.VLine" Collapsed="true">
+    <Position X="27.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\VLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Arc" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEAAAAEAAECiABAAAAAABAAgAAAAAAAIAAQAgQAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Arc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.BoxTesto" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAiABAAAgAAAAAkAAABAEAIAAQAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\BoxTesto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Ele" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kJQgoZRDBYwYB6X1AZQB0FRSOvgHkAAOTkBYWvII9oI=</HashCode>
+      <FileName>VectorShapes\Shapes\Ele.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Ell" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAqABAAAAAAAAAgAAAAAAAIAAQAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Ell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Graph" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gDQAgBCACIEIgrEAAACAAAAAAgAAAAAAAIAAQAAAABA=</HashCode>
+      <FileName>VectorShapes\Shapes\Graph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Group" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAUAoAARCAQAAqCBAAwAwFRAIkkgAAQGKIAQUAAEgBQ=</HashCode>
+      <FileName>VectorShapes\Shapes\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.ImgBox" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAEAEqABAAAAAEBAAgAAAAAAAIAAQgAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\ImgBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Linea" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAECiABAAAAAAAAAgAAAAQAAIAAQAgAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Linea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Link" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAqABAAAAAAAAAgAAAAAAAIAAQAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Link.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.OLine" Collapsed="true">
+    <Position X="29.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\OLine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.PointColorSet" Collapsed="true">
+    <Position X="25.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\PointColorSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.PointSet" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gBAAgBCACoAIgrEBAICAAAAAAgAAAAAAwIAAUACAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\PointSet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Rect" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAqABAAAAAAAAAgAAAAAAAIAAQAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Rect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.RRect" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAqABAAAAAAAAAgAAAAAAAICAQAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\RRect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.SelRectBK" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAQIAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\SelRectBK.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.VectorShapes.Shapes.Stext" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAMAAAAAqABAAAAIAAAAgAAAAAQAIAASAAAAAA=</HashCode>
+      <FileName>VectorShapes\Shapes\Stext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

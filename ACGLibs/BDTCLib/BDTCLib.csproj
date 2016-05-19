@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC0E1C4D-AE46-459F-A816-C6934120B33E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BDTCLib</RootNamespace>
+    <AssemblyName>BDTCLib</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseMyFile.cs" />
+    <Compile Include="BDTCHelper.cs" />
+    <Compile Include="ClassAction.cs" />
+    <Compile Include="DiaHinh.cs" />
+    <Compile Include="MyBillboardMeshFile.cs" />
+    <Compile Include="MyD3DModelMeshFile.cs" />
+    <Compile Include="MyDefaFileName.cs" />
+    <Compile Include="MyExplodeFile.cs" />
+    <Compile Include="MyGridDataFile.cs" />
+    <Compile Include="MyImagesPath.cs" />
+    <Compile Include="MyKHCnnString.cs" />
+    <Compile Include="MyLastSaban.cs" />
+    <Compile Include="MyMapGst.cs" />
+    <Compile Include="MyMapNhoGst.cs" />
+    <Compile Include="MyMuiTenFile.cs" />
+    <Compile Include="MySoundsPath.cs" />
+    <Compile Include="MySpriteTexsFile.cs" />
+    <Compile Include="MyTextureFile.cs" />
+    <Compile Include="CreateScript\Projection3D.cs" />
+    <Compile Include="ObjectCopier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripts\Actions\AbstractAction.cs" />
+    <Compile Include="Scripts\Actions\BlinkAction.cs" />
+    <Compile Include="Scripts\Actions\BombardAction.cs" />
+    <Compile Include="Scripts\Actions\CommentAction.cs" />
+    <Compile Include="Scripts\Actions\CornerTitleAction.cs" />
+    <Compile Include="Scripts\Actions\DisappearAction.cs" />
+    <Compile Include="Scripts\Actions\DescriptionAction.cs" />
+    <Compile Include="Scripts\Actions\ExplodeDclAction.cs" />
+    <Compile Include="Scripts\Actions\FlyAction.cs" />
+    <Compile Include="Scripts\Actions\FocusAtAction.cs" />
+    <Compile Include="Scripts\Actions\MoveAction.cs" />
+    <Compile Include="Scripts\Actions\ShootAction.cs" />
+    <Compile Include="Scripts\Actions\AppearAction.cs" />
+    <Compile Include="Scripts\Actions\TargetAction.cs" />
+    <Compile Include="Scripts\MnuItem.cs" />
+    <Compile Include="Scripts\MnuItemRefScript.cs" />
+    <Compile Include="Scripts\MyMnu.cs" />
+    <Compile Include="Scripts\AbstractMnuScript.cs" />
+    <Compile Include="Scripts\ScriptXmlFile.cs" />
+    <Compile Include="Scripts\ScrptFileScript.cs" />
+    <Compile Include="Scripts\TimerCalc.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="Scripts\Actions\ActionClassDiagram.cd" />
+    <None Include="Scripts\MyMnuClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,9 @@
+H:\PROGRAMMING\2016\ACGProject\ACGTool\ACGLib\bin\Debug\ACGLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\ACGLib\bin\Debug\ACGLib.pdb
+H:\PROGRAMMING\2016\ACGProject\ACGTool\ACGLib\obj\Debug\ACGLib.csprojResolveAssemblyReference.cache
+H:\PROGRAMMING\2016\ACGProject\ACGTool\ACGLib\obj\Debug\ACGLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\ACGLib\obj\Debug\ACGLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.pdb

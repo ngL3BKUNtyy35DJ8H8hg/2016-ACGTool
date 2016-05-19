@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HTMapLib.ucVectShapes_Map">
+    <Position X="1.5" Y="26" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAgoCDIAABAAIDABEACCCAAAECgBAsEAoAAARI=</HashCode>
+      <FileName>ucVectShapes_Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.ucVectShapes_Form">
+    <Position X="4.75" Y="26" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAgCCAAAAMAEACAAAACAAAAAEAAEBEgAAAAAAA=</HashCode>
+      <FileName>ucVectShapes_Form.cs</FileName>
+      <NewMemberFileName>ucVectShapes.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HTMapLib.ucVectShapes">
+    <Position X="3.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>PArMzs4kQDWDTqA0EALK6qRDwo15BOAEtpcjBoFBFwA=</HashCode>
+      <FileName>ucVectShapes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

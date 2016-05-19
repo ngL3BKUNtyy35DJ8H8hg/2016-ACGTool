@@ -1,0 +1,8 @@
+H:\PROGRAMMING\2016\ACGProject\ACGTool\BDTCLib\bin\Debug\BDTCLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\BDTCLib\bin\Debug\BDTCLib.pdb
+H:\PROGRAMMING\2016\ACGProject\ACGTool\BDTCLib\obj\Debug\BDTCLib.dll
+H:\PROGRAMMING\2016\ACGProject\ACGTool\BDTCLib\obj\Debug\BDTCLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
+C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
+C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb
