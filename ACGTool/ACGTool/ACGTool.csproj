@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3F3267A-16BB-4D7F-B881-D3916CADDD87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ACGTool</RootNamespace>
+    <AssemblyName>ACGTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ACGTool.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp, Version=5.3.0.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.BatchParser, Version=10.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.SqlServer.BatchParser.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Replication, Version=9.0.242.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Microsoft.SqlServer.Replication.dll</HintPath>
+    </Reference>
+    <Reference Include="MITI.BaseDB, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MITI.BaseDB.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.32.2608.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ACGMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ACGMain.Designer.cs">
+      <DependentUpon>ACGMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDTCActions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDTCActions.Designer.cs">
+      <DependentUpon>BDTCActions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BDTCTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDTCTool.Designer.cs">
+      <DependentUpon>BDTCTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ClassAction.cs" />
+    <Compile Include="Classes\ClassBDTC.cs" />
+    <Compile Include="Classes\ClassCollectionGeneration.cs" />
+    <Compile Include="Classes\ClassControllerGeneration.cs" />
+    <Compile Include="Classes\ClassDataProviderGeneration.cs" />
+    <Compile Include="Classes\ClassInfoGeneration.cs" />
+    <Compile Include="Classes\ClassOthersGeneration.cs" />
+    <Compile Include="Classes\ClassSQLDataProviderGeneration.cs" />
+    <Compile Include="Classes\ClassSQLStoreProcedureGeneration.cs" />
+    <Compile Include="Classes\LinqToSql\RepositoryClass_CSharp.cs" />
+    <Compile Include="Classes\LinqToSql\RepositoryClass.cs" />
+    <Compile Include="Classes\LinqToSql\RepositoryClass_VB.cs" />
+    <Compile Include="Classes\Procedure.cs" />
+    <Compile Include="2015\Decompiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2015\Decompiler.Designer.cs">
+      <DependentUpon>Decompiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmACG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmACG.Designer.cs">
+      <DependentUpon>frmACG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCopyPasteBDTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCopyPasteBDTC.Designer.cs">
+      <DependentUpon>frmCopyPasteBDTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMAIN.Designer.cs">
+      <DependentUpon>frmMAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPDF.Designer.cs">
+      <DependentUpon>frmPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadAccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadAccess.Designer.cs">
+      <DependentUpon>frmReadAccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReadXYZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReadXYZ.Designer.cs">
+      <DependentUpon>frmReadXYZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRebuildBDTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRebuildBDTC.Designer.cs">
+      <DependentUpon>frmRebuildBDTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkflowManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkflowManagement.Designer.cs">
+      <DependentUpon>frmWorkflowManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralClass.cs" />
+    <Compile Include="PowerDesigner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PowerDesigner.Designer.cs">
+      <DependentUpon>PowerDesigner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\Person.cs" />
+    <Compile Include="Serialization\PersonWithNonSerialization.cs" />
+    <Compile Include="Serialization\TestSerialization.cs" />
+    <Compile Include="UserControls\ucImportExcel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucImportExcel.Designer.cs">
+      <DependentUpon>ucImportExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPhysicalDevice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPhysicalDevice.Designer.cs">
+      <DependentUpon>ViewPhysicalDevice.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ACGMain.resx">
+      <DependentUpon>ACGMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDTCActions.resx">
+      <DependentUpon>BDTCActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDTCTool.resx">
+      <DependentUpon>BDTCTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="2015\Decompiler.resx">
+      <DependentUpon>Decompiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmACG.resx">
+      <DependentUpon>frmACG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCopyPasteBDTC.resx">
+      <DependentUpon>frmCopyPasteBDTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMAIN.resx">
+      <DependentUpon>frmMAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPDF.resx">
+      <DependentUpon>frmPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadAccess.resx">
+      <DependentUpon>frmReadAccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReadXYZ.resx">
+      <DependentUpon>frmReadXYZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRebuildBDTC.resx">
+      <DependentUpon>frmRebuildBDTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkflowManagement.resx">
+      <DependentUpon>frmWorkflowManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PowerDesigner.resx">
+      <DependentUpon>PowerDesigner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucImportExcel.resx">
+      <DependentUpon>ucImportExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPhysicalDevice.resx">
+      <DependentUpon>ViewPhysicalDevice.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Classes\GenerationClassDiagram.cd" />
+    <None Include="Classes\LinqToSql\RepositoryClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logs.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ACGLib\ACGLib.csproj">
+      <Project>{173F6A67-05F4-4143-89C3-9243662FE031}</Project>
+      <Name>ACGLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BDTCLib\BDTCLib.csproj">
+      <Project>{CC0E1C4D-AE46-459F-A816-C6934120B33E}</Project>
+      <Name>BDTCLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,11 @@
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\ResolveAssemblyReference.cache
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\HT.VectorShapes.Forms.csproj.ResolveComReference.cache
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\HT.VectorShapes.Forms.ucVectShapes_Form.resources
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\GenerateResource.read.1.tlog
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\GenerateResource.write.1.tlog
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\bin\Debug\HT.VectorShapes.Forms.dll
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\bin\Debug\HT.VectorShapes.Forms.pdb
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\bin\Debug\HT.VectorShapes.dll
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\bin\Debug\HT.VectorShapes.pdb
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\HT.VectorShapes.Forms.dll
+C:\Programming\2016\ACGProject\2015acg\MapTool\HT.VectorShapes.Forms\obj\Debug\HT.VectorShapes.Forms.pdb

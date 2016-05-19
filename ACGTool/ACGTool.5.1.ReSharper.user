@@ -1,0 +1,1927 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/f:ScriptXmlFile.cs" caret="7259" fromTop="10" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:TimeLineHelper.cs" caret="9903" fromTop="37" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:ACGMain.cs" caret="5933" fromTop="17" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:ucMyMnuTreeView.cs" caret="1399" fromTop="10" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/d:Actions/f:AbstractAction.cs" caret="9693" fromTop="10" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:BDTCTimeLine.cs" caret="12403" fromTop="17" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/f:MnuItem.cs" caret="13487" fromTop="13" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/f:AbstractMnuScript.cs" caret="4672" fromTop="31" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/f:ScrptFileScript.cs" caret="3817" fromTop="18" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/d:Scripts/f:MnuItemRefScript.cs" caret="5289" fromTop="12" />
+      <File id="0F830C52-C2CF-49A1-AA7B-471A9E66E4F3/f:ucMap.cs" caret="0" fromTop="0" />
+      <File id="0F830C52-C2CF-49A1-AA7B-471A9E66E4F3/f:MapHelper.cs" caret="959" fromTop="12" />
+      <File id="FF2E9287-BCB2-4DCB-B39A-82E1A945EF2D/f:frmBDTCShapeViewer.cs" caret="16600" fromTop="16" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:BDTCActions.Designer.cs" caret="20" fromTop="0" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:Program.cs" caret="570" fromTop="17" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:BDTCActions.cs" caret="387" fromTop="16" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmMain.cs" caret="520" fromTop="8" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:BDTCTool.cs" caret="2501" fromTop="10" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyImagesPath.cs" caret="0" fromTop="0" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:BaseMyFile.cs" caret="378" fromTop="6" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:DiaHinh.cs" caret="10356" fromTop="5" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyGridDataFile.cs" caret="718" fromTop="10" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmMain.Designer.cs" caret="594" fromTop="11" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="7929" fromTop="30" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:BDTCHelper.cs" caret="3384" fromTop="14" />
+      <File id="15CC93DF-9B85-4583-A503-F80764AA9D78/f:FileProcessor.cs" caret="14298" fromTop="12" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmConfigDiaHinhFile.cs" caret="7781" fromTop="37" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="9849" fromTop="21" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="8874" fromTop="11" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmReadAccess.cs" caret="13711" fromTop="111" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyGridDataFile.cs" caret="729" fromTop="12" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyGridDataFile.cs" caret="716" fromTop="9" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="1776" fromTop="16" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="2752" fromTop="17" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="5825" fromTop="11" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="3470" fromTop="4" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="2288" fromTop="21" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="7944" fromTop="24" />
+      <File id="7B0EE548-960F-46CA-814B-E42E551D328F/f:frmBuildDiaHinh.cs" caret="7289" fromTop="17" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="7003" fromTop="21" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="7003" fromTop="25" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="10210" fromTop="16" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="10210" fromTop="15" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="7031" fromTop="5" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="10213" fromTop="22" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="9332" fromTop="1" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="9332" fromTop="22" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="7909" fromTop="18" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="9232" fromTop="31" />
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:MyMapGst.cs" caret="9192" fromTop="8" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="10079" fromTop="15" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="9129" fromTop="17" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="9804" fromTop="27" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="9886" fromTop="31" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="11283" fromTop="26" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="10507" fromTop="19" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="11226" fromTop="34" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmReadAccess.cs" caret="13874" fromTop="111" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="10973" fromTop="32" />
+      <File id="D3F3267A-16BB-4D7F-B881-D3916CADDD87/f:frmPDF.cs" caret="9633" fromTop="31" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>D:\Program Files\NUnit 2.6\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="try" priority="44" />
+      <Item value="catch" priority="6" />
+      <Item value="return" priority="73" />
+      <Item value="ConfigBDTC" priority="5" />
+      <Item value="if" priority="198" />
+      <Item value="activeTool" priority="1" />
+      <Item value="DrawToolType`0" priority="1" />
+      <Item value="AxMap1" priority="20" />
+      <Item value="mousePT" priority="1" />
+      <Item value="double" priority="26" />
+      <Item value="mapX" priority="4" />
+      <Item value="mapY" priority="5" />
+      <Item value="MapXLib" priority="5" />
+      <Item value="ConversionConstants`0" priority="3" />
+      <Item value="e" priority="18" />
+      <Item value="DrawRectangle`0" priority="0" />
+      <Item value="private" priority="102" />
+      <Item value="int" priority="70" />
+      <Item value="List" priority="29" />
+      <Item value="foreach" priority="29" />
+      <Item value="rect" priority="8" />
+      <Item value="numOfRows" priority="5" />
+      <Item value="dX" priority="7" />
+      <Item value="i" priority="22" />
+      <Item value="numOfColumns" priority="7" />
+      <Item value="row" priority="9" />
+      <Item value="g" priority="9" />
+      <Item value="pen" priority="0" />
+      <Item value="Rectangle" priority="2" />
+      <Item value="float" priority="61" />
+      <Item value="new" priority="151" />
+      <Item value="Size" priority="1" />
+      <Item value="FeatureSupport`0" priority="0" />
+      <Item value="frmCreateBooms`0" priority="0" />
+      <Item value="void" priority="26" />
+      <Item value="Rectangle`0" priority="5" />
+      <Item value="DrawGrid`0" priority="0" />
+      <Item value="Point`0" priority="6" />
+      <Item value="public" priority="133" />
+      <Item value="indexCell" priority="1" />
+      <Item value="X" priority="1" />
+      <Item value="PointF" priority="2" />
+      <Item value="dY" priority="1" />
+      <Item value="Y" priority="1" />
+      <Item value="Brush`0" priority="2" />
+      <Item value="Brushes`0" priority="6" />
+      <Item value="Pen`0" priority="2" />
+      <Item value="Pen" priority="3" />
+      <Item value="val" priority="1" />
+      <Item value="y" priority="9" />
+      <Item value="List&lt;int&gt;" priority="3" />
+      <Item value="for" priority="4" />
+      <Item value="num" priority="0" />
+      <Item value="indexList" priority="4" />
+      <Item value="Math`0" priority="5" />
+      <Item value="Random`0" priority="1" />
+      <Item value="size" priority="2" />
+      <Item value="randomNumber" priority="1" />
+      <Item value="GetRandom`0" priority="0" />
+      <Item value="in" priority="8" />
+      <Item value="while" priority="3" />
+      <Item value="DrawRegion`0" priority="3" />
+      <Item value="objDrawRegion" priority="1" />
+      <Item value="myGraphics" priority="1" />
+      <Item value="null" priority="28" />
+      <Item value="txtNumOfBooms" priority="1" />
+      <Item value="txtNumOfRows" priority="0" />
+      <Item value="numOfBooms" priority="2" />
+      <Item value="col" priority="3" />
+      <Item value="boom" priority="0" />
+      <Item value="string" priority="221" />
+      <Item value="class" priority="7" />
+      <Item value="TargetScript`0" priority="0" />
+      <Item value="txtSceenX" priority="1" />
+      <Item value="txtScreenY" priority="2" />
+      <Item value="lon" priority="8" />
+      <Item value="lat" priority="6" />
+      <Item value="InputLanguage`0" priority="0" />
+      <Item value="txtLongitude" priority="3" />
+      <Item value="txtLatitude" priority="3" />
+      <Item value="Size`0" priority="1" />
+      <Item value="static" priority="3" />
+      <Item value="width" priority="0" />
+      <Item value="height" priority="0" />
+      <Item value="ref" priority="11" />
+      <Item value="enum" priority="1" />
+      <Item value="type" priority="0" />
+      <Item value="Conversion3DConstants`0" priority="2" />
+      <Item value="else" priority="65" />
+      <Item value="centerMapX" priority="0" />
+      <Item value="width3D" priority="0" />
+      <Item value="widthMap" priority="0" />
+      <Item value="x" priority="11" />
+      <Item value="Projection3D`0" priority="5" />
+      <Item value="x3D" priority="3" />
+      <Item value="y3D" priority="3" />
+      <Item value="txt3DX" priority="0" />
+      <Item value="txt3DY" priority="0" />
+      <Item value="docScript" priority="6" />
+      <Item value="node" priority="21" />
+      <Item value="XmlNode`0" priority="13" />
+      <Item value="XmlAttribute`0" priority="3" />
+      <Item value="att" priority="45" />
+      <Item value="rootNode" priority="3" />
+      <Item value="XmlElement`0" priority="5" />
+      <Item value="actionNode" priority="8" />
+      <Item value="ActionScript" priority="0" />
+      <Item value="obj" priority="33" />
+      <Item value="targetNode" priority="2" />
+      <Item value="XmlDocument`0" priority="3" />
+      <Item value="xmlDoc" priority="6" />
+      <Item value="CreateBoomAction`0" priority="0" />
+      <Item value="point3DList" priority="3" />
+      <Item value="List&lt;PointF&gt;" priority="0" />
+      <Item value="PointF`0" priority="4" />
+      <Item value="SizeF`0" priority="0" />
+      <Item value="SizeF" priority="0" />
+      <Item value="p" priority="12" />
+      <Item value="Point" priority="3" />
+      <Item value="p3D" priority="0" />
+      <Item value="miScreenToMap" priority="1" />
+      <Item value="To3D" priority="0" />
+      <Item value="AxMapXLib" priority="4" />
+      <Item value="AxMap`0" priority="2" />
+      <Item value="map" priority="0" />
+      <Item value="id" priority="1" />
+      <Item value="writer" priority="2" />
+      <Item value="txtIncrement" priority="0" />
+      <Item value="txtStart" priority="0" />
+      <Item value="txtMaxGroup" priority="0" />
+      <Item value="start" priority="10" />
+      <Item value="minGroup" priority="0" />
+      <Item value="maxGroup" priority="0" />
+      <Item value="group" priority="1" />
+      <Item value="curr" priority="3" />
+      <Item value="increment" priority="2" />
+      <Item value="txtNumOfObjNames" priority="0" />
+      <Item value="random" priority="0" />
+      <Item value="numOfObjNames" priority="1" />
+      <Item value="objName" priority="1" />
+      <Item value="objNameId" priority="2" />
+      <Item value="txtCenterMapX" priority="0" />
+      <Item value="txtHeight3D" priority="0" />
+      <Item value="txtWidth3D" priority="0" />
+      <Item value="txtHeightMap" priority="0" />
+      <Item value="FileStyleUriParser`0" priority="1" />
+      <Item value="tempFile" priority="3" />
+      <Item value="Open" priority="0" />
+      <Item value="Write" priority="0" />
+      <Item value="StreamReader" priority="0" />
+      <Item value="UTF8" priority="0" />
+      <Item value="reader" priority="5" />
+      <Item value="File`0" priority="15" />
+      <Item value="fullpath" priority="1" />
+      <Item value="fullPath" priority="1" />
+      <Item value="nodeScript" priority="3" />
+      <Item value="filePath" priority="13" />
+      <Item value="Exception`0" priority="4" />
+      <Item value="frmConfigDiaHinhFile`0" priority="1" />
+      <Item value="frmConfigDiaHinhFile" priority="1" />
+      <Item value="frm" priority="10" />
+      <Item value="comboBoxActionFilter" priority="7" />
+      <Item value="scriptNode" priority="7" />
+      <Item value="nodeAction" priority="10" />
+      <Item value="listBoxActions" priority="12" />
+      <Item value="DataTable`0" priority="6" />
+      <Item value="DataTable" priority="6" />
+      <Item value="actionTable" priority="8" />
+      <Item value="DataColumn`0" priority="3" />
+      <Item value="DataColumn" priority="1" />
+      <Item value="Type`0" priority="3" />
+      <Item value="nameAction" priority="0" />
+      <Item value="typeInt32" priority="0" />
+      <Item value="dataGridViewAttributes" priority="6" />
+      <Item value="DataGridViewColumn`0" priority="2" />
+      <Item value="DataGridViewColumn" priority="0" />
+      <Item value="xmlFile" priority="2" />
+      <Item value="action" priority="10" />
+      <Item value="strAction" priority="0" />
+      <Item value="strXmlFile" priority="0" />
+      <Item value="actionList" priority="2" />
+      <Item value="ClassAction`0" priority="1" />
+      <Item value="outerXml" priority="0" />
+      <Item value="objClassAction" priority="1" />
+      <Item value="ArrayList" priority="3" />
+      <Item value="ArrayList`0" priority="2" />
+      <Item value="ThuyetMinhList" priority="1" />
+      <Item value="object" priority="2" />
+      <Item value="scriptDoc" priority="3" />
+      <Item value="treeViewScript" priority="5" />
+      <Item value="keyNode" priority="2" />
+      <Item value="TreeNode`0" priority="11" />
+      <Item value="bool" priority="17" />
+      <Item value="false" priority="22" />
+      <Item value="isExist" priority="2" />
+      <Item value="true" priority="19" />
+      <Item value="txtObjName" priority="2" />
+      <Item value="LoadActionByXmlFile`0" priority="0" />
+      <Item value="tvNodeMnu" priority="0" />
+      <Item value="LoadActionsByXmlFile`0" priority="0" />
+      <Item value="_isLoadComplete" priority="1" />
+      <Item value="XmlDocument" priority="2" />
+      <Item value="richTextBoxScript" priority="1" />
+      <Item value="content" priority="7" />
+      <Item value="CreateExplodeDclAction`0" priority="0" />
+      <Item value="checkBoxDanDich" priority="0" />
+      <Item value="toolStripStatusLabelAction" priority="0" />
+      <Item value="Color`0" priority="6" />
+      <Item value="OpenFileDialog`0" priority="2" />
+      <Item value="OpenFileDialog" priority="2" />
+      <Item value="txtFilePath" priority="16" />
+      <Item value="txtSheet" priority="1" />
+      <Item value="txtColumnStart" priority="0" />
+      <Item value="txtColumnEnd" priority="0" />
+      <Item value="txtRowEnd" priority="0" />
+      <Item value="colStart" priority="1" />
+      <Item value="txtHeaderRow" priority="0" />
+      <Item value="oSheet" priority="0" />
+      <Item value="headerRow" priority="0" />
+      <Item value="oRange" priority="0" />
+      <Item value="ApplicationClass`0" priority="0" />
+      <Item value="db" priority="12" />
+      <Item value="typeof" priority="0" />
+      <Item value="Data" priority="0" />
+      <Item value="dataGridViewExcel" priority="0" />
+      <Item value="Excel" priority="0" />
+      <Item value="sheetIndex" priority="0" />
+      <Item value="DataRow`0" priority="2" />
+      <Item value="colEnd" priority="0" />
+      <Item value="indexCol" priority="7" />
+      <Item value="value" priority="26" />
+      <Item value="colCount" priority="0" />
+      <Item value="dbExcel" priority="3" />
+      <Item value="txtTableName" priority="3" />
+      <Item value="sql" priority="2" />
+      <Item value="Dictionary" priority="19" />
+      <Item value="Dictionary&lt;int,int&gt;" priority="0" />
+      <Item value="colLen" priority="5" />
+      <Item value="c" priority="0" />
+      <Item value="index" priority="2" />
+      <Item value="sqlCreateTable" priority="1" />
+      <Item value="MessageBox`0" priority="15" />
+      <Item value="sqlInsert" priority="4" />
+      <Item value="_Worksheet`0" priority="0" />
+      <Item value="UsedRange" priority="0" />
+      <Item value="xlRange" priority="0" />
+      <Item value="comboBoxSheet" priority="4" />
+      <Item value="txtColumnCount" priority="0" />
+      <Item value="DataGridView`0" priority="0" />
+      <Item value="DataGridViewRow`0" priority="2" />
+      <Item value="absPath" priority="2" />
+      <Item value="relativePath" priority="2" />
+      <Item value="ConvertAbsoluteToRelativePath`0" priority="0" />
+      <Item value="absFile" priority="0" />
+      <Item value="curFolder" priority="0" />
+      <Item value="DrawListViewSubItemEventArgs`0" priority="1" />
+      <Item value="switch" priority="3" />
+      <Item value="oldValue" priority="1" />
+      <Item value="newValue" priority="1" />
+      <Item value="relFile" priority="0" />
+      <Item value="char" priority="6" />
+      <Item value="absPathArr" priority="4" />
+      <Item value="Length" priority="9" />
+      <Item value="currFolderArr" priority="2" />
+      <Item value="strArr" priority="3" />
+      <Item value="path" priority="2" />
+      <Item value="ToolStripGripDisplayStyle`0" priority="0" />
+      <Item value="List&lt;string&gt;" priority="12" />
+      <Item value="str" priority="4" />
+      <Item value="value2" priority="0" />
+      <Item value="break" priority="9" />
+      <Item value="samePath" priority="0" />
+      <Item value="GetSameString`0" priority="0" />
+      <Item value="key" priority="10" />
+      <Item value="Dictionary&lt;string,string&gt;" priority="1" />
+      <Item value="result" priority="28" />
+      <Item value="refPath" priority="3" />
+      <Item value="KeyValuePair" priority="9" />
+      <Item value="fileDialog" priority="3" />
+      <Item value="DialogResult" priority="0" />
+      <Item value="fileName" priority="3" />
+      <Item value="checkBoxReplaceText" priority="1" />
+      <Item value="txtFindWhat" priority="4" />
+      <Item value="txtReplaceWith" priority="1" />
+      <Item value="labelFindWhat" priority="0" />
+      <Item value="folderBrowserDialog1" priority="3" />
+      <Item value="LoadMnuItem`0" priority="0" />
+      <Item value="nodeMnuItem" priority="2" />
+      <Item value="textBoxDesFind" priority="1" />
+      <Item value="textBoxFind" priority="1" />
+      <Item value="buttonDesFind_Click`0" priority="0" />
+      <Item value="btnSrcFind_Click`0" priority="0" />
+      <Item value="lblDesResult" priority="1" />
+      <Item value="lblSrcResult" priority="3" />
+      <Item value="UserControl" priority="0" />
+      <Item value="_myLastSaBanPath" priority="4" />
+      <Item value="_myMnuPath" priority="1" />
+      <Item value="GeneralClass`0" priority="2" />
+      <Item value="allFileList" priority="0" />
+      <Item value="fileInfo" priority="3" />
+      <Item value="_xmlFileList" priority="1" />
+      <Item value="AllDirectories" priority="0" />
+      <Item value="listViewXmlFiles" priority="0" />
+      <Item value="continue" priority="0" />
+      <Item value="FilterAction`0" priority="2" />
+      <Item value="durationNode" priority="0" />
+      <Item value="BaseDBCe`0" priority="0" />
+      <Item value="connectStr" priority="0" />
+      <Item value="File" priority="2" />
+      <Item value="richTextBoxView" priority="0" />
+      <Item value="ReadXYZFile`0" priority="0" />
+      <Item value="filestream" priority="0" />
+      <Item value="filepath" priority="0" />
+      <Item value="values" priority="5" />
+      <Item value="heightGridValues" priority="2" />
+      <Item value="widthGridValues" priority="2" />
+      <Item value="altitudeValues" priority="1" />
+      <Item value="line" priority="0" />
+      <Item value="labelInfo" priority="0" />
+      <Item value="frmReadXYZ`0" priority="0" />
+      <Item value="frmReadXYZ" priority="0" />
+      <Item value="this" priority="29" />
+      <Item value="altitudeGridValues" priority="1" />
+      <Item value="altitudeGridValue" priority="3" />
+      <Item value="richTextBox1" priority="2" />
+      <Item value="ex" priority="13" />
+      <Item value="_objBDTCHelper" priority="1" />
+      <Item value="BDTCHelper" priority="0" />
+      <Item value="StringFormat`0" priority="0" />
+      <Item value="DiaHinh`0" priority="7" />
+      <Item value="_objDiaHinhDoc" priority="1" />
+      <Item value="STR_MYLASTSABAN" priority="1" />
+      <Item value="STR_MYD3DMODELMESHFILE" priority="0" />
+      <Item value="STR_MYCURRENTDIRECTORY" priority="0" />
+      <Item value="LoadDiaHinh`0" priority="0" />
+      <Item value="MyMapGst`0" priority="2" />
+      <Item value="MyDefaFileName`0" priority="0" />
+      <Item value="MyLastSaban`0" priority="3" />
+      <Item value="MySpriteTexsFile`0" priority="1" />
+      <Item value="MyImagesPath`0" priority="1" />
+      <Item value="MySoundsPath`0" priority="2" />
+      <Item value="MyExplodeFile`0" priority="0" />
+      <Item value="MyTextureFile`0" priority="1" />
+      <Item value="MyGridDataFile`0" priority="1" />
+      <Item value="PATH_MYCURRENTDIRECTORY" priority="2" />
+      <Item value="_objMyDefaFileName" priority="2" />
+      <Item value="MyDefaFileName" priority="0" />
+      <Item value="_objMyKHCnnString" priority="0" />
+      <Item value="MyKHCnnString" priority="0" />
+      <Item value="FULLPATH_FILE" priority="15" />
+      <Item value="FileInfo" priority="2" />
+      <Item value="PATH_FILE" priority="4" />
+      <Item value="Path`0" priority="14" />
+      <Item value="listView1" priority="0" />
+      <Item value="BDTCLib" priority="3" />
+      <Item value="BDTCHelper`0" priority="9" />
+      <Item value="MyKHCnnString`0" priority="0" />
+      <Item value="keyName" priority="0" />
+      <Item value="VALUE_NAME" priority="1" />
+      <Item value="case" priority="1" />
+      <Item value="MyBase`0" priority="0" />
+      <Item value="base" priority="8" />
+      <Item value="BaseMyFile`0" priority="13" />
+      <Item value="MyBillboardMeshFile`0" priority="0" />
+      <Item value="MyMuiTenFile`0" priority="0" />
+      <Item value="_objMyMapGst" priority="1" />
+      <Item value="MyMapGst" priority="0" />
+      <Item value="_objMyMapNhoGst" priority="0" />
+      <Item value="MyLastSaban" priority="0" />
+      <Item value="_objMyTextureFile" priority="1" />
+      <Item value="_objMyD3DModelMeshFile" priority="1" />
+      <Item value="MyD3DModelMeshFile" priority="0" />
+      <Item value="MyBillboardMeshFile" priority="0" />
+      <Item value="_objMySpriteTexsFile" priority="0" />
+      <Item value="MySpriteTexsFile" priority="0" />
+      <Item value="_objMyImagesPath" priority="0" />
+      <Item value="MyImagesPath" priority="0" />
+      <Item value="_objMySoundsPath" priority="1" />
+      <Item value="MySoundsPath" priority="0" />
+      <Item value="_objMyMuiTenFile" priority="0" />
+      <Item value="MyMuiTenFile" priority="0" />
+      <Item value="MyExplodeFile" priority="0" />
+      <Item value="MyTextureFile" priority="0" />
+      <Item value="MyGridDataFile" priority="1" />
+      <Item value="KEY_MYSABANDIR" priority="0" />
+      <Item value="KEY_MYLASTBDTC" priority="0" />
+      <Item value="myCurrentDirectory" priority="1" />
+      <Item value="_myDefaFileName" priority="0" />
+      <Item value="_myKHCnnString" priority="0" />
+      <Item value="_myMapGst" priority="0" />
+      <Item value="_myMapNhoGst" priority="0" />
+      <Item value="_myD3DModelMeshFile" priority="0" />
+      <Item value="_myBillboardMeshFile" priority="0" />
+      <Item value="_mySpriteTexsFile" priority="0" />
+      <Item value="_myImagesPath" priority="0" />
+      <Item value="_myGridDataFile" priority="0" />
+      <Item value="ListVew" priority="0" />
+      <Item value="KEY_NAME" priority="0" />
+      <Item value="System" priority="1" />
+      <Item value="Forms" priority="0" />
+      <Item value="ListView`0" priority="1" />
+      <Item value="objMyLastSaBan" priority="5" />
+      <Item value="DiaHinh" priority="3" />
+      <Item value="listViewD3DModelMesh" priority="2" />
+      <Item value="_myMap1X" priority="2" />
+      <Item value="_myGridDataType" priority="0" />
+      <Item value="_myGRID_WIDTH" priority="0" />
+      <Item value="_myGRID_HEIGHT" priority="0" />
+      <Item value="_mySCALE_FACTOR" priority="0" />
+      <Item value="_myLightDir" priority="0" />
+      <Item value="_mySaiSo" priority="0" />
+      <Item value="_myTinhChinhGocQuay" priority="0" />
+      <Item value="_objDiaHinh" priority="45" />
+      <Item value="_mySaBanDir" priority="1" />
+      <Item value="_LastBdTC" priority="1" />
+      <Item value="mySaBanDirFullPath" priority="0" />
+      <Item value="_LastBdTCFullPath" priority="0" />
+      <Item value="_nodeLAST" priority="0" />
+      <Item value="ListViewItem`0" priority="1" />
+      <Item value="listViewD3DSpriteTexs" priority="0" />
+      <Item value="_mySaBanDirFullPath" priority="1" />
+      <Item value="CacheVirtualItemsEventArgs`0" priority="0" />
+      <Item value="Directory`0" priority="4" />
+      <Item value="listViewLastConfig" priority="0" />
+      <Item value="listViewSound" priority="2" />
+      <Item value="_objMyLastSaban" priority="3" />
+      <Item value="_objMyLastSaBan" priority="1" />
+      <Item value="_D3DSoundXmlFile" priority="2" />
+      <Item value="btnCheckDiaHinhFile" priority="2" />
+      <Item value="_filePath" priority="1" />
+      <Item value="FileInfo`0" priority="1" />
+      <Item value="isMyD3DModelMeshFile" priority="1" />
+      <Item value="isMySoundPath" priority="0" />
+      <Item value="isDeleteXFile" priority="0" />
+      <Item value="Regex" priority="1" />
+      <Item value="MatchCollection`0" priority="1" />
+      <Item value="matchCollection" priority="2" />
+      <Item value="r" priority="2" />
+      <Item value="tabFileList" priority="5" />
+      <Item value="AssemblyLoadEventArgs`0" priority="1" />
+      <Item value="Match`0" priority="0" />
+      <Item value="m" priority="8" />
+      <Item value="pattern" priority="0" />
+      <Item value="items" priority="1" />
+      <Item value="labelMessageGstMap" priority="1" />
+      <Item value="_tabFilePath" priority="6" />
+      <Item value="TabFileInfo`0" priority="1" />
+      <Item value="listViewGstMap" priority="7" />
+      <Item value="message" priority="1" />
+      <Item value="CheckPathValidating`0" priority="0" />
+      <Item value="ListViewItem" priority="0" />
+      <Item value="item" priority="4" />
+      <Item value="Regex`0" priority="1" />
+      <Item value="_imageSize" priority="0" />
+      <Item value="WaitForChangedResult`0" priority="0" />
+      <Item value="NativeWindow`0" priority="0" />
+      <Item value="_objTabFileInfo" priority="1" />
+      <Item value="TabFileInfo" priority="0" />
+      <Item value="_coordTopLeft" priority="0" />
+      <Item value="_coordRightBottom" priority="0" />
+      <Item value="_tabPointInfoList" priority="1" />
+      <Item value="List&lt;TabPointInfo&gt;" priority="0" />
+      <Item value="TabPointInfo`0" priority="0" />
+      <Item value="TabPointInfo" priority="0" />
+      <Item value="mc1" priority="0" />
+      <Item value="r1" priority="0" />
+      <Item value="ImageFileName" priority="0" />
+      <Item value="Dictionary&lt;string,PointInfo&gt;" priority="0" />
+      <Item value="Image`0" priority="1" />
+      <Item value="ImageFileInfo" priority="0" />
+      <Item value="Bitmap`0" priority="1" />
+      <Item value="Bitmap" priority="0" />
+      <Item value="ImageInfo" priority="4" />
+      <Item value="ImagePath" priority="7" />
+      <Item value="PointInfoList" priority="0" />
+      <Item value="String`0" priority="1" />
+      <Item value="tabFile" priority="0" />
+      <Item value="PointInfoDict" priority="4" />
+      <Item value="PointInfo`0" priority="0" />
+      <Item value="valuePair" priority="3" />
+      <Item value="r2" priority="0" />
+      <Item value="Double`0" priority="0" />
+      <Item value="LoadXYZFile`0" priority="0" />
+      <Item value="listViewXYZ" priority="4" />
+      <Item value="LatitudeGridValues" priority="2" />
+      <Item value="LongitudeGridValues" priority="2" />
+      <Item value="_objMyGridDataFile" priority="1" />
+      <Item value="myGRID_WIDTH" priority="1" />
+      <Item value="myGRID_HEIGHT" priority="1" />
+      <Item value="Action`0" priority="14" />
+      <Item value="UnhideAction`0" priority="0" />
+      <Item value="MnuItem`0" priority="18" />
+      <Item value="MnuScript`0" priority="2" />
+      <Item value="ScriptFile`0" priority="2" />
+      <Item value="MyMnu`0" priority="3" />
+      <Item value="FileName" priority="0" />
+      <Item value="MyMnuXmlFile" priority="1" />
+      <Item value="MnuItem" priority="1" />
+      <Item value="objMnuItem" priority="26" />
+      <Item value="MnuItemNode" priority="0" />
+      <Item value="ID" priority="5" />
+      <Item value="Name" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="Title" priority="0" />
+      <Item value="MnuItemRef`0" priority="0" />
+      <Item value="mItem" priority="0" />
+      <Item value="MnuScript" priority="0" />
+      <Item value="objMnuScript" priority="12" />
+      <Item value="MnuItemDict" priority="0" />
+      <Item value="Dictionary&lt;string,MnuScript&gt;" priority="0" />
+      <Item value="ScrptFileScript`0" priority="4" />
+      <Item value="ScrptFile" priority="1" />
+      <Item value="Start" priority="9" />
+      <Item value="MnuItemRef" priority="3" />
+      <Item value="MyMnu" priority="2" />
+      <Item value="objDiaHinh" priority="5" />
+      <Item value="_objMyMnu" priority="10" />
+      <Item value="objMyMnu" priority="4" />
+      <Item value="_objMnuItem" priority="2" />
+      <Item value="_objScrptFileScript" priority="1" />
+      <Item value="_objScriptFile" priority="1" />
+      <Item value="Actions" priority="2" />
+      <Item value="_objMnuItem_Ref" priority="4" />
+      <Item value="ObjMnuItem" priority="9" />
+      <Item value="objAction" priority="5" />
+      <Item value="DisappearLeftAction`0" priority="1" />
+      <Item value="DisappearTopAction`0" priority="0" />
+      <Item value="DisappearAAction`0" priority="0" />
+      <Item value="DescriptionAction`0" priority="0" />
+      <Item value="ShootAction`0" priority="0" />
+      <Item value="ActionDict" priority="1" />
+      <Item value="DisappearAction`0" priority="0" />
+      <Item value="Type" priority="1" />
+      <Item value="AppearAction`0" priority="0" />
+      <Item value="ObjName" priority="0" />
+      <Item value="Steps" priority="1" />
+      <Item value="Duration" priority="9" />
+      <Item value="Partial" priority="1" />
+      <Item value="Hide" priority="0" />
+      <Item value="SoundName" priority="0" />
+      <Item value="SoundLoop" priority="0" />
+      <Item value="Repeat" priority="0" />
+      <Item value="abstract" priority="6" />
+      <Item value="AbstractAction`0" priority="6" />
+      <Item value="DescText" priority="1" />
+      <Item value="SaBanHide" priority="1" />
+      <Item value="ExplodeDclAction`0" priority="0" />
+      <Item value="ShiftZ" priority="0" />
+      <Item value="dAngle" priority="0" />
+      <Item value="FlyAction`0" priority="0" />
+      <Item value="FocusAtAction`0" priority="0" />
+      <Item value="ExplID" priority="0" />
+      <Item value="TargetAction`0" priority="1" />
+      <Item value="targetsNode" priority="0" />
+      <Item value="TargetAction" priority="0" />
+      <Item value="TargetActions" priority="1" />
+      <Item value="objTarget" priority="0" />
+      <Item value="List&lt;TargetAction&gt;" priority="0" />
+      <Item value="default" priority="0" />
+      <Item value="LoadXmlFile`0" priority="0" />
+      <Item value="Exception" priority="0" />
+      <Item value="Dictionary&lt;string,MnuItem&gt;" priority="1" />
+      <Item value="ScriptXmlFile" priority="1" />
+      <Item value="Dictionary&lt;string,AbstractAction&gt;" priority="1" />
+      <Item value="openFileDialog" priority="0" />
+      <Item value="Width3D" priority="1" />
+      <Item value="Height3D" priority="0" />
+      <Item value="CenterMapX" priority="0" />
+      <Item value="CenterMapY" priority="0" />
+      <Item value="WidthMap" priority="0" />
+      <Item value="Projection3D" priority="2" />
+      <Item value="objDrawing" priority="0" />
+      <Item value="MapTool" priority="1" />
+      <Item value="map1" priority="0" />
+      <Item value="objProject" priority="0" />
+      <Item value="objProjection3D" priority="1" />
+      <Item value="ucDrawingToolStrip`0" priority="0" />
+      <Item value="mapControl" priority="14" />
+      <Item value="CenterY_Original" priority="1" />
+      <Item value="Zoom_Original" priority="0" />
+      <Item value="toolStripStatusLabelScreenCoord" priority="0" />
+      <Item value="AxMapACtion_MouseDownEvent" priority="0" />
+      <Item value="enumToolStripType`0" priority="6" />
+      <Item value="enumActionToolStrip`0" priority="0" />
+      <Item value="ActionToolStrip" priority="1" />
+      <Item value="ActiveToolStrip" priority="0" />
+      <Item value="AxMapDrawing_MouseDownEvent" priority="0" />
+      <Item value="DrawingDragging" priority="0" />
+      <Item value="Graphics`0" priority="0" />
+      <Item value="HTMapLib" priority="0" />
+      <Item value="Form1`0" priority="1" />
+      <Item value="Form1" priority="1" />
+      <Item value="ucMap`0" priority="0" />
+      <Item value="InitMap`0" priority="0" />
+      <Item value="ucVectShapeMap`0" priority="4" />
+      <Item value="ucVectShapeToolStrip`0" priority="0" />
+      <Item value="sender" priority="5" />
+      <Item value="Map" priority="1" />
+      <Item value="EntryWrittenEventArgs`0" priority="0" />
+      <Item value="frmBDTCShapeViewer`0" priority="0" />
+      <Item value="enumVectShapeTool`0" priority="0" />
+      <Item value="enumVectShapeCursor`0" priority="1" />
+      <Item value="CursorConstants`0" priority="0" />
+      <Item value="Clipboard`0" priority="1" />
+      <Item value="txtXmlFile" priority="1" />
+      <Item value="ToolTip`0" priority="0" />
+      <Item value="txtX3D" priority="1" />
+      <Item value="txtY3D" priority="0" />
+      <Item value="ToolConstants`0" priority="0" />
+      <Item value="contextMenuStripMap" priority="0" />
+      <Item value="pScreen" priority="1" />
+      <Item value="Load" priority="0" />
+      <Item value="LoadFile`0" priority="0" />
+      <Item value="throw" priority="4" />
+      <Item value="duration" priority="8" />
+      <Item value="ucMyMnuTreeView`0" priority="3" />
+      <Item value="ucMyMnuTreeView" priority="2" />
+      <Item value="LoadTreeView`0" priority="0" />
+      <Item value="_objUcMyMnuTreeView" priority="4" />
+      <Item value="Fill" priority="1" />
+      <Item value="splitContainer1" priority="0" />
+      <Item value="richTextBoxLog" priority="2" />
+      <Item value="msg" priority="42" />
+      <Item value="finally" priority="1" />
+      <Item value="err" priority="2" />
+      <Item value="is" priority="8" />
+      <Item value="currNode" priority="6" />
+      <Item value="childNode" priority="2" />
+      <Item value="currChildNode" priority="0" />
+      <Item value="tvNodeScript" priority="4" />
+      <Item value="CurrentXmlNode" priority="4" />
+      <Item value="nodeMnu" priority="0" />
+      <Item value="myMnuPath" priority="0" />
+      <Item value="pair" priority="2" />
+      <Item value="pairScript" priority="6" />
+      <Item value="pairMnuItem" priority="1" />
+      <Item value="AbstractMnuScript`0" priority="5" />
+      <Item value="errList" priority="61" />
+      <Item value="tvNodeMnuItem" priority="0" />
+      <Item value="currentIndex" priority="1" />
+      <Item value="valueTimer" priority="4" />
+      <Item value="valueID" priority="0" />
+      <Item value="valueIDRef" priority="4" />
+      <Item value="timeTemplate" priority="2" />
+      <Item value="MnuItemRefScript`0" priority="9" />
+      <Item value="MnuScriptDict" priority="1" />
+      <Item value="TimerCalc`0" priority="5" />
+      <Item value="valueTime" priority="0" />
+      <Item value="ObjTimerCalc" priority="10" />
+      <Item value="TimerCalc" priority="0" />
+      <Item value="enumTimer`0" priority="1" />
+      <Item value="eTimer" priority="2" />
+      <Item value="Stop" priority="1" />
+      <Item value="None" priority="1" />
+      <Item value="ObjScriptXmlFile" priority="4" />
+      <Item value="ScriptXmlFile`0" priority="7" />
+      <Item value="xmlFilePath" priority="3" />
+      <Item value="objScriptXmlFile" priority="6" />
+      <Item value="FilePath" priority="1" />
+      <Item value="xmlContent" priority="0" />
+      <Item value="tvNode" priority="4" />
+      <Item value="pairMnuItemRef" priority="0" />
+      <Item value="tvNodeMnuItemRefScript" priority="0" />
+      <Item value="splitContainer2" priority="1" />
+      <Item value="ucScriptXmlFileTreeView`0" priority="2" />
+      <Item value="_objUcScriptXmlFileTreeView" priority="4" />
+      <Item value="LoadXmlFiles_TreeView`0" priority="0" />
+      <Item value="Dictionary&lt;string,ScriptXmlFile&gt;" priority="0" />
+      <Item value="directory" priority="0" />
+      <Item value="directoryInfo" priority="0" />
+      <Item value="directoryNode" priority="0" />
+      <Item value="Count`1" priority="0" />
+      <Item value="pairAction" priority="16" />
+      <Item value="TreeViewEventHandler`0" priority="0" />
+      <Item value="btnReload" priority="0" />
+      <Item value="TreeViewEventHandler" priority="0" />
+      <Item value="ProjectManager`0" priority="0" />
+      <Item value="Task" priority="1" />
+      <Item value="_mManager" priority="4" />
+      <Item value="Dictionary&lt;string,Task&gt;" priority="0" />
+      <Item value="Task`0" priority="5" />
+      <Item value="task" priority="16" />
+      <Item value="TaskDict" priority="6" />
+      <Item value="AddTime" priority="0" />
+      <Item value="using" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="override" priority="3" />
+      <Item value="_TextAlignCenterMiddle`0" priority="0" />
+      <Item value="_TextAlignLeftMiddle`0" priority="0" />
+      <Item value="enumGanttChartTimer`0" priority="3" />
+      <Item value="dependant" priority="0" />
+      <Item value="p2" priority="2" />
+      <Item value="p1" priority="2" />
+      <Item value="p3" priority="2" />
+      <Item value="srect" priority="1" />
+      <Item value="p4" priority="0" />
+      <Item value="p5" priority="1" />
+      <Item value="graphics" priority="1" />
+      <Item value="clipRectF" priority="0" />
+      <Item value="prect" priority="0" />
+      <Item value="DrawPredecessorLines3`0" priority="0" />
+      <Item value="_objScriptXmlFile" priority="4" />
+      <Item value="objRefAction" priority="5" />
+      <Item value="var" priority="0" />
+      <Item value="PendingActionDict" priority="0" />
+      <Item value="CheckPendingScript`0" priority="0" />
+      <Item value="CheckPendingAction`0" priority="0" />
+      <Item value="maxEndTime" priority="2" />
+      <Item value="arrID" priority="2" />
+      <Item value="txtrectStart" priority="1" />
+      <Item value="BarWidth" priority="1" />
+      <Item value="objScrptFileScript" priority="5" />
+      <Item value="LoadScriptFileContent_TreeView`0" priority="1" />
+      <Item value="Chart`0" priority="0" />
+      <Item value="_mChart" priority="0" />
+      <Item value="chartMyMnu" priority="2" />
+      <Item value="LoadMyMnuContent_TreeView`0" priority="0" />
+      <Item value="LoadScriptFileContent_TimeLine`0" priority="1" />
+      <Item value="richTextBoxMyMnuLog" priority="4" />
+      <Item value="objMnuItemRefScript" priority="5" />
+      <Item value="InitTask`0" priority="0" />
+      <Item value="InitChart`0" priority="2" />
+      <Item value="objChart" priority="1" />
+      <Item value="LoadMnuItemContent_TimeLine`0" priority="0" />
+      <Item value="PendingMnuScriptDict" priority="6" />
+      <Item value="Dictionary&lt;string,AbstractMnuScript&gt;" priority="0" />
+      <Item value="objRefMnuScript" priority="0" />
+      <Item value="PendingMnuItemDict" priority="5" />
+      <Item value="ObjMnuItem_Ref" priority="4" />
+      <Item value="CalculateDS" priority="0" />
+      <Item value="CalculateDuration`0" priority="0" />
+      <Item value="Scripts" priority="0" />
+      <Item value="taskrect" priority="0" />
+      <Item value="__DrawRegularTaskAndGroup`0" priority="0" />
+      <Item value="taskRect" priority="0" />
+      <Item value="Dictionary&lt;string,MnuItemRefScript&gt;" priority="0" />
+      <Item value="PendingMnuItemRefDict" priority="3" />
+      <Item value="MapHelper`0" priority="1" />
+      <Item value="DefaultValues" priority="2" />
+      <Item value="comboBoxDichTa" priority="0" />
+      <Item value="ucVectShapeMap" priority="0" />
+      <Item value="List&lt;XmlElement&gt;" priority="0" />
+      <Item value="diahinhPath" priority="0" />
+      <Item value="ucBDTCActions`0" priority="0" />
+      <Item value="ucBDTCActions" priority="0" />
+      <Item value="tabPageBDTCActions" priority="0" />
+      <Item value="objBDTCActions" priority="1" />
+      <Item value="ucMitSymbols`0" priority="0" />
+      <Item value="Shapes`0" priority="0" />
+      <Item value="rowsPerPage" priority="0" />
+      <Item value="colsPerPage" priority="0" />
+      <Item value="itemsDisplayed" priority="2" />
+      <Item value="backG" priority="1" />
+      <Item value="VectShapMap_MouseDownEvent" priority="1" />
+      <Item value="VectShapMap_MouseMoveEvent" priority="0" />
+      <Item value="s" priority="1" />
+      <Item value="redraw`0" priority="0" />
+      <Item value="All" priority="0" />
+      <Item value="Ele`0" priority="0" />
+      <Item value="dy" priority="1" />
+      <Item value="mRect" priority="8" />
+      <Item value="el" priority="0" />
+      <Item value="startX" priority="0" />
+      <Item value="tmpstartX" priority="2" />
+      <Item value="X1" priority="0" />
+      <Item value="x1" priority="3" />
+      <Item value="Y1" priority="0" />
+      <Item value="y1" priority="2" />
+      <Item value="NotFiniteNumberException`0" priority="0" />
+      <Item value="dx" priority="4" />
+      <Item value="tmpstartY" priority="1" />
+      <Item value="CheckPendingMnuIteRef`0" priority="0" />
+      <Item value="fileDB" priority="0" />
+      <Item value="len" priority="0" />
+      <Item value="DisplayNameAttribute`0" priority="0" />
+      <Item value="dr" priority="1" />
+      <Item value="dataGridViewAirport" priority="2" />
+      <Item value="cmbTables" priority="6" />
+      <Item value="results" priority="1" />
+      <Item value="GetTables`0" priority="0" />
+      <Item value="tableName" priority="1" />
+      <Item value="GetTableList`0" priority="1" />
+      <Item value="connString" priority="0" />
+      <Item value="frmReadAccess`0" priority="0" />
+      <Item value="frmReadAccess" priority="0" />
+      <Item value="GetTableData`0" priority="1" />
+      <Item value="export" priority="1" />
+      <Item value="TimeLineHelper`0" priority="3" />
+      <Item value="LoadMnuItemNode`0" priority="0" />
+      <Item value="mnuItemStask" priority="1" />
+      <Item value="pairMnuScript" priority="0" />
+      <Item value="minStartTime" priority="2" />
+      <Item value="DrawTreeNodeEventArgs`0" priority="0" />
+      <Item value="mManager" priority="4" />
+      <Item value="actionTask" priority="5" />
+      <Item value="relateTask" priority="0" />
+      <Item value="scriptKey" priority="0" />
+      <Item value="actionkey" priority="0" />
+      <Item value="taskDict" priority="0" />
+      <Item value="mnuItemNode" priority="3" />
+      <Item value="beginStatus" priority="3" />
+      <Item value="scriptTaskStart" priority="2" />
+      <Item value="mnuItemTask" priority="1" />
+      <Item value="actionTaskStart" priority="0" />
+      <Item value="label" priority="0" />
+      <Item value="Font" priority="1" />
+      <Item value="Font`0" priority="0" />
+      <Item value="font" priority="1" />
+      <Item value="h2labelrect" priority="4" />
+      <Item value="startTemplate" priority="2" />
+      <Item value="IFeatureSupport`0" priority="2" />
+      <Item value="resource" priority="1" />
+      <Item value="BarHeight" priority="0" />
+      <Item value="_mProject" priority="0" />
+      <Item value="endTask" priority="2" />
+      <Item value="extraWidth" priority="0" />
+      <Item value="newP" priority="0" />
+      <Item value="SelRect`0" priority="0" />
+      <Item value="tmpY" priority="1" />
+      <Item value="aa" priority="1" />
+      <Item value="minX" priority="0" />
+      <Item value="minY" priority="1" />
+      <Item value="tempX" priority="0" />
+      <Item value="List&lt;Point&gt;" priority="0" />
+      <Item value="myArr" priority="0" />
+      <Item value="toolStripProgressBar1" priority="1" />
+      <Item value="backgroundWorker1" priority="1" />
+      <Item value="text" priority="0" />
+      <Item value="SetValue`0" priority="0" />
+      <Item value="valueStr" priority="0" />
+      <Item value="btnCancel" priority="0" />
+      <Item value="total" priority="0" />
+      <Item value="percent" priority="0" />
+      <Item value="myMap1X" priority="0" />
+      <Item value="xyzGRID_WIDTH" priority="0" />
+      <Item value="xyzGRID_HEIGHT" priority="0" />
+      <Item value="_myMap2Y" priority="1" />
+      <Item value="_myMap2X" priority="0" />
+      <Item value="ColorDepth`0" priority="1" />
+      <Item value="Drawing" priority="0" />
+      <Item value="tempLon" priority="5" />
+      <Item value="tempLat" priority="5" />
+      <Item value="lon1" priority="0" />
+      <Item value="ucMap1" priority="0" />
+      <Item value="PointSet`0" priority="0" />
+      <Item value="CommentAction`0" priority="0" />
+      <Item value="StreamWrite" priority="1" />
+      <Item value="Stream`0" priority="0" />
+      <Item value="FileStream" priority="0" />
+      <Item value="Create" priority="0" />
+      <Item value="CornerTitleAction`0" priority="0" />
+      <Item value="gridEXColumns" priority="0" />
+      <Item value="RectangleF`0" priority="0" />
+      <Item value="RectangleF" priority="0" />
+      <Item value="x2" priority="1" />
+      <Item value="y2" priority="0" />
+      <Item value="ListView" priority="0" />
+      <Item value="frmBuildDiaHinh" priority="0" />
+      <Item value="bDTCActionsToolStripMenuItem" priority="0" />
+      <Item value="BDTCAction`0" priority="0" />
+      <Item value="BDTCAction" priority="0" />
+      <Item value="BDTCTimeLine`0" priority="0" />
+      <Item value="BDTCTimeLine" priority="0" />
+      <Item value="frmMain`0" priority="0" />
+      <Item value="txtSaBanName" priority="0" />
+      <Item value="folderPath" priority="1" />
+      <Item value="Application`0" priority="0" />
+      <Item value="SrcFolderPath" priority="0" />
+      <Item value="DesFolderPath" priority="3" />
+      <Item value="diaHinhFile" priority="0" />
+      <Item value="gridDataFile" priority="1" />
+      <Item value="txtXYZFile" priority="2" />
+      <Item value="txtImageFile" priority="1" />
+      <Item value="imageFile" priority="1" />
+      <Item value="xyzFile" priority="1" />
+      <Item value="imageInfo" priority="1" />
+      <Item value="minLon" priority="0" />
+      <Item value="lonList" priority="0" />
+      <Item value="latList" priority="0" />
+      <Item value="List&lt;double&gt;" priority="0" />
+      <Item value="chkUseWatermaker" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConfigBDTC.frmCreateBooms+DrawToolType">
+      <Item value="Pointer" priority="1" />
+      <Item value="Rectangle" priority="0" />
+      <Item value="GridRegion" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AxMapXLib.AxMap">
+      <Item value="ConvertCoord`0" priority="8" />
+      <Item value="CenterX" priority="1" />
+      <Item value="Bottom" priority="0" />
+      <Item value="Layers" priority="0" />
+      <Item value="GeoDictionary" priority="0" />
+      <Item value="GeoSet" priority="0" />
+      <Item value="Zoom" priority="0" />
+      <Item value="CenterY" priority="0" />
+      <Item value="Refresh`0" priority="3" />
+      <Item value="Cursor" priority="0" />
+      <Item value="CreateCustomTool`0" priority="1" />
+      <Item value="CursorChanged" priority="0" />
+      <Item value="CurrentTool" priority="2" />
+      <Item value="ZoomTo`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Point">
+      <Item value="X" priority="4" />
+      <Item value="Y" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MapXLib.ConversionConstants">
+      <Item value="miScreenToMap" priority="1" />
+      <Item value="miMapToScreen" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AxMapXLib.CMapXEvents_MouseDownEvent">
+      <Item value="x" priority="0" />
+      <Item value="y" priority="0" />
+      <Item value="button" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Rectangle">
+      <Item value="X" priority="1" />
+      <Item value="Size" priority="4" />
+      <Item value="Y" priority="2" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="Right" priority="1" />
+      <Item value="Bottom" priority="1" />
+      <Item value="Top" priority="1" />
+      <Item value="Left" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Size">
+      <Item value="Width" priority="1" />
+      <Item value="Height" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Graphics">
+      <Item value="DrawLine`0" priority="2" />
+      <Item value="FillRectangle`0" priority="0" />
+      <Item value="FillEllipse`0" priority="0" />
+      <Item value="Dispose`0" priority="0" />
+      <Item value="DrawRectangle`0" priority="1" />
+      <Item value="MeasureString`0" priority="0" />
+      <Item value="DrawLines`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapXLib.Layer">
+      <Item value="CoordSys" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapXLib.CoordSys">
+      <Item value="Bounds" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapXLib.Rectangle">
+      <Item value="XMin" priority="0" />
+      <Item value="YMin" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Color">
+      <Item value="Yellow" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Brushes">
+      <Item value="Yellow" priority="4" />
+      <Item value="Gray" priority="3" />
+      <Item value="Blue" priority="1" />
+      <Item value="Red" priority="1" />
+      <Item value="DarkRed" priority="0" />
+      <Item value="Orange" priority="0" />
+      <Item value="LightGray" priority="0" />
+      <Item value="Brown" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Contains`0" priority="4" />
+      <Item value="Add`0" priority="26" />
+      <Item value="Count" priority="26" />
+      <Item value="ToArray`0" priority="3" />
+      <Item value="AddRange`0" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.Classes.DrawRegion">
+      <Item value="Draw`0" priority="0" />
+      <Item value="Point3DList" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
+      <Item value="Text" priority="73" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="12" />
+      <Item value="MaxValue" priority="1" />
+      <Item value="MinValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AxMapXLib.CMapXEvents_MouseMoveEvent">
+      <Item value="x" priority="3" />
+      <Item value="y" priority="3" />
+      <Item value="button" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Single">
+      <Item value="ToString`0" priority="12" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Double">
+      <Item value="ToString`0" priority="6" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripStatusLabel">
+      <Item value="Text" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="42" />
+      <Item value="IsNullOrEmpty`0" priority="0" />
+      <Item value="Empty" priority="2" />
+      <Item value="Compare`0" priority="0" />
+      <Item value="Join`0" priority="3" />
+      <Item value="from" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConfigBDTC.Classes.Conversion3DConstants">
+      <Item value="To3D" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ConfigBDTC.Classes.Projection3D">
+      <Item value="Convert3DCoord`0" priority="1" />
+      <Item value="CenterMapX" priority="0" />
+      <Item value="Height3D" priority="0" />
+      <Item value="Width3D" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNode">
+      <Item value="Name" priority="2" />
+      <Item value="Value" priority="2" />
+      <Item value="Attributes" priority="11" />
+      <Item value="OuterXml" priority="6" />
+      <Item value="ChildNodes" priority="8" />
+      <Item value="InnerXml" priority="0" />
+      <Item value="InnerText" priority="0" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="RemoveAll`0" priority="0" />
+      <Item value="RemoveChild`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttributeCollection">
+      <Item value="InsertAfter`0" priority="1" />
+      <Item value="Append`0" priority="1" />
+      <Item value="Equals`0" priority="0" />
+      <Item value="Item`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlDocument">
+      <Item value="CreateAttribute`0" priority="1" />
+      <Item value="Attributes" priority="1" />
+      <Item value="ChildNodes" priority="0" />
+      <Item value="AppendChild`0" priority="1" />
+      <Item value="CreateElement`0" priority="1" />
+      <Item value="DocumentElement" priority="0" />
+      <Item value="Save`0" priority="1" />
+      <Item value="LoadXml`0" priority="0" />
+      <Item value="Load`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlAttribute">
+      <Item value="Name" priority="18" />
+      <Item value="Value" priority="47" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlElement">
+      <Item value="SetAttribute`0" priority="0" />
+      <Item value="AppendChild`0" priority="1" />
+      <Item value="Attributes" priority="0" />
+      <Item value="ChildNodes" priority="0" />
+      <Item value="LastChild" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC2.Scripts.ActionScript">
+      <Item value="CreateXml`0" priority="0" />
+      <Item value="CreateBoomAction`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.PointF">
+      <Item value="X" priority="10" />
+      <Item value="Y" priority="6" />
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Drawing.Color">
+      <Item value="Black" priority="1" />
+      <Item value="Gray" priority="0" />
+      <Item value="Red" priority="3" />
+      <Item value="Yellow" priority="4" />
+      <Item value="Green" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="14" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.XmlNodeType">
+      <Item value="EndElement" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlWriter">
+      <Item value="WriteElementString`0" priority="1" />
+      <Item value="WriteEndElement`0" priority="0" />
+      <Item value="WriteEndAttribute`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Single">
+      <Item value="Parse`0" priority="6" />
+      <Item value="PositiveInfinity" priority="1" />
+      <Item value="MaxValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Random">
+      <Item value="Next`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Double">
+      <Item value="Parse`0" priority="11" />
+      <Item value="PositiveInfinity" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.StreamReader">
+      <Item value="ReadToEnd`0" priority="1" />
+      <Item value="Close`0" priority="0" />
+      <Item value="ReadLine`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="Exists`0" priority="9" />
+      <Item value="Open`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeView">
+      <Item value="Nodes" priority="3" />
+      <Item value="ExpandAll`0" priority="0" />
+      <Item value="SelectedNode" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeNodeCollection">
+      <Item value="Clear`0" priority="3" />
+      <Item value="ContainsKey`0" priority="0" />
+      <Item value="Add`0" priority="0" />
+      <Item value="Find`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.frmConfigDiaHinhFile">
+      <Item value="ShowDialog`0" priority="0" />
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.XmlNodeList">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox">
+      <Item value="SelectedText" priority="4" />
+      <Item value="SelectedIndex" priority="8" />
+      <Item value="Text" priority="4" />
+      <Item value="Items" priority="0" />
+      <Item value="DataSource" priority="2" />
+      <Item value="DisplayMember" priority="1" />
+      <Item value="ValueMember" priority="0" />
+      <Item value="SelectedValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox">
+      <Item value="Items" priority="6" />
+      <Item value="DataSource" priority="1" />
+      <Item value="SelectedValue" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListBox+ObjectCollection">
+      <Item value="Add`0" priority="1" />
+      <Item value="Clear`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataTable">
+      <Item value="Columns" priority="8" />
+      <Item value="Rows" priority="2" />
+      <Item value="AsDataView`0" priority="0" />
+      <Item value="NewRow`0" priority="1" />
+      <Item value="DefaultView" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumnCollection">
+      <Item value="Add`0" priority="4" />
+      <Item value="Contains`0" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Type">
+      <Item value="GetType`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataRowCollection">
+      <Item value="Add`0" priority="1" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
+      <Item value="Columns" priority="1" />
+      <Item value="Rows" priority="9" />
+      <Item value="DataSource" priority="1" />
+      <Item value="ReadOnly" priority="0" />
+      <Item value="CurrentCell" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewColumnCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.ArrayList">
+      <Item value="Add`0" priority="3" />
+      <Item value="Clear`0" priority="0" />
+      <Item value="AddRange`0" priority="0" />
+      <Item value="Count" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ACGTool.Classes.ClassAction">
+      <Item value="Action" priority="1" />
+      <Item value="XmlFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRowCollection">
+      <Item value="Add`0" priority="0" />
+      <Item value="Clear`0" priority="1" />
+      <Item value="Count" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewColumn">
+      <Item value="Width" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRow">
+      <Item value="Cells" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCell">
+      <Item value="Value" priority="4" />
+      <Item value="RowIndex" priority="0" />
+      <Item value="ToolTipText" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString`0" priority="10" />
+      <Item value="Equals`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
+      <Item value="Show`0" priority="17" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="Contains`0" priority="9" />
+      <Item value="Replace`0" priority="18" />
+      <Item value="Length" priority="6" />
+      <Item value="Substring`0" priority="3" />
+      <Item value="Trim`0" priority="2" />
+      <Item value="Split`0" priority="6" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeNode">
+      <Item value="Text" priority="5" />
+      <Item value="Tag" priority="17" />
+      <Item value="Name" priority="14" />
+      <Item value="Nodes" priority="14" />
+      <Item value="Clone`0" priority="0" />
+      <Item value="EndEdit`0" priority="0" />
+      <Item value="Parent" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.CheckBox">
+      <Item value="Checked" priority="3" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.Excel.Sheets">
+      <Item value="get_Item`0" priority="0" />
+      <Item value="Item" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.Excel.Worksheet">
+      <Item value="Rows" priority="0" />
+      <Item value="Cells" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Microsoft.Office.Interop.Excel.Range">
+      <Item value="Value2" priority="1" />
+      <Item value="Columns" priority="0" />
+      <Item value="Count" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MITI.BaseDB">
+      <Item value="ExecSql_NoneQuery`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.DataColumn">
+      <Item value="ColumnName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="ContainsKey`0" priority="12" />
+      <Item value="Add`0" priority="16" />
+      <Item value="Keys" priority="6" />
+      <Item value="Count" priority="4" />
+      <Item value="Remove`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ComboBox+ObjectCollection">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Exception">
+      <Item value="ToString`0" priority="2" />
+      <Item value="Message" priority="8" />
+      <Item value="StackTrace" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.KeyValuePair`2">
+      <Item value="Value" priority="33" />
+      <Item value="Key" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.OpenFileDialog">
+      <Item value="OpenFile`0" priority="0" />
+      <Item value="CheckFileExists" priority="0" />
+      <Item value="DefaultExt" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Label">
+      <Item value="Visible" priority="0" />
+      <Item value="Text" priority="8" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ACGTool.GeneralClass">
+      <Item value="GetAllFiles`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="Length" priority="0" />
+      <Item value="FullName" priority="0" />
+      <Item value="Name" priority="5" />
+      <Item value="OpenRead`0" priority="0" />
+      <Item value="Attributes" priority="0" />
+      <Item value="CopyTo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView">
+      <Item value="Clear`0" priority="0" />
+      <Item value="Items" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.RichTextBox">
+      <Item value="Text" priority="7" />
+      <Item value="ForeColor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileStream">
+      <Item value="BeginRead`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2+KeyCollection">
+      <Item value="Contains`1" priority="0" />
+      <Item value="ToArray`1" priority="0" />
+      <Item value="ToList`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ACGTool.frmReadXYZ">
+      <Item value="MdiParent" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Directory">
+      <Item value="SetCurrentDirectory`0" priority="0" />
+      <Item value="Exists`0" priority="2" />
+      <Item value="GetCurrentDirectory`0" priority="1" />
+      <Item value="CreateDirectory`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyDefaFileName">
+      <Item value="KEY" priority="0" />
+      <Item value="PATH_FILE" priority="0" />
+      <Item value="KEY_FILE" priority="0" />
+      <Item value="LoadInfo`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyKHCnnString">
+      <Item value="KEY" priority="0" />
+      <Item value="PATH_FILE" priority="0" />
+      <Item value="KEY_FILE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.Path">
+      <Item value="GetFullPath`0" priority="4" />
+      <Item value="GetFileName`0" priority="3" />
+      <Item value="GetDirectoryName`0" priority="5" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BDTCLib.BDTCHelper">
+      <Item value="CheckExistLink`0" priority="0" />
+      <Item value="GetCurrentXMLContent`0" priority="1" />
+      <Item value="TimerProcessor`0" priority="0" />
+      <Item value="FormatFolderNode`0" priority="0" />
+      <Item value="FormatLeafNode`0" priority="1" />
+      <Item value="IsFolderPath`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyLastSaban">
+      <Item value="FULLPATH_FILE" priority="1" />
+      <Item value="_mySaBanDir" priority="0" />
+      <Item value="_mySaBanDirFullPath" priority="7" />
+      <Item value="BindLastFile_ListView`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.DiaHinh">
+      <Item value="_myD3DModelMeshFile" priority="0" />
+      <Item value="_objMyLastSaban" priority="13" />
+      <Item value="_objMySpriteTexsFile" priority="0" />
+      <Item value="_objMySoundsPath" priority="1" />
+      <Item value="_myCurrentDirectory" priority="7" />
+      <Item value="LoadDiaHinh`0" priority="0" />
+      <Item value="_objMyMapGst" priority="4" />
+      <Item value="BindGstMap_ListView`0" priority="0" />
+      <Item value="BindDataGrid_ListView`0" priority="1" />
+      <Item value="_objMyD3DModelMeshFile" priority="0" />
+      <Item value="_myGRID_WIDTH" priority="0" />
+      <Item value="_myMap1X" priority="1" />
+      <Item value="_myLastSaban" priority="0" />
+      <Item value="_myMap2Y" priority="0" />
+      <Item value="_myMap2X" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyD3DModelMeshFile">
+      <Item value="BindD3DModelMesh_ListView`0" priority="1" />
+      <Item value="FULLPATH_FILE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListControl">
+      <Item value="Items" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MySpriteTexsFile">
+      <Item value="BindD3DSpriteTexs_ListView`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListView+ListViewItemCollection">
+      <Item value="Clear`0" priority="2" />
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MySoundsPath">
+      <Item value="BindSoundFiles_ListView`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Button">
+      <Item value="PerformClick`0" priority="3" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Regex">
+      <Item value="Matches`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.MatchCollection">
+      <Item value="Count" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Match">
+      <Item value="Result`0" priority="0" />
+      <Item value="Groups" priority="3" />
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.RegularExpressions.Group">
+      <Item value="Value" priority="4" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyMapGst">
+      <Item value="ReadMapFile`0" priority="0" />
+      <Item value="VALUE_NAME" priority="0" />
+      <Item value="BindGstMap_ListView`0" priority="1" />
+      <Item value="FULLPATH_FILE" priority="0" />
+      <Item value="_objTabFileInfo" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem">
+      <Item value="SubItems" priority="6" />
+      <Item value="Tag" priority="0" />
+      <Item value="Name" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem+ListViewSubItemCollection">
+      <Item value="Add`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.TabPointInfo">
+      <Item value="Lon" priority="0" />
+      <Item value="Lat" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="Label" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.PointInfo">
+      <Item value="Lon" priority="6" />
+      <Item value="Height" priority="2" />
+      <Item value="Width" priority="0" />
+      <Item value="Label" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Bitmap">
+      <Item value="Width" priority="3" />
+      <Item value="Height" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.TabFileInfo">
+      <Item value="BindTabInfo_ListView`0" priority="0" />
+      <Item value="PointInfoDict" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.MyGridDataFile">
+      <Item value="BindDataGrid_ListView`0" priority="0" />
+      <Item value="LatitudeGridValues" priority="3" />
+      <Item value="LongitudeGridValues" priority="0" />
+      <Item value="myGRID_WIDTH" priority="0" />
+      <Item value="myGRID_HEIGHT" priority="0" />
+      <Item value="LoadXYZFile`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.MnuItem">
+      <Item value="ID" priority="8" />
+      <Item value="MnuScriptDict" priority="9" />
+      <Item value="MyMnu" priority="0" />
+      <Item value="ObjMyMnu" priority="5" />
+      <Item value="LoadActions`0" priority="0" />
+      <Item value="LoadScripts`0" priority="5" />
+      <Item value="CurrentXmlNode" priority="3" />
+      <Item value="ToString`0" priority="6" />
+      <Item value="CheckPendingAction`0" priority="0" />
+      <Item value="CheckPendingMnuScript`0" priority="2" />
+      <Item value="CalculateMnuItemTimer`0" priority="6" />
+      <Item value="Duration" priority="9" />
+      <Item value="BindMnuItem_TreeNode`0" priority="1" />
+      <Item value="Name" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.MnuScript">
+      <Item value="ID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.MyMnu">
+      <Item value="MnuItemDict" priority="2" />
+      <Item value="ObjDiaHinh" priority="2" />
+      <Item value="LoadXmlContent`0" priority="1" />
+      <Item value="ScriptXmlFileDict" priority="4" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="CheckPendingMnuItem`0" priority="0" />
+      <Item value="MyMnuXmlFile" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.Actions.Action">
+      <Item value="ID" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HTMapLib.DrawToolType">
+      <Item value="GridRegion" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Projection3D">
+      <Item value="Convert3DCoord`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.ucDrawingToolStrip">
+      <Item value="DrawingDragging" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.ucMap">
+      <Item value="CenterX_Original" priority="0" />
+      <Item value="ActiveToolStrip" priority="6" />
+      <Item value="Map" priority="7" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HTMapLib.enumToolStripType">
+      <Item value="DrawingToolStrip" priority="1" />
+      <Item value="ActionToolStrip" priority="1" />
+      <Item value="GridRegion" priority="1" />
+      <Item value="VectorShapeToolStrip" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HTMapLib.enumDrawingToolStrip">
+      <Item value="None" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.AxMapExt">
+      <Item value="CreateGraphicsFromImage`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapTool.Form1">
+      <Item value="ShowDialog`0" priority="1" />
+      <Item value="Handle" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapTool.frmVecShapeMap">
+      <Item value="ucVectShapeToolBox1" priority="0" />
+      <Item value="ucVectShapeMap1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:AxMapXLib.CMapXEvents_MouseUpEvent">
+      <Item value="x" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.ucVectShapeMap">
+      <Item value="ActiveToolStrip" priority="1" />
+      <Item value="Map" priority="2" />
+      <Item value="s" priority="3" />
+      <Item value="AxMap1" priority="1" />
+      <Item value="PointToClient`0" priority="0" />
+      <Item value="AxMap_DblClick" priority="0" />
+      <Item value="ucMap1" priority="10" />
+      <Item value="UserControl_MouseDown`0" priority="0" />
+      <Item value="ObjShapes" priority="1" />
+      <Item value="VectShapMap_MouseDownEvent" priority="0" />
+      <Item value="redimStatus" priority="1" />
+      <Item value="Status" priority="0" />
+      <Item value="Option" priority="4" />
+      <Item value="polyPoints" priority="4" />
+      <Item value="isShowDrawingRoute" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MapXLib.ToolConstants">
+      <Item value="miRectSelectTool" priority="0" />
+      <Item value="miAddLineTool" priority="0" />
+      <Item value="miRadiusSelectTool" priority="0" />
+      <Item value="miSelectTool" priority="0" />
+      <Item value="miArrowTool" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.ucVectShapeToolBox">
+      <Item value="s" priority="2" />
+      <Item value="Cursor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@MapXLib.CursorConstants">
+      <Item value="miCrossCursor" priority="0" />
+      <Item value="miSizeAllCursor" priority="1" />
+      <Item value="miSizeNWSECursor" priority="0" />
+      <Item value="miSizeEWCursor" priority="0" />
+      <Item value="miCustomCursor" priority="0" />
+      <Item value="miSelectPlusCursor" priority="0" />
+      <Item value="miSelectRadiusPlusCursor" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HTMapLib.enumVectShapeTool">
+      <Item value="Rect" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@HTMapLib.enumVectShapeCursor">
+      <Item value="SizeAll" priority="1" />
+      <Item value="Cross" priority="1" />
+      <Item value="Hand" priority="0" />
+      <Item value="SizeNWSE" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Clipboard">
+      <Item value="ContainsText`0" priority="0" />
+      <Item value="SetText`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolTip">
+      <Item value="SetToolTip`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ContextMenuStrip">
+      <Item value="Visible" priority="0" />
+      <Item value="Show`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapTool.frmBDTCShapeViewer">
+      <Item value="PointToScreen`0" priority="0" />
+      <Item value="ucMitSymbols1" priority="2" />
+      <Item value="ucVectShapeToolBox1" priority="1" />
+      <Item value="mapControl" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC2.ucMyMnuTreeView">
+      <Item value="LoadTreeView`0" priority="0" />
+      <Item value="Dock" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.SplitContainer">
+      <Item value="Panel1" priority="1" />
+      <Item value="SplitterDistance" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.SplitterPanel">
+      <Item value="Controls" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.Control+ControlCollection">
+      <Item value="Add`0" priority="2" />
+      <Item value="Remove`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.AbstractMnuScript">
+      <Item value="ID" priority="2" />
+      <Item value="CurrentXmlNode" priority="1" />
+      <Item value="ObjTimerCalc" priority="1" />
+      <Item value="ToString`0" priority="2" />
+      <Item value="CalculateTimer`0" priority="1" />
+      <Item value="CalculateMnuTimer`0" priority="1" />
+      <Item value="ObjMnuItem" priority="3" />
+      <Item value="GetType`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.TimerCalc">
+      <Item value="Start" priority="14" />
+      <Item value="CalculateTimer`0" priority="1" />
+      <Item value="IDRefValue" priority="4" />
+      <Item value="AddTime" priority="0" />
+      <Item value="Total" priority="0" />
+      <Item value="Duration" priority="7" />
+      <Item value="Stop" priority="3" />
+      <Item value="eTimer" priority="0" />
+      <Item value="StartTemplate" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.ScriptXmlFile">
+      <Item value="ActionDict" priority="4" />
+      <Item value="LoadContentXmlFile`0" priority="3" />
+      <Item value="CalculateActionTimer`0" priority="1" />
+      <Item value="PendingActionDict" priority="3" />
+      <Item value="FilePath" priority="5" />
+      <Item value="Duration" priority="1" />
+      <Item value="BindMnuItem_TreeNode`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.MnuItemRefScript">
+      <Item value="ObjMnuItem_Ref" priority="9" />
+      <Item value="BindMnuItem_TreeNode`0" priority="2" />
+      <Item value="ObjMnuItem" priority="0" />
+      <Item value="MnuItemRef" priority="5" />
+      <Item value="CalculateDuration`0" priority="1" />
+      <Item value="CalculateScriptTimer`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+      <Item value="ObjTimerCalc" priority="4" />
+      <Item value="ID" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.ucScriptXmlFileTreeView">
+      <Item value="LoadXmlFiles_TreeView`0" priority="0" />
+      <Item value="treeViewScript_AfterSelectEvent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.DirectoryInfo">
+      <Item value="FullName" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TreeViewEventArgs">
+      <Item value="Node" priority="9" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.Actions.AbstractAction">
+      <Item value="CalculateActionTimer`0" priority="2" />
+      <Item value="ObjTimerCalc" priority="9" />
+      <Item value="CurrentXmlNode" priority="0" />
+      <Item value="ID" priority="5" />
+      <Item value="Start" priority="1" />
+      <Item value="ToString`0" priority="4" />
+      <Item value="ObjScriptXmlFile" priority="0" />
+      <Item value="Repeat" priority="1" />
+      <Item value="Type" priority="3" />
+      <Item value="ObjName" priority="1" />
+      <Item value="Hide" priority="0" />
+      <Item value="DescText" priority="0" />
+      <Item value="CornerText" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Braincase.GanttChart.Task">
+      <Item value="Duration" priority="3" />
+      <Item value="Slack" priority="0" />
+      <Item value="BeginStatus" priority="0" />
+      <Item value="End" priority="1" />
+      <Item value="Name" priority="4" />
+      <Item value="Complete" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BDTCLib.Scripts.enumTimer">
+      <Item value="Start" priority="0" />
+      <Item value="Stop" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.Form1+MyTask">
+      <Item value="BeginStatus" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Braincase.GanttChart.enumGanttChartTimer">
+      <Item value="None" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.RectangleF">
+      <Item value="Left" priority="4" />
+      <Item value="Bottom" priority="3" />
+      <Item value="Offset`0" priority="0" />
+      <Item value="Width" priority="2" />
+      <Item value="Right" priority="1" />
+      <Item value="Top" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:BDTCLib.Scripts.ScrptFileScript">
+      <Item value="ObjScriptXmlFile" priority="4" />
+      <Item value="LoadContentXmlFile`0" priority="0" />
+      <Item value="CalculateTimer`0" priority="0" />
+      <Item value="CalculateScriptTimer`0" priority="0" />
+      <Item value="ScrptFile" priority="0" />
+      <Item value="ObjTimerCalc" priority="0" />
+      <Item value="ID" priority="0" />
+      <Item value="CalculateDuration`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.SizeF">
+      <Item value="Width" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:MapTool.Properties.Settings">
+      <Item value="RecentDiaHinhDirectory" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Braincase.GanttChart.Chart">
+      <Item value="Height" priority="0" />
+      <Item value="Width" priority="0" />
+      <Item value="BarWidth" priority="0" />
+      <Item value="ScrollTo`0" priority="0" />
+      <Item value="BarHeight" priority="0" />
+      <Item value="CreateGraphics`0" priority="0" />
+      <Item value="Font" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TabPage">
+      <Item value="Controls" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.ucBDTCActions">
+      <Item value="Dock" priority="0" />
+      <Item value="InitMyMnu`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.ucMitSymbols">
+      <Item value="ObjShapes" priority="1" />
+      <Item value="Zoom" priority="1" />
+      <Item value="dx" priority="1" />
+      <Item value="dy" priority="1" />
+      <Item value="redraw`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.Shapes">
+      <Item value="selEle" priority="3" />
+      <Item value="addRect`0" priority="0" />
+      <Item value="List" priority="3" />
+      <Item value="sRec" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.Ele">
+      <Item value="Copy`0" priority="0" />
+      <Item value="Draw`0" priority="1" />
+      <Item value="redim`0" priority="2" />
+      <Item value="endMoveRedim`0" priority="1" />
+      <Item value="PosX" priority="7" />
+      <Item value="move`0" priority="0" />
+      <Item value="PosY" priority="2" />
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="getX1`0" priority="1" />
+      <Item value="UpdateRect`0" priority="0" />
+      <Item value="getY1`0" priority="0" />
+      <Item value="TopLat" priority="1" />
+      <Item value="X" priority="2" />
+      <Item value="Y" priority="2" />
+      <Item value="X1" priority="0" />
+      <Item value="Y1" priority="0" />
+      <Item value="LeftLon" priority="0" />
+      <Item value="RightLon" priority="0" />
+      <Item value="BottomLat" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.Group">
+      <Item value="Width" priority="0" />
+      <Item value="Height" priority="0" />
+      <Item value="endMoveRedim`0" priority="2" />
+      <Item value="GrpZoomX" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbCommand">
+      <Item value="ExecuteScalar`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Data.OleDb.OleDbDataReader">
+      <Item value="FieldCount" priority="0" />
+      <Item value="GetName`0" priority="0" />
+      <Item value="Read`0" priority="0" />
+      <Item value="HasRows" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ACGTool.frmReadAccess">
+      <Item value="Show`0" priority="0" />
+      <Item value="MdiParent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Braincase.GanttChart.ProjectManager">
+      <Item value="Group`0" priority="2" />
+      <Item value="IsGroup`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@BDTCLib.ObjectCopier">
+      <Item value="Clone`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Drawing.Font">
+      <Item value="CreateObjRef`0" priority="0" />
+      <Item value="Size" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.MyTask">
+      <Item value="BeginStatus" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Braincase.GanttChart.ProjectManager`2">
+      <Item value="Tasks" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.PointWr">
+      <Item value="selected" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.SelPoly">
+      <Item value="handles" priority="0" />
+      <Item value="AddNewPoint`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Math">
+      <Item value="Min`0" priority="1" />
+      <Item value="Max`0" priority="0" />
+      <Item value="Abs`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ToolStripProgressBar">
+      <Item value="Maximum" priority="1" />
+      <Item value="Value" priority="0" />
+      <Item value="Visible" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.ProgressChangedEventArgs">
+      <Item value="ProgressPercentage" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.DoWorkEventArgs">
+      <Item value="Argument" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.ComponentModel.BackgroundWorker">
+      <Item value="RunWorkerAsync`0" priority="0" />
+      <Item value="ReportProgress`0" priority="0" />
+      <Item value="CancelAsync`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.ListViewItem+ListViewSubItem">
+      <Item value="Text" priority="2" />
+      <Item value="ForeColor" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:HTMapLib.PointSet">
+      <Item value="Points" priority="0" />
+      <Item value="mapPoints" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Boolean">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.Stream">
+      <Item value="BeginWrite`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.FileMode">
+      <Item value="Open" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter">
+      <Item value="Deserialize`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ConfigBDTC.frmBuildDiaHinh">
+      <Item value="Show`0" priority="0" />
+      <Item value="MdiParent" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Windows.Forms.Application">
+      <Item value="ExecutablePath" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@FolderLib.FileProcessor">
+      <Item value="DirectoryCopy`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>

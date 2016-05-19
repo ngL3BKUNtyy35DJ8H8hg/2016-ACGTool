@@ -1,0 +1,5 @@
+C:\Programming\2016\ACGProject\2015acg\ACGTool\BDTCLib\bin\Debug\BDTCLib.dll
+C:\Programming\2016\ACGProject\2015acg\ACGTool\BDTCLib\bin\Debug\BDTCLib.pdb
+C:\Programming\2016\ACGProject\2015acg\ACGTool\BDTCLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Programming\2016\ACGProject\2015acg\ACGTool\BDTCLib\obj\Debug\BDTCLib.dll
+C:\Programming\2016\ACGProject\2015acg\ACGTool\BDTCLib\obj\Debug\BDTCLib.pdb

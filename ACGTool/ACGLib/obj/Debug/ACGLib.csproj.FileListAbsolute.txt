@@ -1,0 +1,5 @@
+C:\Programming\2016\ACGProject\2015acg\ACGTool\ACGLib\bin\Debug\ACGLib.dll
+C:\Programming\2016\ACGProject\2015acg\ACGTool\ACGLib\bin\Debug\ACGLib.pdb
+C:\Programming\2016\ACGProject\2015acg\ACGTool\ACGLib\obj\Debug\ResolveAssemblyReference.cache
+C:\Programming\2016\ACGProject\2015acg\ACGTool\ACGLib\obj\Debug\ACGLib.dll
+C:\Programming\2016\ACGProject\2015acg\ACGTool\ACGLib\obj\Debug\ACGLib.pdb

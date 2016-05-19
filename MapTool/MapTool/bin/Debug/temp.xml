@@ -1,0 +1,153 @@
+<Actions>
+  <Action ID="Boom" Type="ExplodeDcl" ImageFile="explosion1.bmp" Width="2" Height="2" ShiftZ="2" Start="0" Speed="80" Duration="1" SoundName="Explosion1.wav" SoundLoop="0"></Action>
+  <Action ID="1" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="54.40508" Y="67.12799" Z="0"></Target>
+  </Action>
+  <Action ID="2" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="61.29887" Y="67.12799" Z="0"></Target>
+  </Action>
+  <Action ID="3" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="49.80922" Y="82.72853" Z="0"></Target>
+  </Action>
+  <Action ID="4" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="47.51129" Y="53.75609" Z="0"></Target>
+  </Action>
+  <Action ID="5" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="49.80922" Y="60.44204" Z="0"></Target>
+  </Action>
+  <Action ID="6" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="0.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="49.80922" Y="64.89934" Z="0"></Target>
+  </Action>
+  <Action ID="7" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="1" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="49.29879" Z="0"></Target>
+  </Action>
+  <Action ID="8" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="1" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="80.49988" Z="0"></Target>
+  </Action>
+  <Action ID="9" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="1" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="31.42577" Y="58.21339" Z="0"></Target>
+  </Action>
+  <Action ID="10" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="1.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="54.40508" Y="78.27123" Z="0"></Target>
+  </Action>
+  <Action ID="11" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="1.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="54.40508" Y="40.3842" Z="0"></Target>
+  </Action>
+  <Action ID="12" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="2" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="47.51129" Y="67.12799" Z="0"></Target>
+  </Action>
+  <Action ID="13" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="2" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="24.53197" Y="60.44204" Z="0"></Target>
+  </Action>
+  <Action ID="14" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="2.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="38.31956" Y="55.98474" Z="0"></Target>
+  </Action>
+  <Action ID="15" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="2.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="49.80922" Y="71.58528" Z="0"></Target>
+  </Action>
+  <Action ID="16" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="3" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="52.10715" Y="44.8415" Z="0"></Target>
+  </Action>
+  <Action ID="17" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="3" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="45.21335" Y="42.61285" Z="0"></Target>
+  </Action>
+  <Action ID="18" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="3.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="76.04258" Z="0"></Target>
+  </Action>
+  <Action ID="19" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="3.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="42.61285" Z="0"></Target>
+  </Action>
+  <Action ID="20" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="42.91542" Y="64.89934" Z="0"></Target>
+  </Action>
+  <Action ID="21" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="49.80922" Y="49.29879" Z="0"></Target>
+  </Action>
+  <Action ID="22" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="40.3842" Z="0"></Target>
+  </Action>
+  <Action ID="23" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="38.31956" Y="67.12799" Z="0"></Target>
+  </Action>
+  <Action ID="24" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="47.51129" Y="76.04258" Z="0"></Target>
+  </Action>
+  <Action ID="25" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="38.31956" Y="62.67069" Z="0"></Target>
+  </Action>
+  <Action ID="26" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="4.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="42.91542" Y="53.75609" Z="0"></Target>
+  </Action>
+  <Action ID="27" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="59.00094" Y="53.75609" Z="0"></Target>
+  </Action>
+  <Action ID="28" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="59.00094" Y="80.49988" Z="0"></Target>
+  </Action>
+  <Action ID="29" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="5.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="33.7237" Y="76.04258" Z="0"></Target>
+  </Action>
+  <Action ID="30" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="5.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="63.59679" Y="53.75609" Z="0"></Target>
+  </Action>
+  <Action ID="31" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="5.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="38.31956" Y="71.58528" Z="0"></Target>
+  </Action>
+  <Action ID="32" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="54.40508" Y="58.21339" Z="0"></Target>
+  </Action>
+  <Action ID="33" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="78.27123" Z="0"></Target>
+  </Action>
+  <Action ID="34" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="22.23404" Y="42.61285" Z="0"></Target>
+  </Action>
+  <Action ID="35" Type="Bombard" ObjName="Dich_Phao_3" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="45.21335" Y="40.3842" Z="0"></Target>
+  </Action>
+  <Action ID="36" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="31.42577" Y="69.35664" Z="0"></Target>
+  </Action>
+  <Action ID="37" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="60.44204" Z="0"></Target>
+  </Action>
+  <Action ID="38" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="53.75609" Z="0"></Target>
+  </Action>
+  <Action ID="39" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="6.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="47.07014" Z="0"></Target>
+  </Action>
+  <Action ID="40" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="40.61749" Y="69.35664" Z="0"></Target>
+  </Action>
+  <Action ID="41" Type="Bombard" ObjName="Dich_Phao_2" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="38.31956" Y="82.72853" Z="0"></Target>
+  </Action>
+  <Action ID="42" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="61.29887" Y="49.29879" Z="0"></Target>
+  </Action>
+  <Action ID="43" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="40.61749" Y="49.29879" Z="0"></Target>
+  </Action>
+  <Action ID="44" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="26.8299" Y="71.58528" Z="0"></Target>
+  </Action>
+  <Action ID="45" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="7.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="22.23404" Y="78.27123" Z="0"></Target>
+  </Action>
+  <Action ID="46" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="8" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="47.51129" Y="82.72853" Z="0"></Target>
+  </Action>
+  <Action ID="47" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="8" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="19.93611" Y="67.12799" Z="0"></Target>
+  </Action>
+  <Action ID="48" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="8" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="73.81393" Z="0"></Target>
+  </Action>
+  <Action ID="49" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="8.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="47.51129" Y="78.27123" Z="0"></Target>
+  </Action>
+  <Action ID="50" Type="Bombard" ObjName="Dich_Phao_1" ImageFile="Dich_DanCoi.png" Width="0.5" Height="0.5" Start="8.5" Duration="1" Speed="1" dAngle="-45" SoundName="gun_shotgun1.wav" SoundLoop="1" ExplID="Boom" Repeat="1">
+    <Target X="36.02163" Y="53.75609" Z="0"></Target>
+  </Action>
+</Actions>

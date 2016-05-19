@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BDTCLib.Scripts.MyMnu">
+    <Position X="4" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIIMAAACAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\MyMnu.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjDiaHinh" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDTCLib.Scripts.MnuItem">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAAgEAEAAAAwEQAAAAAAIAAQAAAAAEAAAA=</HashCode>
+      <FileName>Scripts\MnuItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjMyMnu" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDTCLib.Scripts.AbstractMnuScript">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAEACAAgAAEAAAAAAAAEAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Scripts\AbstractMnuScript.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjMnuItem" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDTCLib.Scripts.ScrptFileScript">
+    <Position X="13.75" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAACAg=</HashCode>
+      <FileName>Scripts\ScrptFileScript.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjScriptXmlFile" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDTCLib.Scripts.MnuItemRefScript">
+    <Position X="10.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAIAEAAAAAAAAACAEAAAAAAAAAAA=</HashCode>
+      <FileName>Scripts\MnuItemRefScript.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjMnuItem_Ref" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BDTCLib.Scripts.ScriptXmlFile">
+    <Position X="17" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Scripts\ScriptXmlFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.DiaHinh">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACCAULQAAgJQBQSYEgSCABCgABCAQJhSIxIJAhAEiA=</HashCode>
+      <FileName>DiaHinh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BDTCLib.Scripts.Actions.AbstractAction">
+    <Position X="20.25" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>wAABAAAFBCBCgAwEGgAAAMADABiQAAAAAQIEAABACQA=</HashCode>
+      <FileName>Scripts\Actions\AbstractAction.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ObjScriptXmlFile" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

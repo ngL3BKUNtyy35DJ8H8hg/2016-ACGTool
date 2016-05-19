@@ -1,0 +1,31 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="CC0E1C4D-AE46-459F-A816-C6934120B33E/f:DiaHinh.cs" caret="3290" fromTop="13" />
+      <File id="10789C16-0D2B-4312-B2A9-8FBD17C60F09/d:Properties/f:licenses.licx" caret="251" fromTop="0" />
+      <File id="E0557F6D-21C6-400F-A900-67438D06C5ED/d:Properties/f:licenses.licx" caret="668" fromTop="4" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="10789C16-0D2B-4312-B2A9-8FBD17C60F09/d:Properties/f:licenses.licx" caret="251" fromTop="0" />
+      <File id="E0557F6D-21C6-400F-A900-67438D06C5ED/d:Properties/f:licenses.licx" caret="0" fromTop="0" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>

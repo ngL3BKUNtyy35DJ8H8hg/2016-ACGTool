@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Segoe UI" Size="9" />
+  <Class Name="ACGTool.Classes.ClassInfoGeneration">
+    <Position X="5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Classes\ClassInfoGeneration.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAAFAAAAAAAAAAAAAAAIAAAAAAAEAAH4=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACGTool.Classes.ClassInfoGenerationCSharp">
+    <Position X="7.5" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Classes\ClassInfoGeneration.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ACGTool.Classes.ClassInfoGenerationVBDotNet">
+    <Position X="2.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Classes\ClassInfoGeneration.cs</FileName>
+      <HashCode>AAAAAAQAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

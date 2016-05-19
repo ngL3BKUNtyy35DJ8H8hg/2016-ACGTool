@@ -1,0 +1,12 @@
+F:\Programming\ACGTool Project\ACGTool\BaseDB\bin\Debug\MITI.BaseDB.dll
+F:\Programming\ACGTool Project\ACGTool\BaseDB\bin\Debug\MITI.BaseDB.pdb
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Debug\ResolveAssemblyReference.cache
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Debug\MITI.BaseDB.dll
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Debug\MITI.BaseDB.pdb
+F:\Programming\2013\B1MV\Project\GPSMap\GPSMap\bin\Debug\MITI.BaseDB.dll
+F:\Programming\2013\B1MV\Project\GPSMap\GPSMap\bin\Debug\MITI.BaseDB.pdb
+F:\Programming\ACGTool Project\ACGTool\BaseDB\bin\Release\MITI.BaseDB.dll
+F:\Programming\ACGTool Project\ACGTool\BaseDB\bin\Release\MITI.BaseDB.pdb
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Release\ResolveAssemblyReference.cache
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Release\MITI.BaseDB.dll
+F:\Programming\ACGTool Project\ACGTool\BaseDB\obj\Release\MITI.BaseDB.pdb
