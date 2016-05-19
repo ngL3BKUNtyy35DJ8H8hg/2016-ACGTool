@@ -1,8 +1,0 @@
-﻿Ngày 2015-06-24:
-+ Decompiler chưa xử lý trường hợp ở Class CBanDoNen
-private static void NhapNhayFeature(AxMap m_Map, Feature pObj, int pSoLan)
-{
-}
-+Strings.Len(t1)
-+Strings.Mid(Convert.ToString(t1), num2, 1)
-+
