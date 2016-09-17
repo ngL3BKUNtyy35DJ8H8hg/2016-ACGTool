@@ -289,7 +289,7 @@
       <Project>{173F6A67-05F4-4143-89C3-9243662FE031}</Project>
       <Name>ACGLib</Name>
     </ProjectReference>
-    <ProjectReference Include="..\BDTCLib\BDTCLib.csproj">
+    <ProjectReference Include="..\..\ACGLibs\BDTCLib\BDTCLib.csproj">
       <Project>{CC0E1C4D-AE46-459F-A816-C6934120B33E}</Project>
       <Name>BDTCLib</Name>
     </ProjectReference>

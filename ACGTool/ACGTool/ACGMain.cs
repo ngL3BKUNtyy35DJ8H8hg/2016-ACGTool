@@ -1111,20 +1111,21 @@ namespace ACGTool
                 //Set border
                 oTable.Borders.InsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
                 oTable.Borders.OutsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
-                oTable.Columns[1].Width = oWord.InchesToPoints((float)0.5); //Change width of columns 1 & 2
-                oTable.Columns[2].Width = oWord.InchesToPoints((float)2.5);
-                oTable.Columns[3].Width = oWord.InchesToPoints((float)0.8);
-                oTable.Columns[4].Width = oWord.InchesToPoints((float)0.5);
-                oTable.Columns[5].Width = oWord.InchesToPoints((float)3);
+                //Thay đổi kích thước column
+                oTable.Columns[1].Width = oWord.CentimetersToPoints((float)1.27); //Change width of columns 1 & 2
+                oTable.Columns[2].Width = oWord.CentimetersToPoints((float)4.28);
+                oTable.Columns[3].Width = oWord.CentimetersToPoints((float)2.38);
+                oTable.Columns[4].Width = oWord.CentimetersToPoints((float)1.75);
+                oTable.Columns[5].Width = oWord.CentimetersToPoints((float)7.3);
                 //oTable.Range.ParagraphFormat.SpaceAfter = 6;
                 int stt = 1;
                 //Create Header column
                 oTable.Rows[1].Range.Font.Bold = 1;
-                oTable.Cell(stt, 1).Range.Text = "Stt";
-                oTable.Cell(stt, 2).Range.Text = "Field Name";
-                oTable.Cell(stt, 3).Range.Text = "Type";
-                oTable.Cell(stt, 4).Range.Text = "Size";
-                oTable.Cell(stt, 5).Range.Text = "Description";
+                oTable.Cell(stt, 1).Range.Text = "TT";
+                oTable.Cell(stt, 2).Range.Text = "Thuộc tính";
+                oTable.Cell(stt, 3).Range.Text = "Kiểu dữ liệu";
+                oTable.Cell(stt, 4).Range.Text = "Kích thước";
+                oTable.Cell(stt, 5).Range.Text = "Mô tả";
                 
                 
                 foreach (DataRow dr in ds.Tables[0].Rows)
@@ -1238,20 +1239,20 @@ namespace ACGTool
                 //Set border
                 oTable.Borders.InsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
                 oTable.Borders.OutsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
-                oTable.Columns[1].Width = oWord.InchesToPoints((float)0.5); //Change width of columns 1 & 2
-                oTable.Columns[2].Width = oWord.InchesToPoints((float)2.5);
-                oTable.Columns[3].Width = oWord.InchesToPoints((float)0.8);
-                oTable.Columns[4].Width = oWord.InchesToPoints((float)0.5);
-                oTable.Columns[5].Width = oWord.InchesToPoints((float)3);
+                oTable.Columns[1].Width = oWord.CentimetersToPoints((float)1.27); //Change width of columns 1 & 2
+                oTable.Columns[2].Width = oWord.CentimetersToPoints((float)4.28);
+                oTable.Columns[3].Width = oWord.CentimetersToPoints((float)2.38);
+                oTable.Columns[4].Width = oWord.CentimetersToPoints((float)1.75);
+                oTable.Columns[5].Width = oWord.CentimetersToPoints((float)7.3);
                 //oTable.Range.ParagraphFormat.SpaceAfter = 6;
                 int stt = 1;
                 //Create Header column
                 oTable.Rows[1].Range.Font.Bold = 1;
-                oTable.Cell(stt, 1).Range.Text = "Stt";
-                oTable.Cell(stt, 2).Range.Text = "Field Name";
-                oTable.Cell(stt, 3).Range.Text = "Type";
-                oTable.Cell(stt, 4).Range.Text = "Size";
-                oTable.Cell(stt, 5).Range.Text = "Description";
+                oTable.Cell(stt, 1).Range.Text = "TT";
+                oTable.Cell(stt, 2).Range.Text = "Thuộc tính";
+                oTable.Cell(stt, 3).Range.Text = "Kiểu dữ liệu";
+                oTable.Cell(stt, 4).Range.Text = "Kích thước";
+                oTable.Cell(stt, 5).Range.Text = "Mô tả";
 
 
                 foreach (DataRow dr in ds.Tables[0].Rows)

@@ -44,3 +44,26 @@ c:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.dll
 c:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\BDTCLib.pdb
 c:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\FolderLib.pdb
 c:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\ConfigBDTC.exe.config
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\ConfigBDTC.exe
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\ConfigBDTC.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\BDTCLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\FolderLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\BDTCLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\FolderLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.csprojResolveAssemblyReference.cache
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.BDTCAction.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.frmBuildDiaHinh.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.frmMain.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.splash.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.ucBDTCActions.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.ucScriptXmlFileTreeView.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.BDTCTimeLine.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.frmConfigDiaHinhFile.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.Properties.Resources.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.ucMyMnuTreeView.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.csproj.GenerateResource.Cache
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.exe
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.pdb

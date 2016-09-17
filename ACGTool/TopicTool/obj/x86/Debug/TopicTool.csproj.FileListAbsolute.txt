@@ -22,3 +22,15 @@ c:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Properties.Reso
 c:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csproj.GenerateResource.Cache
 c:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.exe
 c:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.exe.config
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.exe
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.xml
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csprojResolveAssemblyReference.cache
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Form1.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Properties.Resources.resources
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csproj.GenerateResource.Cache
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.exe
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.pdb
