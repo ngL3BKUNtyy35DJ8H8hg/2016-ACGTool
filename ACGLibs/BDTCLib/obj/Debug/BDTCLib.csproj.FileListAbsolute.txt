@@ -6,3 +6,7 @@ C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
 C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb

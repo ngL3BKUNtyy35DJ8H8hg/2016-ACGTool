@@ -7,3 +7,7 @@ C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.pdb
 C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.pdb
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.dll
+c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.pdb

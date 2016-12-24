@@ -1232,18 +1232,18 @@ namespace ACGTool
                 }
 
                 //Insert a 3 x 5 table, fill it with data, and make the first row
+                int colNums = 4;
                 //bold and italic.
                 Word.Table oTable;
                 Word.Range wrdRng = oDoc.Bookmarks.get_Item(ref oEndOfDoc).Range;
-                oTable = oDoc.Tables.Add(wrdRng, ds.Tables[0].Rows.Count + 1, 5, ref oMissing, ref oMissing);
+                oTable = oDoc.Tables.Add(wrdRng, ds.Tables[0].Rows.Count + 1, colNums, ref oMissing, ref oMissing);
                 //Set border
                 oTable.Borders.InsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
                 oTable.Borders.OutsideLineStyle = Microsoft.Office.Interop.Word.WdLineStyle.wdLineStyleSingle;
-                oTable.Columns[1].Width = oWord.CentimetersToPoints((float)1.27); //Change width of columns 1 & 2
-                oTable.Columns[2].Width = oWord.CentimetersToPoints((float)4.28);
-                oTable.Columns[3].Width = oWord.CentimetersToPoints((float)2.38);
-                oTable.Columns[4].Width = oWord.CentimetersToPoints((float)1.75);
-                oTable.Columns[5].Width = oWord.CentimetersToPoints((float)7.3);
+                oTable.Columns[1].Width = oWord.CentimetersToPoints((float)1.3); //Change width of columns 1 & 2
+                oTable.Columns[2].Width = oWord.CentimetersToPoints((float)4.5);
+                oTable.Columns[3].Width = oWord.CentimetersToPoints((float)3);
+                oTable.Columns[4].Width = oWord.CentimetersToPoints((float)9);
                 //oTable.Range.ParagraphFormat.SpaceAfter = 6;
                 int stt = 1;
                 //Create Header column
@@ -1251,8 +1251,7 @@ namespace ACGTool
                 oTable.Cell(stt, 1).Range.Text = "TT";
                 oTable.Cell(stt, 2).Range.Text = "Thuộc tính";
                 oTable.Cell(stt, 3).Range.Text = "Kiểu dữ liệu";
-                oTable.Cell(stt, 4).Range.Text = "Kích thước";
-                oTable.Cell(stt, 5).Range.Text = "Mô tả";
+                oTable.Cell(stt, 4).Range.Text = "Ghi chú";
 
 
                 foreach (DataRow dr in ds.Tables[0].Rows)
@@ -1261,15 +1260,19 @@ namespace ACGTool
                     oTable.Rows[stt].Range.Font.Bold = 0;
                     oTable.Cell(stt, 1).Range.Text = (stt - 1).ToString();
                     oTable.Cell(stt, 2).Range.Text = dr["COLUMN_NAME"].ToString();
-                    oTable.Cell(stt, 3).Range.Text = dr["TYPE_NAME"].ToString();
-                    oTable.Cell(stt, 4).Range.Text = dr["TYPE_NAME"].ToString().Contains("varchar") ? dr["PRECISION"].ToString() : dr["LENGTH"].ToString();
+                    string len = "";
+                    if (dr["TYPE_NAME"].ToString().Contains("char") || dr["TYPE_NAME"].ToString().Contains("binary"))
+                    len = "(" + dr["PRECISION"].ToString() + ")";
+                    else if (dr["TYPE_NAME"].ToString().Contains("numeric") || dr["TYPE_NAME"].ToString().Contains("decimal"))
+                        len = "(" + dr["PRECISION"].ToString() + ":" + dr["LENGTH"].ToString() + ")";
+                    oTable.Cell(stt, 3).Range.Text = string.Format("{0}{1}", dr["TYPE_NAME"].ToString(), len);
 
                     //Check the column is a primary key
                     des = "";
                     dvPrimaryKey.Sort = "COLUMN_NAME";
                     index = dvPrimaryKey.Find(dr["COLUMN_NAME"]);
                     if (index != -1)
-                        des = "Primary Key.";
+                        des = "Primary Key";
 
                     //Check the column is a foreign key
                     dvForeignKey.Sort = "ColumnName";
@@ -1277,7 +1280,7 @@ namespace ACGTool
                     if (index != -1)
                     {
                         if (!string.IsNullOrEmpty(des))
-                            des += " ";
+                            des += System.Environment.NewLine;;
                         des += "Foreign Key (" + dvForeignKey[index]["ReferenceTableName"].ToString() + ").";
                     }
 
@@ -1287,11 +1290,11 @@ namespace ACGTool
                     if (index != -1)
                     {
                         if (!string.IsNullOrEmpty(des))
-                            des += " ";
+                            des += System.Environment.NewLine;
                         des += dvDescriptionColumns[index]["value"].ToString();
                     }
 
-                    oTable.Cell(stt, 5).Range.Text = des;
+                    oTable.Cell(stt, 4).Range.Text = des;
                 }
             }
         }

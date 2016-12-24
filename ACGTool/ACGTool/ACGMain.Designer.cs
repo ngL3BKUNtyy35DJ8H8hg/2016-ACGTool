@@ -235,7 +235,7 @@
             this.panelCode.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelCode.Location = new System.Drawing.Point(3, 3);
             this.panelCode.Name = "panelCode";
-            this.panelCode.Size = new System.Drawing.Size(570, 547);
+            this.panelCode.Size = new System.Drawing.Size(570, 469);
             this.panelCode.TabIndex = 33;
             // 
             // richTextBoxClassInfo
@@ -244,7 +244,7 @@
             this.richTextBoxClassInfo.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBoxClassInfo.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxClassInfo.Name = "richTextBoxClassInfo";
-            this.richTextBoxClassInfo.Size = new System.Drawing.Size(570, 547);
+            this.richTextBoxClassInfo.Size = new System.Drawing.Size(570, 469);
             this.richTextBoxClassInfo.TabIndex = 0;
             this.richTextBoxClassInfo.Text = "";
             // 
@@ -264,7 +264,7 @@
             this.panelDataProvider.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDataProvider.Location = new System.Drawing.Point(0, 0);
             this.panelDataProvider.Name = "panelDataProvider";
-            this.panelDataProvider.Size = new System.Drawing.Size(576, 553);
+            this.panelDataProvider.Size = new System.Drawing.Size(576, 475);
             this.panelDataProvider.TabIndex = 34;
             // 
             // richTextBoxDataProvider
@@ -272,7 +272,7 @@
             this.richTextBoxDataProvider.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxDataProvider.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxDataProvider.Name = "richTextBoxDataProvider";
-            this.richTextBoxDataProvider.Size = new System.Drawing.Size(576, 553);
+            this.richTextBoxDataProvider.Size = new System.Drawing.Size(576, 475);
             this.richTextBoxDataProvider.TabIndex = 0;
             this.richTextBoxDataProvider.Text = "";
             // 
@@ -293,7 +293,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(576, 553);
+            this.panel4.Size = new System.Drawing.Size(576, 475);
             this.panel4.TabIndex = 34;
             // 
             // richTextBoxSqlDataProvider
@@ -301,7 +301,7 @@
             this.richTextBoxSqlDataProvider.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxSqlDataProvider.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxSqlDataProvider.Name = "richTextBoxSqlDataProvider";
-            this.richTextBoxSqlDataProvider.Size = new System.Drawing.Size(576, 553);
+            this.richTextBoxSqlDataProvider.Size = new System.Drawing.Size(576, 475);
             this.richTextBoxSqlDataProvider.TabIndex = 0;
             this.richTextBoxSqlDataProvider.Text = "";
             // 
@@ -322,7 +322,7 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(570, 547);
+            this.panel6.Size = new System.Drawing.Size(570, 469);
             this.panel6.TabIndex = 34;
             // 
             // richTextBoxClassController
@@ -330,7 +330,7 @@
             this.richTextBoxClassController.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxClassController.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxClassController.Name = "richTextBoxClassController";
-            this.richTextBoxClassController.Size = new System.Drawing.Size(570, 547);
+            this.richTextBoxClassController.Size = new System.Drawing.Size(570, 469);
             this.richTextBoxClassController.TabIndex = 0;
             this.richTextBoxClassController.Text = "";
             // 
@@ -350,7 +350,7 @@
             this.panelSQLProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelSQLProcedures.Location = new System.Drawing.Point(0, 0);
             this.panelSQLProcedures.Name = "panelSQLProcedures";
-            this.panelSQLProcedures.Size = new System.Drawing.Size(576, 553);
+            this.panelSQLProcedures.Size = new System.Drawing.Size(576, 475);
             this.panelSQLProcedures.TabIndex = 34;
             // 
             // richTextBoxSqlProcedures
@@ -358,7 +358,7 @@
             this.richTextBoxSqlProcedures.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxSqlProcedures.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxSqlProcedures.Name = "richTextBoxSqlProcedures";
-            this.richTextBoxSqlProcedures.Size = new System.Drawing.Size(576, 553);
+            this.richTextBoxSqlProcedures.Size = new System.Drawing.Size(576, 475);
             this.richTextBoxSqlProcedures.TabIndex = 0;
             this.richTextBoxSqlProcedures.Text = "";
             // 
@@ -380,7 +380,7 @@
             this.panelClassCollection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelClassCollection.Location = new System.Drawing.Point(3, 3);
             this.panelClassCollection.Name = "panelClassCollection";
-            this.panelClassCollection.Size = new System.Drawing.Size(570, 547);
+            this.panelClassCollection.Size = new System.Drawing.Size(570, 469);
             this.panelClassCollection.TabIndex = 34;
             // 
             // richTextBoxClassCollection
@@ -388,7 +388,7 @@
             this.richTextBoxClassCollection.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxClassCollection.Location = new System.Drawing.Point(0, 92);
             this.richTextBoxClassCollection.Name = "richTextBoxClassCollection";
-            this.richTextBoxClassCollection.Size = new System.Drawing.Size(570, 455);
+            this.richTextBoxClassCollection.Size = new System.Drawing.Size(570, 377);
             this.richTextBoxClassCollection.TabIndex = 0;
             this.richTextBoxClassCollection.Text = "";
             // 
@@ -417,7 +417,7 @@
             this.richTextBoxOthers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.richTextBoxOthers.Location = new System.Drawing.Point(3, 54);
             this.richTextBoxOthers.Name = "richTextBoxOthers";
-            this.richTextBoxOthers.Size = new System.Drawing.Size(570, 496);
+            this.richTextBoxOthers.Size = new System.Drawing.Size(570, 418);
             this.richTextBoxOthers.TabIndex = 1;
             this.richTextBoxOthers.Text = "";
             // 
@@ -785,17 +785,17 @@
             // 
             // btnExportToWord2
             // 
-            this.btnExportToWord2.Location = new System.Drawing.Point(900, 28);
+            this.btnExportToWord2.Location = new System.Drawing.Point(837, 28);
             this.btnExportToWord2.Name = "btnExportToWord2";
-            this.btnExportToWord2.Size = new System.Drawing.Size(100, 23);
+            this.btnExportToWord2.Size = new System.Drawing.Size(163, 23);
             this.btnExportToWord2.TabIndex = 7;
-            this.btnExportToWord2.Text = "Export To Word 2";
+            this.btnExportToWord2.Text = "Export To Word (Việt hóa)";
             this.btnExportToWord2.UseVisualStyleBackColor = true;
             this.btnExportToWord2.Click += new System.EventHandler(this.btnExportToWord2_Click);
             // 
             // btnExportToWord
             // 
-            this.btnExportToWord.Location = new System.Drawing.Point(777, 28);
+            this.btnExportToWord.Location = new System.Drawing.Point(730, 28);
             this.btnExportToWord.Name = "btnExportToWord";
             this.btnExportToWord.Size = new System.Drawing.Size(100, 23);
             this.btnExportToWord.TabIndex = 7;
