@@ -109,6 +109,27 @@ namespace ConfigBDTC
             File.Delete(tempFile);
         }
 
+        private void SaveBDTC()
+        {
+            //Save file BDTC
+            if (richTextBoxOrigion.Text != string.Empty)
+            {
+                XmlElement node = _myBDTCFileDocument.DocumentElement;
+                foreach (XmlNode node1 in node.ChildNodes)
+                    if (node1.Name == "Slide" || node1.Name == "Page")
+                    {
+                        foreach (XmlAttribute att in node1.Attributes)
+                        {
+                            if (att.Name == "Symbols")
+                            {
+                                att.Value = richTextBoxOrigion.Text;
+                            }
+                        }
+                    }
+                _myBDTCFileDocument.Save(txtFilePath.Text);
+            }
+        }
+
         private void btnResetID_Click(object sender, EventArgs e)
         {
             if (textBoxReplace.Text == string.Empty)
@@ -263,6 +284,8 @@ namespace ConfigBDTC
                 }
             }
 
+            //Save BDTC file
+            SaveBDTC();
 
             MessageBox.Show("Reset successfull!");
         }
@@ -277,27 +300,27 @@ namespace ConfigBDTC
         //    richTextBoxOrigion.Text = System.Web.HttpUtility.HtmlDecode(richTextBoxOrigion.Text);
         //}
 
-        private void buttonSaveFile_Click(object sender, EventArgs e)
-        {
-            if (richTextBoxOrigion.Text != string.Empty)
-            {
-                XmlNode node;
-                node = _myBDTCFileDocument.DocumentElement;
-                foreach (XmlNode node1 in node.ChildNodes)
-                    if (node1.Name == "Slide" || node1.Name == "Page")
-                    {
-                        foreach (XmlAttribute att in node1.Attributes)
-                        {
-                            if (att.Name == "Symbols")
-                            {
-                                att.Value = richTextBoxOrigion.Text;
-                            }
-                        }
-                    }
-                _myBDTCFileDocument.Save(txtFilePathOut.Text);
-                MessageBox.Show("Save successfull!");
-            }
-        }
+        //private void buttonSaveFile_Click(object sender, EventArgs e)
+        //{
+        //    if (richTextBoxOrigion.Text != string.Empty)
+        //    {
+        //        XmlNode node;
+        //        node = _myBDTCFileDocument.DocumentElement;
+        //        foreach (XmlNode node1 in node.ChildNodes)
+        //            if (node1.Name == "Slide" || node1.Name == "Page")
+        //            {
+        //                foreach (XmlAttribute att in node1.Attributes)
+        //                {
+        //                    if (att.Name == "Symbols")
+        //                    {
+        //                        att.Value = richTextBoxOrigion.Text;
+        //                    }
+        //                }
+        //            }
+        //        _myBDTCFileDocument.Save(txtFilePathOut.Text);
+        //        MessageBox.Show("Save successfull!");
+        //    }
+        //}
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -347,18 +370,9 @@ namespace ConfigBDTC
             }
         }
 
-        private void btBrowseSave_Click(object sender, EventArgs e)
-        {
-            //mo form cho nguoi ta chon co so du lieu
-            OpenFileDialog1.Filter = "Excel File(*.BDTC)|*.BDTC;|All files (*.*)|*.*";
-            txtFilePathOut.Text = "";
-            OpenFileDialog1.ShowDialog();
-            txtFilePathOut.Text = OpenFileDialog1.FileName;
-        }
-
         private void BDTCTool_Load(object sender, EventArgs e)
         {
-            txtFilePathOut.Text = System.Environment.CurrentDirectory + "\\" + "New.BDTC";
+
         }
 
         private void listBox1_DoubleClick(object sender, EventArgs e)
@@ -516,19 +530,21 @@ namespace ConfigBDTC
             richTextBoxOrigion.Text = _myXmlDocument.OuterXml;
 
             //Save xuống file
-            node = _myBDTCFileDocument.DocumentElement;
-            foreach (XmlNode node1 in node.ChildNodes)
-                if (node1.Name == "Slide" || node1.Name == "Page")
-                {
-                    foreach (XmlAttribute att in node1.Attributes)
-                    {
-                        if (att.Name == "Symbols")
-                        {
-                            att.Value = richTextBoxOrigion.Text;
-                        }
-                    }
-                }
-            _myBDTCFileDocument.Save(txtFilePathOut.Text);
+            SaveBDTC();
+
+            //node = _myBDTCFileDocument.DocumentElement;
+            //foreach (XmlNode node1 in node.ChildNodes)
+            //    if (node1.Name == "Slide" || node1.Name == "Page")
+            //    {
+            //        foreach (XmlAttribute att in node1.Attributes)
+            //        {
+            //            if (att.Name == "Symbols")
+            //            {
+            //                att.Value = richTextBoxOrigion.Text;
+            //            }
+            //        }
+            //    }
+            //_myBDTCFileDocument.Save(txtFilePath.Text);
             MessageBox.Show("Save successfull!");
         }
 
