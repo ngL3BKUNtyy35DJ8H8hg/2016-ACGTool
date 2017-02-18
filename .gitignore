@@ -7,6 +7,7 @@
 .metadata
 bin/
 tmp/
+obj/
 *.tmp
 *.bak
 *.swp
@@ -214,3 +215,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+*.cache

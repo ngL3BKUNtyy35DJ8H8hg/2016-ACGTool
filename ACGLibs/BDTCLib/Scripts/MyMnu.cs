@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml;
@@ -21,11 +22,13 @@ namespace BDTCLib.Scripts
 
         //Lưu danh sách các file script .xml (một file script .xml có thể xuất hiện nhiều lần ở các MnuItem)
         public Dictionary<string, ScriptXmlFile> ScriptXmlFileDict;
+        public List<string> _xmlFileList = new List<string>();
 
         public MyMnu(DiaHinh objDiaHinh)
         {
             _objDiaHinh = objDiaHinh;
             MyMnuXmlFile = _objDiaHinh._objMyLastSaban._mySaBanDirFullPath + "\\MyMnu.xml";
+            LoadXmlFiles();
         }
 
         private DiaHinh _objDiaHinh;
@@ -35,7 +38,33 @@ namespace BDTCLib.Scripts
             set { _objDiaHinh = value; }
         }
 
-        
+        public List<string> LoadXmlFiles()
+        {
+            XmlNode nodeMnu;
+            try
+            {
+                _objMyMnuDoc = new XmlDocument();
+                _objMyMnuDoc.Load(MyMnuXmlFile);
+                nodeMnu = _objMyMnuDoc.DocumentElement;
+                XmlNodeList nodeList = nodeMnu.SelectNodes("//Script");
+
+                foreach (XmlNode nodeMnuItem in nodeList)
+                {
+                    if (nodeMnuItem.Attributes["ScrptFile"] != null)
+                    {
+                        string path = _objDiaHinh._myCurrentDirectory + "\\" + nodeMnuItem.Attributes["ScrptFile"].Value;
+                        if (!_xmlFileList.Contains(path) && File.Exists(path))
+                            _xmlFileList.Add(path);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return _xmlFileList;
+        }
+
         /// <summary>
         /// Load nội dung của file MyMnu.xml
         /// </summary>
@@ -53,12 +82,12 @@ namespace BDTCLib.Scripts
                 _objMyMnuDoc.Load(MyMnuXmlFile);
                 nodeMnu = _objMyMnuDoc.DocumentElement;
                 CurrentXmlNode = nodeMnu;
-                
+
                 //=============================================================
                 //Xử lý load <MnuItem> trước
                 MnuItemDict = new Dictionary<string, MnuItem>();
                 PendingMnuItemDict = new Dictionary<string, MnuItem>();
-                
+
                 foreach (XmlNode nodeMnuItem in nodeMnu.ChildNodes)
                     if (nodeMnuItem.Name == "MnuItem")
                     {
@@ -68,7 +97,7 @@ namespace BDTCLib.Scripts
                         //Kiểm tra tồn tại ID không
                         if (nodeMnuItem.Attributes["ID"] == null)
                         {
-                            errList.Add(string.Format("MnuItem {0} chưa có thuộc tính ID", BDTCHelper.GetCurrentXMLContent(nodeMnuItem).Replace("</MnuItem>","")));
+                            errList.Add(string.Format("MnuItem {0} chưa có thuộc tính ID", BDTCHelper.GetCurrentXMLContent(nodeMnuItem).Replace("</MnuItem>", "")));
                             //Gán temp ID
                             ID = string.Format("TempID{0}", currentIndex);
                         }
@@ -91,7 +120,7 @@ namespace BDTCLib.Scripts
                         MnuItemDict.Add(ID, objMnuItem);
                     }
 
-                
+
                 //=============================================================
                 //Với mỗi MnuItem, tiếp tục load <Script> bên trong
                 ScriptXmlFileDict = new Dictionary<string, ScriptXmlFile>();
@@ -114,6 +143,35 @@ namespace BDTCLib.Scripts
 
             return errList;
         }
+
+        /// <summary>
+        /// 2017-02-18
+        /// Rename ObjName của các file script .xml
+        /// </summary>
+        /// <returns></returns>
+        public void RenameObjNameInScriptXmlFiles(string oldObjName, string newObjName)
+        {
+            try
+            {
+                foreach (string filepath in _xmlFileList)
+                {
+                    XmlDocument doc = new XmlDocument();
+                    doc.Load(filepath);
+                    XmlNode nodeMnu = doc.DocumentElement;
+                    XmlNodeList actionNodeList = nodeMnu.SelectNodes("//Action[@ObjName='" + oldObjName + "']");
+                    foreach (XmlNode nodeMnuItem in actionNodeList)
+                    {
+                        nodeMnuItem.Attributes["ObjName"].Value = newObjName;
+                    }
+                    doc.Save(filepath);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
 
         ///// <summary>
         ///// Kiểm tra Action xử lý có tham chiếu đến ID Ref bị pending không
@@ -154,7 +212,7 @@ namespace BDTCLib.Scripts
         //                msg += String.Join("-->", arrID);
         //                errList.Add(msg);
         //            }
-                    
+
         //        }
         //    }
         //    catch (Exception ex)

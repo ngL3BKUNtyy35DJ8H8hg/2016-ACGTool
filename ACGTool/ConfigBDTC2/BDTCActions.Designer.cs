@@ -33,13 +33,13 @@
             this.OpenFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.Label2 = new System.Windows.Forms.Label();
+            this.txtFilePath = new System.Windows.Forms.TextBox();
+            this.btBrowse = new System.Windows.Forms.Button();
             this.comboBoxActionFilter = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtObjName = new System.Windows.Forms.TextBox();
-            this.Label2 = new System.Windows.Forms.Label();
-            this.txtFilePath = new System.Windows.Forms.TextBox();
-            this.btBrowse = new System.Windows.Forms.Button();
             this.buttonScript = new System.Windows.Forms.Button();
             this.openFileDialogScriptPath = new System.Windows.Forms.OpenFileDialog();
             this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
@@ -61,6 +61,7 @@
             this.txtReplaceWith = new System.Windows.Forms.TextBox();
             this.txtFindWhat = new System.Windows.Forms.TextBox();
             this.treeViewScript = new System.Windows.Forms.TreeView();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.listBoxActions = new System.Windows.Forms.ListBox();
             this.richTextBoxScript = new System.Windows.Forms.RichTextBox();
@@ -80,7 +81,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabelAction = new System.Windows.Forms.ToolStripStatusLabel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel8.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -94,6 +95,7 @@
             this.splitContainer3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttributes)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -104,7 +106,6 @@
             this.panel7.SuspendLayout();
             this.panel3.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel8
@@ -117,6 +118,37 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1047, 47);
             this.panel8.TabIndex = 1;
+            // 
+            // Label2
+            // 
+            this.Label2.AutoSize = true;
+            this.Label2.BackColor = System.Drawing.Color.Transparent;
+            this.Label2.Location = new System.Drawing.Point(10, 15);
+            this.Label2.Name = "Label2";
+            this.Label2.Size = new System.Drawing.Size(99, 13);
+            this.Label2.TabIndex = 18;
+            this.Label2.Text = "Choose .diahinh file";
+            // 
+            // txtFilePath
+            // 
+            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFilePath.Location = new System.Drawing.Point(115, 12);
+            this.txtFilePath.Name = "txtFilePath";
+            this.txtFilePath.Size = new System.Drawing.Size(794, 20);
+            this.txtFilePath.TabIndex = 19;
+            // 
+            // btBrowse
+            // 
+            this.btBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btBrowse.Location = new System.Drawing.Point(915, 9);
+            this.btBrowse.Name = "btBrowse";
+            this.btBrowse.Size = new System.Drawing.Size(38, 23);
+            this.btBrowse.TabIndex = 20;
+            this.btBrowse.Text = "...";
+            this.btBrowse.UseVisualStyleBackColor = true;
+            this.btBrowse.Click += new System.EventHandler(this.btBrowse_Click);
             // 
             // comboBoxActionFilter
             // 
@@ -166,37 +198,6 @@
             this.txtObjName.Size = new System.Drawing.Size(204, 20);
             this.txtObjName.TabIndex = 22;
             // 
-            // Label2
-            // 
-            this.Label2.AutoSize = true;
-            this.Label2.BackColor = System.Drawing.Color.Transparent;
-            this.Label2.Location = new System.Drawing.Point(10, 15);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(99, 13);
-            this.Label2.TabIndex = 18;
-            this.Label2.Text = "Choose .diahinh file";
-            // 
-            // txtFilePath
-            // 
-            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFilePath.Location = new System.Drawing.Point(115, 12);
-            this.txtFilePath.Name = "txtFilePath";
-            this.txtFilePath.Size = new System.Drawing.Size(794, 20);
-            this.txtFilePath.TabIndex = 19;
-            // 
-            // btBrowse
-            // 
-            this.btBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBrowse.Location = new System.Drawing.Point(915, 9);
-            this.btBrowse.Name = "btBrowse";
-            this.btBrowse.Size = new System.Drawing.Size(38, 23);
-            this.btBrowse.TabIndex = 20;
-            this.btBrowse.Text = "...";
-            this.btBrowse.UseVisualStyleBackColor = true;
-            this.btBrowse.Click += new System.EventHandler(this.btBrowse_Click);
-            // 
             // buttonScript
             // 
             this.buttonScript.Location = new System.Drawing.Point(518, 12);
@@ -223,6 +224,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPageCheckXmlFiles);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -395,8 +397,8 @@
             // 
             // txtReplaceWith
             // 
-            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtReplaceWith.Location = new System.Drawing.Point(88, 68);
             this.txtReplaceWith.Name = "txtReplaceWith";
             this.txtReplaceWith.Size = new System.Drawing.Size(524, 20);
@@ -404,8 +406,8 @@
             // 
             // txtFindWhat
             // 
-            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFindWhat.Location = new System.Drawing.Point(88, 40);
             this.txtFindWhat.Name = "txtFindWhat";
             this.txtFindWhat.Size = new System.Drawing.Size(524, 20);
@@ -420,6 +422,19 @@
             this.treeViewScript.Size = new System.Drawing.Size(402, 218);
             this.treeViewScript.TabIndex = 18;
             this.treeViewScript.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewScript_AfterSelect);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.comboBoxActionFilter);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Controls.Add(this.buttonScript);
+            this.panel4.Controls.Add(this.label7);
+            this.panel4.Controls.Add(this.txtObjName);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(1033, 45);
+            this.panel4.TabIndex = 24;
             // 
             // splitContainer2
             // 
@@ -460,6 +475,7 @@
             this.richTextBoxScript.Name = "richTextBoxScript";
             this.richTextBoxScript.Size = new System.Drawing.Size(954, 117);
             this.richTextBoxScript.TabIndex = 39;
+            this.richTextBoxScript.Text = "";
             // 
             // panel2
             // 
@@ -511,6 +527,7 @@
             this.richTextBoxLog.Name = "richTextBoxLog";
             this.richTextBoxLog.Size = new System.Drawing.Size(1033, 483);
             this.richTextBoxLog.TabIndex = 40;
+            this.richTextBoxLog.Text = "";
             // 
             // tabPageCheckXmlFiles
             // 
@@ -611,18 +628,15 @@
             this.toolStripStatusLabelAction.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabelAction.Text = "toolStripStatusLabel1";
             // 
-            // panel4
+            // tabPage3
             // 
-            this.panel4.Controls.Add(this.comboBoxActionFilter);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.buttonScript);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.txtObjName);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1033, 45);
-            this.panel4.TabIndex = 24;
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1039, 489);
+            this.tabPage3.TabIndex = 4;
+            this.tabPage3.Text = "Symbols";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // BDTCAction
             // 
@@ -652,6 +666,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAttributes)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
@@ -664,8 +680,6 @@
             this.panel3.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -724,5 +738,6 @@
         private System.Windows.Forms.Button btnDefaultValues;
         private System.Windows.Forms.ComboBox comboBoxDichTa;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

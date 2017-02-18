@@ -56,14 +56,13 @@ namespace ConfigBDTC
         public List<string> LoadXmlFiles_TreeView(ref MyMnu objMyMnu)
         {
             List<string> errList = new List<string>();
-            TreeNode tvNodeMnuItem, tvNodeScript;
+            TreeNode tvNodeMnuItem;
             try
             {
                 treeViewScript.Nodes.Clear();
                 _objMyMnu = objMyMnu;
                 //Load toàn bộ thư mục trong đường dẫn thư mục kịch bản
                 ListDirectory(treeViewScript, _objMyMnu.ObjDiaHinh._objMyLastSaban._mySaBanDirFullPath);
-
                 foreach (KeyValuePair<string, ScriptXmlFile> pairScript in _objMyMnu.ScriptXmlFileDict)
                 {
                     //Kiểm tra xem file script có nằm trong thư mục đang chọn ở treeview không
@@ -74,7 +73,6 @@ namespace ConfigBDTC
                         tvNodeMnuItem.Tag = pairScript.Value;
                         BDTCHelper.FormatLeafNode(ref tvNodeMnuItem);    
                     }
-                    
                 }
                 treeViewScript.Focus();
                 treeViewScript.SelectedNode = treeViewScript.Nodes[0];

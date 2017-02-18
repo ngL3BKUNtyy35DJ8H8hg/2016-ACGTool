@@ -77,7 +77,7 @@ namespace ConfigBDTC
             
         }
 
-        splash sp;
+        private splash sp;
         private void DoSplash()
         {
             sp = new splash();

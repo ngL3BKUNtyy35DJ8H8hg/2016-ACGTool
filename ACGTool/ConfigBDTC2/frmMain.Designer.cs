@@ -34,6 +34,7 @@
             this.configDiaHinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bDTCActionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bDTCTimeLineToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bDTCToolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,8 @@
             this.buildDiaHinhToolStripMenuItem,
             this.configDiaHinhToolStripMenuItem,
             this.bDTCActionsToolStripMenuItem,
-            this.bDTCTimeLineToolStripMenuItem});
+            this.bDTCTimeLineToolStripMenuItem,
+            this.bDTCToolToolStripMenuItem});
             this.functionToolStripMenuItem.Name = "functionToolStripMenuItem";
             this.functionToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
             this.functionToolStripMenuItem.Text = "Function";
@@ -86,6 +88,13 @@
             this.bDTCTimeLineToolStripMenuItem.Text = "BDTC TimeLine";
             this.bDTCTimeLineToolStripMenuItem.Click += new System.EventHandler(this.bDTCTimeLineToolStripMenuItem_Click);
             // 
+            // bDTCToolToolStripMenuItem
+            // 
+            this.bDTCToolToolStripMenuItem.Name = "bDTCToolToolStripMenuItem";
+            this.bDTCToolToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.bDTCToolToolStripMenuItem.Text = "BDTC Tool";
+            this.bDTCToolToolStripMenuItem.Click += new System.EventHandler(this.bDTCToolToolStripMenuItem_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,7 +104,9 @@
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -112,5 +123,6 @@
         private System.Windows.Forms.ToolStripMenuItem configDiaHinhToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bDTCActionsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bDTCTimeLineToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bDTCToolToolStripMenuItem;
     }
 }

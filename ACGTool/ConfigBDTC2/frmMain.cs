@@ -48,5 +48,12 @@ namespace ConfigBDTC
         {
 
         }
+
+        private void bDTCToolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BDTCTool frm = new BDTCTool();
+            frm.MdiParent = this;
+            frm.Show();
+        }
     }
 }

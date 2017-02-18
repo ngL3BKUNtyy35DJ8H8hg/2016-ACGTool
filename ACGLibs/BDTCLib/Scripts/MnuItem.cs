@@ -149,9 +149,6 @@ namespace BDTCLib.Scripts
                             //Lưu vào Dictionary theo ID key
                             MnuScriptDict.Add(valueId, objMnuItemRefScript);
                         }
-
-                        
-                        
                     }
             }
             catch (Exception ex)

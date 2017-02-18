@@ -52,6 +52,12 @@
     <Compile Include="BDTCActions.Designer.cs">
       <DependentUpon>BDTCActions.cs</DependentUpon>
     </Compile>
+    <Compile Include="BDTCTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDTCTool.Designer.cs">
+      <DependentUpon>BDTCTool.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBuildDiaHinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     </Compile>
     <EmbeddedResource Include="BDTCActions.resx">
       <DependentUpon>BDTCActions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDTCTool.resx">
+      <DependentUpon>BDTCTool.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBuildDiaHinh.resx">
       <DependentUpon>frmBuildDiaHinh.cs</DependentUpon>
@@ -169,6 +178,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\终极.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

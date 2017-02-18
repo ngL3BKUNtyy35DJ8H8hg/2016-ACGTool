@@ -11,10 +11,12 @@ using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 using System.Xml;
 using System.Web;
-using ACGTool.Classes;
+using System.Threading;
+using BDTCLib;
+using BDTCLib.Scripts;
 //using System.Text.RegularExpressions;
 
-namespace ACGTool
+namespace ConfigBDTC
 {
     public partial class BDTCTool : Form
     {
@@ -30,16 +32,16 @@ namespace ACGTool
             InitializeComponent();
         }
 
-        private void btBrowse_Click(object sender, EventArgs e)
-        {
-            //mo form cho nguoi ta chon co so du lieu
-            OpenFileDialog1.Filter = "BDTC File(*.BDTC)|*.BDTC;|All files (*.*)|*.*";
-            txtFilePath.Text = "";
-            OpenFileDialog1.ShowDialog();
-            txtFilePath.Text = OpenFileDialog1.FileName;
-        }
+        //private void btBrowse_Click(object sender, EventArgs e)
+        //{
+        //    //mo form cho nguoi ta chon co so du lieu
+        //    OpenFileDialog1.Filter = "BDTC File(*.BDTC)|*.BDTC;|All files (*.*)|*.*";
+        //    txtFilePath.Text = "";
+        //    OpenFileDialog1.ShowDialog();
+        //    txtFilePath.Text = OpenFileDialog1.FileName;
+        //}
 
-        private void btnOK_Click(object sender, EventArgs e)
+        private void LoadBDTCFile()
         {
             string tempFile = "temp.xml";
             if (txtFilePath.Text == string.Empty)
@@ -95,7 +97,7 @@ namespace ACGTool
             _myXmlDocument.Save(tempFile);
             //Xử lý StreamReader để đọc file rồi mới gán vào richtextbox
             //Vì nếu dùng richTextBoxView.LoadFile để load file thì không hiển thị được tiếng việt
-            StreamReader reader= new StreamReader(tempFile);
+            StreamReader reader = new StreamReader(tempFile);
             while (reader.Peek() >= 0)
             {
                 string str = reader.ReadToEnd();
@@ -135,9 +137,8 @@ namespace ACGTool
                         {
                             //Nếu tìm thấy
                             isFind = true;
-                            
+
                             XmlAttribute att = node.Attributes["Desc"];
-                            
                             strFind = att.Name + "=\"" + att.Value + "\"";
                             //find text
                             indexToText = richTextBoxOrigion.Find(strFind, indexToText, -1, RichTextBoxFinds.WholeWord);
@@ -146,16 +147,20 @@ namespace ACGTool
                             {
                                 //replace text in xmldocument with auto
                                 att.Value = textBoxReplace.Text + count.ToString();
+
                                 //replace text in richtextbox
                                 richTextBoxOrigion.SelectedText = att.Name + "=\"" + att.Value + "\"";
                                 richTextBoxView.SelectedText = att.Name + "=\"" + att.Value + "\"";
+
+                                //replace tất cả ObjName trong các file script thỏa điều kiện
+                                TimeLineHelper._objMyMnu.RenameObjNameInScriptXmlFiles(listBox1.Items[i].ToString(), att.Value);
                                 //replace text in textbox
                                 listBox1.Items[i] = att.Value;
                                 count++;
                             }
                         }
                     }
-                }
+                } //end if (checkBoxAutoNumber.Checked)
                 else //Nếu không check auto tự động tăng
                 {
                     for (int i = 0; i < listBox1.Items.Count; i++)
@@ -175,11 +180,16 @@ namespace ACGTool
                             {
                                 //replace text in xmldocument without auto
                                 att.Value = textBoxReplace.Text;
+
                                 //replace text in richtextbox
                                 richTextBoxOrigion.SelectedText = att.Name + "=\"" + att.Value + "\"";
                                 richTextBoxView.SelectedText = att.Name + "=\"" + att.Value + "\"";
+
+                                //replace tất cả ObjName trong các file script thỏa điều kiện
+                                TimeLineHelper._objMyMnu.RenameObjNameInScriptXmlFiles(listBox1.Items[i].ToString(), att.Value);
                                 //replace text in textbox
                                 listBox1.Items[i] = att.Value;
+
                             }
                         }
                     }
@@ -209,9 +219,13 @@ namespace ACGTool
                             {
                                 //replace text in xmldocument
                                 att.Value = textBoxReplace.Text + (i + 1).ToString();
+
                                 //replace text in richtextbox
                                 richTextBoxOrigion.SelectedText = att.Name + "=\"" + att.Value + "\"";
                                 richTextBoxView.SelectedText = att.Name + "=\"" + att.Value + "\"";
+
+                                //replace tất cả ObjName trong các file script thỏa điều kiện
+                                TimeLineHelper._objMyMnu.RenameObjNameInScriptXmlFiles(listBox1.Items[i].ToString(), att.Value);
                                 //replace text in textbox
                                 listBox1.Items[i] = att.Value;
                             }
@@ -234,9 +248,13 @@ namespace ACGTool
                             {
                                 //replace text in xmldocument without auto
                                 att.Value = textBoxReplace.Text;
+
                                 //replace text in richtextbox
                                 richTextBoxOrigion.SelectedText = att.Name + "=\"" + att.Value + "\"";
                                 richTextBoxView.SelectedText = att.Name + "=\"" + att.Value + "\"";
+
+                                //replace tất cả ObjName trong các file script thỏa điều kiện
+                                TimeLineHelper._objMyMnu.RenameObjNameInScriptXmlFiles(strFind, att.Value);
                                 //replace text in textbox
                                 listBox1.Items[i] = att.Value;
                             }
@@ -249,6 +267,16 @@ namespace ACGTool
             MessageBox.Show("Reset successfull!");
         }
 
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    richTextBoxOrigion.Text = System.Web.HttpUtility.HtmlEncode(richTextBoxOrigion.Text);
+        //}
+
+        //private void button2_Click(object sender, EventArgs e)
+        //{
+        //    richTextBoxOrigion.Text = System.Web.HttpUtility.HtmlDecode(richTextBoxOrigion.Text);
+        //}
+
         private void buttonSaveFile_Click(object sender, EventArgs e)
         {
             if (richTextBoxOrigion.Text != string.Empty)
@@ -256,7 +284,7 @@ namespace ACGTool
                 XmlNode node;
                 node = _myBDTCFileDocument.DocumentElement;
                 foreach (XmlNode node1 in node.ChildNodes)
-                if (node1.Name == "Slide" || node1.Name == "Page")
+                    if (node1.Name == "Slide" || node1.Name == "Page")
                     {
                         foreach (XmlAttribute att in node1.Attributes)
                         {
@@ -273,50 +301,50 @@ namespace ACGTool
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-                if (listBox1.SelectedIndex > -1)
+            if (listBox1.SelectedIndex > -1)
+            {
+                XmlNode node;
+                node = _myXmlDocument.DocumentElement;
+                node = node.ChildNodes[listBox1.SelectedIndex];
+                string strFind = node.OuterXml;
+                string strEnd = "</KyHieu>";
+
+                int indexToText, endIndex;
+                //Tìm theo toàn bộ element trước để lấy index trước
+                indexToText = richTextBoxOrigion.Find(strFind, 0, -1, RichTextBoxFinds.WholeWord);
+                //Sau đó tìm chính xác từ đó tại vị trí index vừa có
+                endIndex = richTextBoxOrigion.Find(strEnd, indexToText, -1, RichTextBoxFinds.WholeWord);
+                //richtextbox origion
+                richTextBoxOrigion.SelectionStart = indexToText;
+                richTextBoxOrigion.SelectionLength = endIndex + strEnd.Length - indexToText;
+                richTextBoxOrigion.ScrollToCaret();
+                richTextBoxOrigion.Focus();
+                //======================================
+                Clipboard.Clear();
+                richTextBoxOrigion.Copy();
+
+                //======================================
+                //richtextbox view
+                //Tìm theo toàn bộ element trước để lấy index trước
+                strFind = "<KyHieu";
+
+                if (node.Name == "KyHieu")
                 {
-                    XmlNode node;
-                    node = _myXmlDocument.DocumentElement;
-                    node = node.ChildNodes[listBox1.SelectedIndex];
-                    string strFind = node.OuterXml;
-                    string strEnd = "</KyHieu>";
-
-                    int indexToText, endIndex;
-                    //Tìm theo toàn bộ element trước để lấy index trước
-                    indexToText = richTextBoxOrigion.Find(strFind, 0, -1, RichTextBoxFinds.WholeWord);
-                    //Sau đó tìm chính xác từ đó tại vị trí index vừa có
-                    endIndex = richTextBoxOrigion.Find(strEnd, indexToText, -1, RichTextBoxFinds.WholeWord);
-                    //richtextbox origion
-                    richTextBoxOrigion.SelectionStart = indexToText;
-                    richTextBoxOrigion.SelectionLength = endIndex + strEnd.Length - indexToText;
-                    richTextBoxOrigion.ScrollToCaret();
-                    richTextBoxOrigion.Focus();
-                    //======================================
-                    Clipboard.Clear();
-                    richTextBoxOrigion.Copy();
-
-                    //======================================
-                    //richtextbox view
-                    //Tìm theo toàn bộ element trước để lấy index trước
-                    strFind = "<KyHieu";
-                    
-                    if (node.Name == "KyHieu")
+                    //str = node1.;
+                    foreach (XmlAttribute att in node.Attributes)
                     {
-                        //str = node1.;
-                        foreach (XmlAttribute att in node.Attributes)
-                        {
-                            strFind += " " + att.Name + "=\"" + att.Value + "\"";
-                        }
-                        strFind += ">";
+                        strFind += " " + att.Name + "=\"" + att.Value + "\"";
                     }
-                    indexToText = richTextBoxView.Find(strFind, indexToText, -1, RichTextBoxFinds.WholeWord);
-                    //Sau đó tìm chính xác từ đó tại vị trí index vừa có
-                    endIndex = richTextBoxView.Find(strEnd, indexToText, -1, RichTextBoxFinds.WholeWord);
-                    richTextBoxView.SelectionStart = indexToText;
-                    richTextBoxView.SelectionLength = endIndex + strEnd.Length - indexToText;
-                    richTextBoxView.ScrollToCaret();
-                    richTextBoxView.Focus();
+                    strFind += ">";
                 }
+                indexToText = richTextBoxView.Find(strFind, indexToText, -1, RichTextBoxFinds.WholeWord);
+                //Sau đó tìm chính xác từ đó tại vị trí index vừa có
+                endIndex = richTextBoxView.Find(strEnd, indexToText, -1, RichTextBoxFinds.WholeWord);
+                richTextBoxView.SelectionStart = indexToText;
+                richTextBoxView.SelectionLength = endIndex + strEnd.Length - indexToText;
+                richTextBoxView.ScrollToCaret();
+                richTextBoxView.Focus();
+            }
         }
 
         private void btBrowseSave_Click(object sender, EventArgs e)
@@ -363,7 +391,10 @@ namespace ACGTool
                 do
                 {
                     // Retrieve the item based on the previous index found. Starts with -1 which searches start.
-                    index = listBox1.FindString(textBoxFind.Text, x);
+                    if (checkBoxFindExact.Checked)
+                        index = listBox1.FindStringExact(textBoxFind.Text, x);
+                    else
+                        index = listBox1.FindString(textBoxFind.Text, x);
                     // If no item is found that matches exit.
                     if (index > x)
                     {
@@ -373,7 +404,7 @@ namespace ACGTool
                         listBox2.Items.Add(listBox1.Items[x]);
                     }
                     else //if index <= x then exit loop
-                       x = -1;
+                        x = -1;
                 } while (x != -1);
             }
             //Nếu không tìm thấy thì báo
@@ -399,7 +430,7 @@ namespace ACGTool
             index2 = listBox2.SelectedIndex;
 
             // Set our intial index variable to -1.
-            int index, x; 
+            int index, x;
             x = -1;
             // If the search string is empty exit.
             if (textBoxFind.Text.Length != 0)
@@ -499,6 +530,75 @@ namespace ACGTool
                 }
             _myBDTCFileDocument.Save(txtFilePathOut.Text);
             MessageBox.Show("Save successfull!");
+        }
+
+        private void btnBrowseDiaHinh_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //mo form cho nguoi ta chon co so du lieu
+                OpenFileDialog openFileDialog1 = new OpenFileDialog();
+                openFileDialog1.Filter = "DiaHinh File(*.diahinh)|*.diahinh";
+                txtDiaHinhFilePath.Text = "";
+                if (Properties.Settings.Default.RecentDiaHinhFile != "")
+                    openFileDialog1.InitialDirectory = Path.GetDirectoryName(Properties.Settings.Default.RecentDiaHinhFile);
+                openFileDialog1.ShowDialog();
+                txtDiaHinhFilePath.Text = openFileDialog1.FileName;
+                Properties.Settings.Default.RecentDiaHinhFile = txtDiaHinhFilePath.Text;
+                Properties.Settings.Default.Save();
+
+                btnReload.PerformClick();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private splash sp;
+        private void DoSplash()
+        {
+            sp = new splash();
+            sp.ShowDialog();
+
+        }
+
+        private void btnReload_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(new ThreadStart(DoSplash));
+            th.Start();
+            try
+            {
+                LoadFile(txtDiaHinhFilePath.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            if (sp != null)
+            {
+                sp.CloseSplash();
+            }
+            else
+            {
+                th.Abort();
+            }
+        }
+
+        private void LoadFile(string filePath)
+        {
+            try
+            {
+                TimeLineHelper._objDiaHinh = new DiaHinh(filePath);
+                TimeLineHelper._objMyMnu = new MyMnu(TimeLineHelper._objDiaHinh);
+                txtFilePath.Text = TimeLineHelper._objDiaHinh._objMyLastSaban._LastBdTCFullPath;
+                LoadBDTCFile();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }
