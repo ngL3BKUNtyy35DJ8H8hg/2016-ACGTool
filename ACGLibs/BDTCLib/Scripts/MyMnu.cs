@@ -53,7 +53,19 @@ namespace BDTCLib.Scripts
                     if (nodeMnuItem.Attributes["ScrptFile"] != null)
                     {
                         string path = _objDiaHinh._myCurrentDirectory + "\\" + nodeMnuItem.Attributes["ScrptFile"].Value;
-                        if (!_xmlFileList.Contains(path) && File.Exists(path))
+                        //Nếu file chưa tồn tại thì tạo mới
+                        if (!File.Exists(path))
+                        {
+                            // Create a file to write to.
+                            using (StreamWriter sw = File.CreateText(path))
+                            {
+                                sw.WriteLine("<Actions>");
+                                sw.WriteLine(string.Format("<Action ID=\"1\" Type=\"CornerTitle\" Start=\"0\" Duration=\"0\" CornerText=\"{0}\"></Action>", Path.GetFileName(path)));
+                                sw.WriteLine(string.Format("<Action ID=\"2\" Type=\"CornerTitle\" Start=\"0\" Duration=\"0\" CornerText=\"{0}\"></Action>", Path.GetFileName(path)));
+                                sw.WriteLine("</Actions>");
+                            }
+                        }
+                        if (!_xmlFileList.Contains(path))
                             _xmlFileList.Add(path);
                     }
                 }
