@@ -7,3 +7,7 @@ C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.pdb
 C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.dll
 C:\GitHub\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.pdb
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.dll
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\FolderLib\bin\Debug\FolderLib.pdb
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.dll
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\FolderLib\obj\Debug\FolderLib.pdb

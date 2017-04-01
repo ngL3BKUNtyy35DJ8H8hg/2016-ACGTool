@@ -10,3 +10,9 @@ C:\GitHub\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\Braincase.GanttChart.GDIExte
 C:\GitHub\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.csproj.GenerateResource.Cache
 C:\GitHub\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.dll
 C:\GitHub\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.pdb
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\bin\Debug\GanttChart.dll
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\bin\Debug\GanttChart.pdb
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\Braincase.GanttChart.GDIExtention.resources
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.csproj.GenerateResource.Cache
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.dll
+H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\GanttChart\obj\Debug\GanttChart.pdb

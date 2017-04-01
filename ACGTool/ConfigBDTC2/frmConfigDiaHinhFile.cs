@@ -181,7 +181,6 @@ namespace ConfigBDTC
             {
                 _objDiaHinh._objMyLastSaban.BindLastFile_ListView(listViewLastConfig);
 
-                //btnRemoveD3DModelMesh.Enabled = isMyD3DModelMeshFile;
                 _objDiaHinh.BindD3DModelMesh_ListView(listViewD3DModelMesh);
 
                 _objDiaHinh.BindD3DSpriteTexs_ListView(listViewD3DSpriteTexs);

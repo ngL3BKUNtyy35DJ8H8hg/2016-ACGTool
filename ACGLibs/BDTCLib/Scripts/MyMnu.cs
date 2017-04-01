@@ -60,8 +60,8 @@ namespace BDTCLib.Scripts
                             using (StreamWriter sw = File.CreateText(path))
                             {
                                 sw.WriteLine("<Actions>");
-                                sw.WriteLine(string.Format("<Action ID=\"1\" Type=\"CornerTitle\" Start=\"0\" Duration=\"0\" CornerText=\"{0}\"></Action>", Path.GetFileName(path)));
-                                sw.WriteLine(string.Format("<Action ID=\"2\" Type=\"Description\" Start=\"0\" Duration=\"0\" DescText=\"{0}\" Pos=\"Duoi\" SaBanHide=\"false\" SoundName=\"\" SoundLoop=\"0\"></Action>", Path.GetFileName(path)));
+                                sw.WriteLine(string.Format("<Action ID=\"1\" Type=\"Description\" Start=\"0\" Duration=\"0\" DescText=\"{0}\" Pos=\"Duoi\" SaBanHide=\"false\" SoundName=\"\" SoundLoop=\"0\"></Action>", Path.GetFileName(path)));
+                                sw.WriteLine(string.Format("<!--<Action ID=\"2\" Type=\"CornerTitle\" Start=\"0\" Duration=\"0\" CornerText=\"{0}\"></Action>-->", Path.GetFileName(path)));
                                 sw.WriteLine("</Actions>");
                             }
                         }

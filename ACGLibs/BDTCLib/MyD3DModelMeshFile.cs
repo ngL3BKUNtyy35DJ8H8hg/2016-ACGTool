@@ -68,18 +68,41 @@ namespace BDTCLib
                         }
 
                         //Add into listview
-                        ListViewItem item = new ListViewItem(node1.Attributes["Name"].Value, node1.Attributes["XFile"].Value);
-                        //XValue
-                        item.SubItems.Add(node1.Attributes["XFile"].Value);
-                        //Fullpath
-                        item.SubItems.Add(_D3DModelXmlFile);
+                        ListViewItem item = new ListViewItem(node1.Attributes["Name"].Value);
+                       
                         //Notes: Kiểm tra path của các file trong .xml
                         if (File.Exists(_D3DModelXmlFile)) //Nếu file ảnh tồn tại
                         {
-                            item.SubItems.Add("OK");
+                            //Size
+                            FileInfo f = new FileInfo(_D3DModelXmlFile);
+                            if (f.Length == 0)
+                            {
+                                //Size
+                                item.SubItems.Add(f.Length.ToString("0"));
+                                item.ForeColor = Color.Blue;
+                                warning = "Lỗi size = 0";
+                            }
+                            else
+                            {
+                                //Size
+                                item.SubItems.Add(f.Length.ToString("#,###"));
+                                warning = "OK";
+                            }
+                            
+                            //XValue
+                            item.SubItems.Add(node1.Attributes["XFile"].Value);
+                            //Fullpath
+                            item.SubItems.Add(_D3DModelXmlFile);
+                            item.SubItems.Add(warning);
                         }
                         else
                         {
+                            //Size
+                            item.SubItems.Add("");
+                            //XValue
+                            item.SubItems.Add(node1.Attributes["XFile"].Value);
+                            //Fullpath
+                            item.SubItems.Add(_D3DModelXmlFile);
                             item.ForeColor = Color.Red;
                             item.SubItems.Add(warning);
                         }

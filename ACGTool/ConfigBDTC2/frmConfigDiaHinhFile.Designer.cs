@@ -47,6 +47,8 @@
             this.btnRepairMyMapNhoGst = new System.Windows.Forms.Button();
             this.btnRepairMyKHCnnString = new System.Windows.Forms.Button();
             this.btnRepairMyCurrentDirectory = new System.Windows.Forms.Button();
+            this.txtAccessFile = new System.Windows.Forms.TextBox();
+            this.btnBrowseAccessFile = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.listViewLastConfig = new System.Windows.Forms.ListView();
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -62,10 +64,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listViewD3DModelMesh = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderXFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderNote = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderStatus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel4 = new System.Windows.Forms.Panel();
             this.checkBoxDeleteXFile = new System.Windows.Forms.CheckBox();
@@ -100,8 +102,8 @@
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnCheckScripts = new System.Windows.Forms.Button();
-            this.txtAccessFile = new System.Windows.Forms.TextBox();
-            this.btnBrowseAccessFile = new System.Windows.Forms.Button();
+            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControlCheckExistPath.SuspendLayout();
@@ -145,8 +147,8 @@
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilePath.Location = new System.Drawing.Point(108, 21);
             this.txtFilePath.Name = "txtFilePath";
             this.txtFilePath.Size = new System.Drawing.Size(522, 20);
@@ -304,6 +306,27 @@
             this.btnRepairMyCurrentDirectory.UseVisualStyleBackColor = true;
             this.btnRepairMyCurrentDirectory.Click += new System.EventHandler(this.btnRepairMyCurrentDirectory_Click);
             // 
+            // txtAccessFile
+            // 
+            this.txtAccessFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtAccessFile.Location = new System.Drawing.Point(167, 41);
+            this.txtAccessFile.Name = "txtAccessFile";
+            this.txtAccessFile.Size = new System.Drawing.Size(522, 20);
+            this.txtAccessFile.TabIndex = 16;
+            // 
+            // btnBrowseAccessFile
+            // 
+            this.btnBrowseAccessFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBrowseAccessFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBrowseAccessFile.Location = new System.Drawing.Point(695, 39);
+            this.btnBrowseAccessFile.Name = "btnBrowseAccessFile";
+            this.btnBrowseAccessFile.Size = new System.Drawing.Size(38, 23);
+            this.btnBrowseAccessFile.TabIndex = 17;
+            this.btnBrowseAccessFile.Text = "...";
+            this.btnBrowseAccessFile.UseVisualStyleBackColor = true;
+            this.btnBrowseAccessFile.Click += new System.EventHandler(this.btnBrowseAccessFile_Click);
+            // 
             // tabPage4
             // 
             this.tabPage4.Controls.Add(this.listViewLastConfig);
@@ -423,10 +446,11 @@
             // listViewD3DModelMesh
             // 
             this.listViewD3DModelMesh.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8,
+            this.columnHeaderName,
+            this.columnHeaderSize,
+            this.columnHeaderXFile,
+            this.columnHeaderPath,
+            this.columnHeaderNote,
             this.columnHeaderStatus});
             this.listViewD3DModelMesh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewD3DModelMesh.FullRowSelect = true;
@@ -438,25 +462,25 @@
             this.listViewD3DModelMesh.UseCompatibleStateImageBehavior = false;
             this.listViewD3DModelMesh.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader5
+            // columnHeaderName
             // 
-            this.columnHeader5.Text = "Name";
-            this.columnHeader5.Width = 100;
+            this.columnHeaderName.Text = "Name";
+            this.columnHeaderName.Width = 100;
             // 
-            // columnHeader6
+            // columnHeaderXFile
             // 
-            this.columnHeader6.Text = "XFile";
-            this.columnHeader6.Width = 165;
+            this.columnHeaderXFile.Text = "XFile";
+            this.columnHeaderXFile.Width = 165;
             // 
-            // columnHeader7
+            // columnHeaderPath
             // 
-            this.columnHeader7.Text = "Full path";
-            this.columnHeader7.Width = 303;
+            this.columnHeaderPath.Text = "Full path";
+            this.columnHeaderPath.Width = 303;
             // 
-            // columnHeader8
+            // columnHeaderNote
             // 
-            this.columnHeader8.Text = "Notes";
-            this.columnHeader8.Width = 95;
+            this.columnHeaderNote.Text = "Notes";
+            this.columnHeaderNote.Width = 95;
             // 
             // columnHeaderStatus
             // 
@@ -531,6 +555,7 @@
             // 
             this.listViewSound.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader12,
+            this.columnHeader5,
             this.columnHeader13,
             this.columnHeader14});
             this.listViewSound.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -762,26 +787,13 @@
             this.btnCheckScripts.Text = "Kiểm tra Kịch bản";
             this.btnCheckScripts.UseVisualStyleBackColor = true;
             // 
-            // txtAccessFile
+            // columnHeaderSize
             // 
-            this.txtAccessFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAccessFile.Location = new System.Drawing.Point(167, 41);
-            this.txtAccessFile.Name = "txtAccessFile";
-            this.txtAccessFile.Size = new System.Drawing.Size(522, 20);
-            this.txtAccessFile.TabIndex = 16;
+            this.columnHeaderSize.Text = "Size";
             // 
-            // btnBrowseAccessFile
+            // columnHeader5
             // 
-            this.btnBrowseAccessFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBrowseAccessFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBrowseAccessFile.Location = new System.Drawing.Point(695, 39);
-            this.btnBrowseAccessFile.Name = "btnBrowseAccessFile";
-            this.btnBrowseAccessFile.Size = new System.Drawing.Size(38, 23);
-            this.btnBrowseAccessFile.TabIndex = 17;
-            this.btnBrowseAccessFile.Text = "...";
-            this.btnBrowseAccessFile.UseVisualStyleBackColor = true;
-            this.btnBrowseAccessFile.Click += new System.EventHandler(this.btnBrowseAccessFile_Click);
+            this.columnHeader5.Text = "Size";
             // 
             // frmConfigDiaHinhFile
             // 
@@ -840,10 +852,10 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.ListView listViewD3DModelMesh;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
-        private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeaderName;
+        private System.Windows.Forms.ColumnHeader columnHeaderXFile;
+        private System.Windows.Forms.ColumnHeader columnHeaderPath;
+        private System.Windows.Forms.ColumnHeader columnHeaderNote;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
@@ -895,5 +907,7 @@
         internal System.Windows.Forms.Label label1;
         internal System.Windows.Forms.TextBox txtAccessFile;
         internal System.Windows.Forms.Button btnBrowseAccessFile;
+        private System.Windows.Forms.ColumnHeader columnHeaderSize;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
     }
 }
