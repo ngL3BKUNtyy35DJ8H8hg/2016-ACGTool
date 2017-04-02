@@ -79,7 +79,7 @@ namespace BDTCLib
                             {
                                 //Size
                                 item.SubItems.Add(f.Length.ToString("0"));
-                                item.ForeColor = Color.Blue;
+                                item.ForeColor = Color.Red;
                                 warning = "Lỗi size = 0";
                             }
                             else

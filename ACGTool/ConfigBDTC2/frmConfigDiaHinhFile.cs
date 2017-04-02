@@ -54,6 +54,11 @@ namespace ConfigBDTC
                 return;
             }
 
+            if(!File.Exists(txtFilePath.Text))
+            {
+                MessageBox.Show("Đường dẫn không tồn tại");
+                return;
+            }
             _objDiaHinh = new DiaHinh(txtFilePath.Text);
 
             listViewDiaHinh.Items.Clear();
