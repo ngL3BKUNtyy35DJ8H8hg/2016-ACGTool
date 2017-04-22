@@ -44,6 +44,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.btnResetID = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.checkBoxFindExact = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtDiaHinhFilePath = new System.Windows.Forms.TextBox();
             this.btnReload = new System.Windows.Forms.Button();
@@ -72,7 +73,7 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.openFileDialogScriptPath = new System.Windows.Forms.OpenFileDialog();
             this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.checkBoxFindExact = new System.Windows.Forms.CheckBox();
+            this.btnSave = new System.Windows.Forms.Button();
             this.panelRTB.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -194,6 +195,7 @@
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.btnSave);
             this.panel8.Controls.Add(this.checkBoxFindExact);
             this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.txtDiaHinhFilePath);
@@ -221,6 +223,16 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(1168, 126);
             this.panel8.TabIndex = 1;
+            // 
+            // checkBoxFindExact
+            // 
+            this.checkBoxFindExact.AutoSize = true;
+            this.checkBoxFindExact.Location = new System.Drawing.Point(419, 67);
+            this.checkBoxFindExact.Name = "checkBoxFindExact";
+            this.checkBoxFindExact.Size = new System.Drawing.Size(76, 17);
+            this.checkBoxFindExact.TabIndex = 25;
+            this.checkBoxFindExact.Text = "Find Exact";
+            this.checkBoxFindExact.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -502,15 +514,16 @@
             this.ImageList1.Images.SetKeyName(0, "Folder.ICO");
             this.ImageList1.Images.SetKeyName(1, "item.png");
             // 
-            // checkBoxFindExact
+            // btnSave
             // 
-            this.checkBoxFindExact.AutoSize = true;
-            this.checkBoxFindExact.Location = new System.Drawing.Point(419, 67);
-            this.checkBoxFindExact.Name = "checkBoxFindExact";
-            this.checkBoxFindExact.Size = new System.Drawing.Size(76, 17);
-            this.checkBoxFindExact.TabIndex = 25;
-            this.checkBoxFindExact.Text = "Find Exact";
-            this.checkBoxFindExact.UseVisualStyleBackColor = true;
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Location = new System.Drawing.Point(1081, 34);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 26;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // BDTCTool
             // 
@@ -585,5 +598,6 @@
         internal System.Windows.Forms.Button btnReload;
         internal System.Windows.Forms.Button btnBrowseDiaHinh;
         private System.Windows.Forms.CheckBox checkBoxFindExact;
+        internal System.Windows.Forms.Button btnSave;
     }
 }
