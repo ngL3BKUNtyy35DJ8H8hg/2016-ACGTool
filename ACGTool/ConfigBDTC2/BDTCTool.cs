@@ -285,9 +285,9 @@ namespace ConfigBDTC
             }
 
             //Save BDTC file
-            SaveBDTC();
+            //SaveBDTC();
 
-            MessageBox.Show("Reset successfull!");
+            MessageBox.Show("Đã rename thành công. Nên nhấn Save để chắc chắn muốn lưu lại!");
         }
 
         //private void button1_Click(object sender, EventArgs e)
@@ -380,6 +380,7 @@ namespace ConfigBDTC
             if (listBox1.SelectedIndex > -1)
             {
                 textBoxFind.Text = listBox1.SelectedItem.ToString();
+                btnExportXML.PerformClick();
             }
         }
 
@@ -529,9 +530,6 @@ namespace ConfigBDTC
                 }
             richTextBoxOrigion.Text = _myXmlDocument.OuterXml;
 
-            //Save xuống file
-            SaveBDTC();
-
             //node = _myBDTCFileDocument.DocumentElement;
             //foreach (XmlNode node1 in node.ChildNodes)
             //    if (node1.Name == "Slide" || node1.Name == "Page")
@@ -545,7 +543,17 @@ namespace ConfigBDTC
             //        }
             //    }
             //_myBDTCFileDocument.Save(txtFilePath.Text);
-            MessageBox.Show("Save successfull!");
+
+            try
+            {
+                //Save BDTC file
+                SaveBDTC();
+                MessageBox.Show("Save successfull!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnBrowseDiaHinh_Click(object sender, EventArgs e)
@@ -619,8 +627,206 @@ namespace ConfigBDTC
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //Save BDTC file
-            SaveBDTC();
+            try
+            {
+                //Save BDTC file
+                SaveBDTC();
+                MessageBox.Show("Save successfull!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private List<string> existSymbols = new List<string>();
+        private void btnFindDuplicate_Click(object sender, EventArgs e)
+        {
+            int indexListBox1 = 0;
+            //Nếu textBoxFind khác empty thì chỉ reset những tên trùng với textboxFind
+            textBoxFind.Text = "";
+            string searchValue = "";
+            bool isFind = false;
+            do
+            {
+                //Kiểm tra nếu seachValue đã tìm kiếm rồi thì bỏ qua
+                bool isExist = false;
+                do
+                {
+                    searchValue = listBox1.Items[indexListBox1].ToString();
+                    indexListBox1++;
+                    if (indexListBox1 == listBox1.Items.Count)
+                    {
+                        indexListBox1 = 0;
+                        existSymbols.Clear();
+                        if (MessageBox.Show("Đã tìm xong. Bạn có muốn tìm lại từ đầu?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
+                        {
+                            return;
+                        }
+                    }
+
+                    if (!existSymbols.Contains(searchValue))
+                    {
+                        existSymbols.Add(searchValue);
+                    }
+                    else
+                        isExist = true;
+                } while (isExist);
+
+
+                listBox2.Items.Clear();
+                isFind = false;
+
+                // Set our intial index variable to -1.
+                int index, x;
+                x = -1;
+                if (searchValue.Length != 0)
+                {
+                    //// Loop through and find each item that matches the search string.
+                    do
+                    {
+                        // Retrieve the item based on the previous index found. Starts with -1 which searches start.
+                        index = listBox1.FindStringExact(searchValue, x);
+                        // If no item is found that matches exit.
+                        if (index > x)
+                        {
+                            x = index;
+                            //Add to listbox2
+                            listBox2.Items.Add(listBox1.Items[x]);
+                        }
+                        else //if index <= x then exit loop
+                            x = -1;
+                    } while (x != -1);
+                }
+                //Nếu số lượng tìm thấy > 2 tức là có trùng lặp (=1 thì là tìm thấy chính mình)
+                if (listBox2.Items.Count > 1)
+                    isFind = true;
+            } while (!isFind);
+
+            if (isFind)
+            {
+                textBoxFind.Text = searchValue;
+                //Nếu tìm thấy rồi thì add vào exist để cho phép tìm symbol khác
+                existSymbols.Add(searchValue);
+            }
+            else //Nếu không tìm thấy thì báo
+            {
+                MessageBox.Show("Không tìm thấy ký hiệu trùng lặp");
+            }
+        }
+
+        public void Reset()
+        {
+            if (textBoxReplace.Text == string.Empty)
+            {
+                MessageBox.Show("Nhập tên cần Reset trước.");
+                textBoxReplace.Focus();
+                return;
+            }
+            bool isFind = false;
+            XmlNode rootNode, node;
+            rootNode = _myXmlDocument.DocumentElement;
+            int indexToText, indexToTextView;
+            indexToText = indexToTextView = 0;
+            string strFind = "";
+
+            int count = 1;
+            for (int i = 0; i < listBox1.Items.Count; i++)
+            {
+                node = rootNode.ChildNodes[i];
+                if (node.Name == "KyHieu" && node.Attributes["Desc"].Value.Contains(textBoxFind.Text))
+                {
+                    //Nếu tìm thấy
+                    isFind = true;
+
+                    XmlAttribute att = node.Attributes["Desc"];
+                    strFind = att.Name + "=\"" + att.Value + "\"";
+                    //find text
+                    indexToText = richTextBoxOrigion.Find(strFind, indexToText, -1, RichTextBoxFinds.WholeWord);
+                    indexToTextView = richTextBoxView.Find(strFind, indexToTextView, -1, RichTextBoxFinds.WholeWord);
+                    if (indexToText > 0)
+                    {
+                        //replace text in xmldocument with auto
+                        att.Value = textBoxReplace.Text + count.ToString();
+
+                        //replace text in richtextbox
+                        richTextBoxOrigion.SelectedText = att.Name + "=\"" + att.Value + "\"";
+                        richTextBoxView.SelectedText = att.Name + "=\"" + att.Value + "\"";
+
+                        //replace tất cả ObjName trong các file script thỏa điều kiện
+                        TimeLineHelper._objMyMnu.RenameObjNameInScriptXmlFiles(listBox1.Items[i].ToString(), att.Value);
+                        //replace text in textbox
+                        listBox1.Items[i] = att.Value;
+                        count++;
+                    }
+                }
+            }
+
+        }
+        private void btnRemoveDuplicate_Click(object sender, EventArgs e)
+        {
+            int indexListBox1 = 0;
+            //Nếu textBoxFind khác empty thì chỉ reset những tên trùng với textboxFind
+            textBoxFind.Text = "";
+            string searchValue = "";
+            List<string> existSymbols1 = new List<string>();
+            bool isFind = false;
+            do
+            {
+                //Kiểm tra nếu seachValue đã tìm kiếm rồi thì bỏ qua
+                bool isExist = false;
+                do
+                {
+                    searchValue = listBox1.Items[indexListBox1].ToString();
+                    indexListBox1++;
+                    if (!existSymbols1.Contains(searchValue))
+                    {
+                        existSymbols1.Add(searchValue);
+                    }
+                    else
+                        isExist = true;
+                } while (isExist);
+
+
+                isFind = false;
+                // Set our intial index variable to -1.
+                int index, x;
+                x = -1;
+                if (searchValue.Length != 0)
+                {
+                    int count = 0;
+                    //// Loop through and find each item that matches the search string.
+                    do
+                    {
+                        // Retrieve the item based on the previous index found. Starts with -1 which searches start.
+                        index = listBox1.FindStringExact(searchValue, x);
+                        // If no item is found that matches exit.
+                        if (index > x)
+                        {
+                            x = index;
+                            count++;
+                        }
+                        else //if index <= x then exit loop
+                            x = -1;
+                    } while (x != -1);
+                    if (count > 1)
+                        isFind = true;
+                }
+
+            } while (!isFind);
+
+            if (isFind)
+            {
+                textBoxFind.Text = searchValue;
+                textBoxReplace.Text = searchValue + "_";
+                Reset();
+                btnRemoveDuplicate.PerformClick();
+            }
+            else //Nếu không tìm thấy thì báo
+            {
+                MessageBox.Show("Không tìm thấy ký hiệu trùng lặp");
+            }
         }
     }
 }

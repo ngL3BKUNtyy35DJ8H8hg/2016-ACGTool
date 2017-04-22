@@ -44,6 +44,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.btnResetID = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
             this.checkBoxFindExact = new System.Windows.Forms.CheckBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtDiaHinhFilePath = new System.Windows.Forms.TextBox();
@@ -73,7 +74,8 @@
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.openFileDialogScriptPath = new System.Windows.Forms.OpenFileDialog();
             this.ImageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnFindDuplicate = new System.Windows.Forms.Button();
+            this.btnRemoveDuplicate = new System.Windows.Forms.Button();
             this.panelRTB.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,7 +93,7 @@
             this.panelRTB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRTB.Location = new System.Drawing.Point(3, 3);
             this.panelRTB.Name = "panelRTB";
-            this.panelRTB.Size = new System.Drawing.Size(906, 505);
+            this.panelRTB.Size = new System.Drawing.Size(906, 479);
             this.panelRTB.TabIndex = 35;
             // 
             // richTextBoxView
@@ -101,7 +103,7 @@
             this.richTextBoxView.HideSelection = false;
             this.richTextBoxView.Location = new System.Drawing.Point(307, 0);
             this.richTextBoxView.Name = "richTextBoxView";
-            this.richTextBoxView.Size = new System.Drawing.Size(599, 505);
+            this.richTextBoxView.Size = new System.Drawing.Size(599, 479);
             this.richTextBoxView.TabIndex = 21;
             this.richTextBoxView.Text = "";
             // 
@@ -109,7 +111,7 @@
             // 
             this.splitter3.Location = new System.Drawing.Point(304, 0);
             this.splitter3.Name = "splitter3";
-            this.splitter3.Size = new System.Drawing.Size(3, 505);
+            this.splitter3.Size = new System.Drawing.Size(3, 479);
             this.splitter3.TabIndex = 18;
             this.splitter3.TabStop = false;
             // 
@@ -120,16 +122,16 @@
             this.richTextBoxOrigion.HideSelection = false;
             this.richTextBoxOrigion.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxOrigion.Name = "richTextBoxOrigion";
-            this.richTextBoxOrigion.Size = new System.Drawing.Size(304, 505);
+            this.richTextBoxOrigion.Size = new System.Drawing.Size(304, 479);
             this.richTextBoxOrigion.TabIndex = 19;
             this.richTextBoxOrigion.Text = "";
             this.richTextBoxOrigion.TextChanged += new System.EventHandler(this.richTextBoxOrigion_TextChanged);
             // 
             // splitter2
             // 
-            this.splitter2.Location = new System.Drawing.Point(245, 126);
+            this.splitter2.Location = new System.Drawing.Point(245, 152);
             this.splitter2.Name = "splitter2";
-            this.splitter2.Size = new System.Drawing.Size(3, 537);
+            this.splitter2.Size = new System.Drawing.Size(3, 511);
             this.splitter2.TabIndex = 20;
             this.splitter2.TabStop = false;
             // 
@@ -139,18 +141,18 @@
             this.listBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(0, 126);
+            this.listBox1.Location = new System.Drawing.Point(0, 152);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(129, 537);
+            this.listBox1.Size = new System.Drawing.Size(129, 511);
             this.listBox1.TabIndex = 36;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DoubleClick += new System.EventHandler(this.listBox1_DoubleClick);
             // 
             // splitter1
             // 
-            this.splitter1.Location = new System.Drawing.Point(129, 126);
+            this.splitter1.Location = new System.Drawing.Point(129, 152);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 537);
+            this.splitter1.Size = new System.Drawing.Size(3, 511);
             this.splitter1.TabIndex = 37;
             this.splitter1.TabStop = false;
             // 
@@ -189,12 +191,14 @@
             this.btnResetID.Name = "btnResetID";
             this.btnResetID.Size = new System.Drawing.Size(92, 23);
             this.btnResetID.TabIndex = 15;
-            this.btnResetID.Text = "Reset and Save";
+            this.btnResetID.Text = "Reset";
             this.btnResetID.UseVisualStyleBackColor = true;
             this.btnResetID.Click += new System.EventHandler(this.btnResetID_Click);
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.btnRemoveDuplicate);
+            this.panel8.Controls.Add(this.btnFindDuplicate);
             this.panel8.Controls.Add(this.btnSave);
             this.panel8.Controls.Add(this.checkBoxFindExact);
             this.panel8.Controls.Add(this.label10);
@@ -221,8 +225,19 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1168, 126);
+            this.panel8.Size = new System.Drawing.Size(1168, 152);
             this.panel8.TabIndex = 1;
+            // 
+            // btnSave
+            // 
+            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSave.Location = new System.Drawing.Point(1081, 34);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 26;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // checkBoxFindExact
             // 
@@ -416,9 +431,9 @@
             // 
             this.panel3.Controls.Add(this.tabControl1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(248, 126);
+            this.panel3.Location = new System.Drawing.Point(248, 152);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(920, 537);
+            this.panel3.Size = new System.Drawing.Size(920, 511);
             this.panel3.TabIndex = 18;
             // 
             // tabControl1
@@ -428,7 +443,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(920, 537);
+            this.tabControl1.Size = new System.Drawing.Size(920, 511);
             this.tabControl1.TabIndex = 18;
             // 
             // tabPage1
@@ -437,7 +452,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(912, 511);
+            this.tabPage1.Size = new System.Drawing.Size(912, 485);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "File .BDTC";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -448,9 +463,9 @@
             this.panel1.Controls.Add(this.splitter4);
             this.panel1.Controls.Add(this.listBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(132, 126);
+            this.panel1.Location = new System.Drawing.Point(132, 152);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(113, 537);
+            this.panel1.Size = new System.Drawing.Size(113, 511);
             this.panel1.TabIndex = 18;
             // 
             // panel2
@@ -462,7 +477,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 358);
             this.panel2.MinimumSize = new System.Drawing.Size(113, 82);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(113, 179);
+            this.panel2.Size = new System.Drawing.Size(113, 153);
             this.panel2.TabIndex = 20;
             // 
             // buttonDown
@@ -514,16 +529,25 @@
             this.ImageList1.Images.SetKeyName(0, "Folder.ICO");
             this.ImageList1.Images.SetKeyName(1, "item.png");
             // 
-            // btnSave
+            // btnFindDuplicate
             // 
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.Location = new System.Drawing.Point(1081, 34);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(75, 23);
-            this.btnSave.TabIndex = 26;
-            this.btnSave.Text = "Save";
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnFindDuplicate.Location = new System.Drawing.Point(9, 123);
+            this.btnFindDuplicate.Name = "btnFindDuplicate";
+            this.btnFindDuplicate.Size = new System.Drawing.Size(92, 23);
+            this.btnFindDuplicate.TabIndex = 27;
+            this.btnFindDuplicate.Text = "Find Duplicate";
+            this.btnFindDuplicate.UseVisualStyleBackColor = true;
+            this.btnFindDuplicate.Click += new System.EventHandler(this.btnFindDuplicate_Click);
+            // 
+            // btnRemoveDuplicate
+            // 
+            this.btnRemoveDuplicate.Location = new System.Drawing.Point(107, 123);
+            this.btnRemoveDuplicate.Name = "btnRemoveDuplicate";
+            this.btnRemoveDuplicate.Size = new System.Drawing.Size(121, 23);
+            this.btnRemoveDuplicate.TabIndex = 27;
+            this.btnRemoveDuplicate.Text = "Remove Duplicate";
+            this.btnRemoveDuplicate.UseVisualStyleBackColor = true;
+            this.btnRemoveDuplicate.Click += new System.EventHandler(this.btnRemoveDuplicate_Click);
             // 
             // BDTCTool
             // 
@@ -599,5 +623,7 @@
         internal System.Windows.Forms.Button btnBrowseDiaHinh;
         private System.Windows.Forms.CheckBox checkBoxFindExact;
         internal System.Windows.Forms.Button btnSave;
+        internal System.Windows.Forms.Button btnFindDuplicate;
+        internal System.Windows.Forms.Button btnRemoveDuplicate;
     }
 }
