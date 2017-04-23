@@ -643,7 +643,7 @@ namespace ConfigBDTC
         private List<string> existSymbols = new List<string>();
         private void btnFindDuplicate_Click(object sender, EventArgs e)
         {
-            int indexListBox1 = 0;
+            int indexListBox1 = existSymbols.Count;
             //Nếu textBoxFind khác empty thì chỉ reset những tên trùng với textboxFind
             textBoxFind.Text = "";
             string searchValue = "";
@@ -656,19 +656,18 @@ namespace ConfigBDTC
                 {
                     searchValue = listBox1.Items[indexListBox1].ToString();
                     indexListBox1++;
+                    //Nếu tìm xong thì reset lại
                     if (indexListBox1 == listBox1.Items.Count)
                     {
-                        indexListBox1 = 0;
                         existSymbols.Clear();
-                        if (MessageBox.Show("Đã tìm xong. Bạn có muốn tìm lại từ đầu?", "Thông báo", MessageBoxButtons.YesNo) == DialogResult.No)
-                        {
-                            return;
-                        }
+                        MessageBox.Show("Đã tìm xong.");
+                        return;
                     }
 
                     if (!existSymbols.Contains(searchValue))
                     {
                         existSymbols.Add(searchValue);
+                        isExist = false;
                     }
                     else
                         isExist = true;
@@ -707,8 +706,6 @@ namespace ConfigBDTC
             if (isFind)
             {
                 textBoxFind.Text = searchValue;
-                //Nếu tìm thấy rồi thì add vào exist để cho phép tìm symbol khác
-                existSymbols.Add(searchValue);
             }
             else //Nếu không tìm thấy thì báo
             {

@@ -94,3 +94,6 @@ H:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC
 L:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\ConfigBDTC.exe.config
 L:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.exe
 L:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.pdb
+h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\ConfigBDTC.exe.config
+h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.exe
+h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.pdb
