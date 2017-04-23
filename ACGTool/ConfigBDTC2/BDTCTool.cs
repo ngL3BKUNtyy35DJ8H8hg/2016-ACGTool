@@ -659,6 +659,8 @@ namespace ConfigBDTC
                     //Nếu tìm xong thì reset lại
                     if (indexListBox1 == listBox1.Items.Count)
                     {
+                        textBoxFind.Text = "";
+                        listBox2.Items.Clear();
                         existSymbols.Clear();
                         MessageBox.Show("Đã tìm xong.");
                         return;
@@ -759,8 +761,8 @@ namespace ConfigBDTC
                     }
                 }
             }
-
         }
+
         private void btnRemoveDuplicate_Click(object sender, EventArgs e)
         {
             int indexListBox1 = 0;
@@ -777,39 +779,41 @@ namespace ConfigBDTC
                 {
                     searchValue = listBox1.Items[indexListBox1].ToString();
                     indexListBox1++;
+                    //Nếu tìm xong thì reset lại
+                    if (indexListBox1 == listBox1.Items.Count)
+                    {
+                        existSymbols1.Clear();
+                        MessageBox.Show("Đã tìm xong.");
+                        return;
+                    }
+
                     if (!existSymbols1.Contains(searchValue))
                     {
                         existSymbols1.Add(searchValue);
+                        isExist = false;
                     }
                     else
                         isExist = true;
                 } while (isExist);
 
-
+                //Tìm symbol trùng lặp
                 isFind = false;
-                // Set our intial index variable to -1.
                 int index, x;
                 x = -1;
-                if (searchValue.Length != 0)
+                int count = 0;
+                do
                 {
-                    int count = 0;
-                    //// Loop through and find each item that matches the search string.
-                    do
+                    index = listBox1.FindStringExact(searchValue, x);
+                    if (index > x)
                     {
-                        // Retrieve the item based on the previous index found. Starts with -1 which searches start.
-                        index = listBox1.FindStringExact(searchValue, x);
-                        // If no item is found that matches exit.
-                        if (index > x)
-                        {
-                            x = index;
-                            count++;
-                        }
-                        else //if index <= x then exit loop
-                            x = -1;
-                    } while (x != -1);
-                    if (count > 1)
-                        isFind = true;
-                }
+                        x = index;
+                        count++;
+                        if (count > 1) //Nếu count > 1 tức là tìm hơn 2 symbol giống nhau
+                            isFind = true;
+                    }
+                    else
+                        x = -1;
+                } while (!isFind && x != -1);
 
             } while (!isFind);
 
