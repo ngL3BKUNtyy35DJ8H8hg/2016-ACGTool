@@ -39,6 +39,7 @@
             this.splitContainerMyMnuTreeView = new System.Windows.Forms.SplitContainer();
             this.chartMyMnu = new Braincase.GanttChart.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.chkIsCollpase = new System.Windows.Forms.CheckBox();
             this.richTextBoxMyMnuLog = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -47,7 +48,7 @@
             this.richTextBoxActionLog = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPageBDTCActions = new System.Windows.Forms.TabPage();
-            this.chkIsCollpase = new System.Windows.Forms.CheckBox();
+            this.btnOpenNotepad = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -197,12 +198,26 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnOpenNotepad);
             this.panel1.Controls.Add(this.chkIsCollpase);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 49);
             this.panel1.TabIndex = 7;
+            // 
+            // chkIsCollpase
+            // 
+            this.chkIsCollpase.AutoSize = true;
+            this.chkIsCollpase.Checked = true;
+            this.chkIsCollpase.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkIsCollpase.Location = new System.Drawing.Point(14, 14);
+            this.chkIsCollpase.Name = "chkIsCollpase";
+            this.chkIsCollpase.Size = new System.Drawing.Size(83, 17);
+            this.chkIsCollpase.TabIndex = 0;
+            this.chkIsCollpase.Text = "Is Collapsed";
+            this.chkIsCollpase.UseVisualStyleBackColor = true;
+            this.chkIsCollpase.CheckedChanged += new System.EventHandler(this.chkIsCollpase_CheckedChanged);
             // 
             // richTextBoxMyMnuLog
             // 
@@ -304,18 +319,16 @@
             this.tabPageBDTCActions.Text = "BDTC Actions";
             this.tabPageBDTCActions.UseVisualStyleBackColor = true;
             // 
-            // chkIsCollpase
+            // btnOpenNotepad
             // 
-            this.chkIsCollpase.AutoSize = true;
-            this.chkIsCollpase.Checked = true;
-            this.chkIsCollpase.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkIsCollpase.Location = new System.Drawing.Point(14, 14);
-            this.chkIsCollpase.Name = "chkIsCollpase";
-            this.chkIsCollpase.Size = new System.Drawing.Size(83, 17);
-            this.chkIsCollpase.TabIndex = 0;
-            this.chkIsCollpase.Text = "Is Collapsed";
-            this.chkIsCollpase.UseVisualStyleBackColor = true;
-            this.chkIsCollpase.CheckedChanged += new System.EventHandler(this.chkIsCollpase_CheckedChanged);
+            this.btnOpenNotepad.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenNotepad.Location = new System.Drawing.Point(605, 10);
+            this.btnOpenNotepad.Name = "btnOpenNotepad";
+            this.btnOpenNotepad.Size = new System.Drawing.Size(103, 23);
+            this.btnOpenNotepad.TabIndex = 1;
+            this.btnOpenNotepad.Text = "Open Notepad++";
+            this.btnOpenNotepad.UseVisualStyleBackColor = true;
+            this.btnOpenNotepad.Click += new System.EventHandler(this.btnOpenNotepad_Click);
             // 
             // BDTCTimeLine
             // 
@@ -375,6 +388,7 @@
         private Braincase.GanttChart.Chart chartMyMnu;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.CheckBox chkIsCollpase;
+        private System.Windows.Forms.Button btnOpenNotepad;
     }
 }
 

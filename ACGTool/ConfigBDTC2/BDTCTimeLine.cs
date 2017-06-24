@@ -12,6 +12,7 @@ using BDTCLib.Scripts;
 using BDTCLib.Scripts.Actions;
 using Braincase.GanttChart;
 using System.Linq;
+using System.Diagnostics;
 
 namespace ConfigBDTC
 {
@@ -413,6 +414,20 @@ namespace ConfigBDTC
                         task.Value.IsCollapsed = chkIsCollpase.Checked;
                 }
                 chartMyMnu.Refresh();
+            }
+        }
+
+        private void btnOpenNotepad_Click(object sender, EventArgs e)
+        {
+            if (_selectNode.Tag is ScrptFileScript)
+            {
+                ScrptFileScript objScrptFileScript = (ScrptFileScript)_selectNode.Tag;
+                string filePath = TimeLineHelper._objDiaHinh._myCurrentDirectory + "\\" + objScrptFileScript.ScrptFile;
+                Process.Start("notepad++.exe", filePath);
+            }
+            else
+            {
+                MessageBox.Show("Treenode đang chọn không phải là ScrptFileScript");
             }
         }
     }
