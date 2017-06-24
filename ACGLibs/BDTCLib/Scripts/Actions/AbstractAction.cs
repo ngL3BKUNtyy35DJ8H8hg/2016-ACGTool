@@ -200,7 +200,7 @@ namespace BDTCLib.Scripts.Actions
                     }
 
                     //Nếu trường hợp ẩn sau khi xuất hiện thì cộng thêm 1 khoảng this.Duration
-                    if(bool.Parse(this.Hide))
+                    if(bool.Parse(this.Hide) && this.Type.Contains("Appear"))
                     {
                         ObjTimerCalc.Duration += float.Parse(this.Duration);
                     }

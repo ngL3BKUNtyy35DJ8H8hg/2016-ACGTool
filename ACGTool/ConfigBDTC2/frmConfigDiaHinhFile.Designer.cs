@@ -65,6 +65,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.listViewD3DModelMesh = new System.Windows.Forms.ListView();
             this.columnHeaderName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderXFile = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeaderNote = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -77,6 +78,7 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.listViewSound = new System.Windows.Forms.ListView();
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel7 = new System.Windows.Forms.Panel();
@@ -102,8 +104,6 @@
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnCheckScripts = new System.Windows.Forms.Button();
-            this.columnHeaderSize = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControlCheckExistPath.SuspendLayout();
@@ -467,6 +467,10 @@
             this.columnHeaderName.Text = "Name";
             this.columnHeaderName.Width = 100;
             // 
+            // columnHeaderSize
+            // 
+            this.columnHeaderSize.Text = "Size";
+            // 
             // columnHeaderXFile
             // 
             this.columnHeaderXFile.Text = "XFile";
@@ -572,6 +576,10 @@
             // 
             this.columnHeader12.Text = "File";
             this.columnHeader12.Width = 157;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Size";
             // 
             // columnHeader13
             // 
@@ -786,14 +794,7 @@
             this.btnCheckScripts.TabIndex = 22;
             this.btnCheckScripts.Text = "Kiểm tra Kịch bản";
             this.btnCheckScripts.UseVisualStyleBackColor = true;
-            // 
-            // columnHeaderSize
-            // 
-            this.columnHeaderSize.Text = "Size";
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "Size";
+            this.btnCheckScripts.Click += new System.EventHandler(this.btnCheckScripts_Click);
             // 
             // frmConfigDiaHinhFile
             // 

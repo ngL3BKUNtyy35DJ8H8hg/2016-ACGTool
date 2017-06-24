@@ -333,6 +333,7 @@ namespace ConfigBDTC
             return errList;
         }
 
+        private TreeNode _selectNode;
         private Dictionary<string, MyTask> _taskDict = new Dictionary<string, MyTask>();
         /// <summary>
         /// Dùng cho ScriptTreeView
@@ -342,6 +343,7 @@ namespace ConfigBDTC
         private void treeViewMyMnu_AfterSelect(object sender, TreeViewEventArgs e)
         {
             List<string> errList = new List<string>();
+            _selectNode = e.Node;
             TreeNode node = e.Node;
             //node.Nodes.Clear();
             if (node.Tag is MnuItem && node.Parent == null)
@@ -401,8 +403,17 @@ namespace ConfigBDTC
             _mChart.Invalidate();
         }
 
-        
-
-       
+        private void chkIsCollpase_CheckedChanged(object sender, EventArgs e)
+        {
+            if (_taskDict != null)
+            {
+                foreach (var task in _taskDict)
+                {
+                    if (task.Key != _selectNode.Name)
+                        task.Value.IsCollapsed = chkIsCollpase.Checked;
+                }
+                chartMyMnu.Refresh();
+            }
+        }
     }
 }

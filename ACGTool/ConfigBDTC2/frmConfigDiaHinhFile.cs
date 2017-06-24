@@ -405,5 +405,9 @@ namespace ConfigBDTC
             }
         }
 
+        private void btnCheckScripts_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

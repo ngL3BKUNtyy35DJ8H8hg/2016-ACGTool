@@ -38,6 +38,7 @@
             this.splitContainerMyMnu = new System.Windows.Forms.SplitContainer();
             this.splitContainerMyMnuTreeView = new System.Windows.Forms.SplitContainer();
             this.chartMyMnu = new Braincase.GanttChart.Chart();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBoxMyMnuLog = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -46,6 +47,7 @@
             this.richTextBoxActionLog = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPageBDTCActions = new System.Windows.Forms.TabPage();
+            this.chkIsCollpase = new System.Windows.Forms.CheckBox();
             this.panel8.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -56,6 +58,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMyMnuTreeView)).BeginInit();
             this.splitContainerMyMnuTreeView.Panel2.SuspendLayout();
             this.splitContainerMyMnuTreeView.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
             this.splitContainer3.Panel1.SuspendLayout();
@@ -75,7 +78,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(831, 46);
+            this.panel8.Size = new System.Drawing.Size(1070, 46);
             this.panel8.TabIndex = 2;
             // 
             // Label2
@@ -90,18 +93,18 @@
             // 
             // txtFilePath
             // 
-            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFilePath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtFilePath.Location = new System.Drawing.Point(115, 12);
             this.txtFilePath.Name = "txtFilePath";
-            this.txtFilePath.Size = new System.Drawing.Size(595, 20);
+            this.txtFilePath.Size = new System.Drawing.Size(834, 20);
             this.txtFilePath.TabIndex = 19;
             // 
             // btnReload
             // 
             this.btnReload.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReload.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReload.Location = new System.Drawing.Point(760, 10);
+            this.btnReload.Location = new System.Drawing.Point(999, 10);
             this.btnReload.Name = "btnReload";
             this.btnReload.Size = new System.Drawing.Size(67, 23);
             this.btnReload.TabIndex = 20;
@@ -113,7 +116,7 @@
             // 
             this.btBrowse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btBrowse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBrowse.Location = new System.Drawing.Point(716, 10);
+            this.btBrowse.Location = new System.Drawing.Point(955, 10);
             this.btBrowse.Name = "btBrowse";
             this.btBrowse.Size = new System.Drawing.Size(38, 23);
             this.btBrowse.TabIndex = 20;
@@ -131,7 +134,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 46);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(831, 454);
+            this.tabControl1.Size = new System.Drawing.Size(1070, 602);
             this.tabControl1.TabIndex = 19;
             // 
             // tabPage2
@@ -140,7 +143,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(823, 428);
+            this.tabPage2.Size = new System.Drawing.Size(1062, 576);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "MyMnu";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -159,8 +162,8 @@
             // splitContainerMyMnu.Panel2
             // 
             this.splitContainerMyMnu.Panel2.Controls.Add(this.richTextBoxMyMnuLog);
-            this.splitContainerMyMnu.Size = new System.Drawing.Size(817, 422);
-            this.splitContainerMyMnu.SplitterDistance = 272;
+            this.splitContainerMyMnu.Size = new System.Drawing.Size(1056, 570);
+            this.splitContainerMyMnu.SplitterDistance = 460;
             this.splitContainerMyMnu.TabIndex = 0;
             // 
             // splitContainerMyMnuTreeView
@@ -172,22 +175,34 @@
             // splitContainerMyMnuTreeView.Panel2
             // 
             this.splitContainerMyMnuTreeView.Panel2.Controls.Add(this.chartMyMnu);
-            this.splitContainerMyMnuTreeView.Size = new System.Drawing.Size(817, 272);
-            this.splitContainerMyMnuTreeView.SplitterDistance = 433;
+            this.splitContainerMyMnuTreeView.Panel2.Controls.Add(this.panel1);
+            this.splitContainerMyMnuTreeView.Size = new System.Drawing.Size(1056, 460);
+            this.splitContainerMyMnuTreeView.SplitterDistance = 339;
             this.splitContainerMyMnuTreeView.TabIndex = 0;
             // 
             // chartMyMnu
             // 
             this.chartMyMnu.AllowTaskDragDrop = false;
+            this.chartMyMnu.BarHeight = 10;
             this.chartMyMnu.BarSpacing = 46;
+            this.chartMyMnu.BarWidth = 40;
             this.chartMyMnu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.chartMyMnu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.chartMyMnu.Location = new System.Drawing.Point(0, 0);
+            this.chartMyMnu.Location = new System.Drawing.Point(0, 49);
             this.chartMyMnu.Margin = new System.Windows.Forms.Padding(0);
             this.chartMyMnu.Name = "chartMyMnu";
             this.chartMyMnu.Padding = new System.Windows.Forms.Padding(5);
-            this.chartMyMnu.Size = new System.Drawing.Size(380, 272);
+            this.chartMyMnu.Size = new System.Drawing.Size(713, 411);
             this.chartMyMnu.TabIndex = 6;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.chkIsCollpase);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(713, 49);
+            this.panel1.TabIndex = 7;
             // 
             // richTextBoxMyMnuLog
             // 
@@ -196,8 +211,9 @@
             this.richTextBoxMyMnuLog.HideSelection = false;
             this.richTextBoxMyMnuLog.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxMyMnuLog.Name = "richTextBoxMyMnuLog";
-            this.richTextBoxMyMnuLog.Size = new System.Drawing.Size(817, 146);
+            this.richTextBoxMyMnuLog.Size = new System.Drawing.Size(1056, 106);
             this.richTextBoxMyMnuLog.TabIndex = 41;
+            this.richTextBoxMyMnuLog.Text = "";
             // 
             // tabPage3
             // 
@@ -205,7 +221,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(823, 428);
+            this.tabPage3.Size = new System.Drawing.Size(1062, 576);
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "Script Files";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -224,8 +240,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.richTextBoxActionLog);
-            this.splitContainer3.Size = new System.Drawing.Size(817, 422);
-            this.splitContainer3.SplitterDistance = 355;
+            this.splitContainer3.Size = new System.Drawing.Size(1056, 570);
+            this.splitContainer3.SplitterDistance = 479;
             this.splitContainer3.TabIndex = 1;
             // 
             // splitContainerActions
@@ -237,21 +253,23 @@
             // splitContainerActions.Panel2
             // 
             this.splitContainerActions.Panel2.Controls.Add(this._mChart);
-            this.splitContainerActions.Size = new System.Drawing.Size(817, 355);
-            this.splitContainerActions.SplitterDistance = 422;
+            this.splitContainerActions.Size = new System.Drawing.Size(1056, 479);
+            this.splitContainerActions.SplitterDistance = 545;
             this.splitContainerActions.TabIndex = 1;
             // 
             // _mChart
             // 
             this._mChart.AllowTaskDragDrop = false;
+            this._mChart.BarHeight = 10;
             this._mChart.BarSpacing = 46;
+            this._mChart.BarWidth = 40;
             this._mChart.Dock = System.Windows.Forms.DockStyle.Fill;
             this._mChart.Font = new System.Drawing.Font("Segoe UI", 9F);
             this._mChart.Location = new System.Drawing.Point(0, 0);
             this._mChart.Margin = new System.Windows.Forms.Padding(0);
             this._mChart.Name = "_mChart";
             this._mChart.Padding = new System.Windows.Forms.Padding(5);
-            this._mChart.Size = new System.Drawing.Size(391, 355);
+            this._mChart.Size = new System.Drawing.Size(507, 479);
             this._mChart.TabIndex = 5;
             // 
             // richTextBoxActionLog
@@ -262,15 +280,16 @@
             this.richTextBoxActionLog.HideSelection = false;
             this.richTextBoxActionLog.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxActionLog.Name = "richTextBoxActionLog";
-            this.richTextBoxActionLog.Size = new System.Drawing.Size(817, 63);
+            this.richTextBoxActionLog.Size = new System.Drawing.Size(1056, 87);
             this.richTextBoxActionLog.TabIndex = 41;
+            this.richTextBoxActionLog.Text = "";
             // 
             // tabPage4
             // 
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(823, 428);
+            this.tabPage4.Size = new System.Drawing.Size(1062, 576);
             this.tabPage4.TabIndex = 4;
             this.tabPage4.Text = "Edit Action";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -280,21 +299,34 @@
             this.tabPageBDTCActions.Location = new System.Drawing.Point(4, 22);
             this.tabPageBDTCActions.Name = "tabPageBDTCActions";
             this.tabPageBDTCActions.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageBDTCActions.Size = new System.Drawing.Size(823, 428);
+            this.tabPageBDTCActions.Size = new System.Drawing.Size(1062, 576);
             this.tabPageBDTCActions.TabIndex = 5;
             this.tabPageBDTCActions.Text = "BDTC Actions";
             this.tabPageBDTCActions.UseVisualStyleBackColor = true;
+            // 
+            // chkIsCollpase
+            // 
+            this.chkIsCollpase.AutoSize = true;
+            this.chkIsCollpase.Checked = true;
+            this.chkIsCollpase.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkIsCollpase.Location = new System.Drawing.Point(14, 14);
+            this.chkIsCollpase.Name = "chkIsCollpase";
+            this.chkIsCollpase.Size = new System.Drawing.Size(83, 17);
+            this.chkIsCollpase.TabIndex = 0;
+            this.chkIsCollpase.Text = "Is Collapsed";
+            this.chkIsCollpase.UseVisualStyleBackColor = true;
+            this.chkIsCollpase.CheckedChanged += new System.EventHandler(this.chkIsCollpase_CheckedChanged);
             // 
             // BDTCTimeLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 500);
+            this.ClientSize = new System.Drawing.Size(1070, 648);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel8);
             this.Name = "BDTCTimeLine";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "BDTC Timeline";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
@@ -307,6 +339,8 @@
             this.splitContainerMyMnuTreeView.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMyMnuTreeView)).EndInit();
             this.splitContainerMyMnuTreeView.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
             this.splitContainer3.Panel2.ResumeLayout(false);
@@ -339,6 +373,8 @@
         private System.Windows.Forms.RichTextBox richTextBoxActionLog;
         private System.Windows.Forms.SplitContainer splitContainerMyMnuTreeView;
         private Braincase.GanttChart.Chart chartMyMnu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chkIsCollpase;
     }
 }
 

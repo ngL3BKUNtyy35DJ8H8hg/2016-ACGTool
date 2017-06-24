@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Xml;
 using BDTCLib;
 using BDTCLib.Scripts;
+using System.Diagnostics;
 
 namespace ConfigBDTC
 {
@@ -396,19 +397,17 @@ namespace ConfigBDTC
                 ClassAction objClassAction = (ClassAction)item;
                 string filePath = objClassAction.XmlFile;
                 string outerXml = objClassAction.Action;
-                //Lưu lại xml của file script
                 XmlDocument scriptDoc = new XmlDocument();
                 scriptDoc.Load(filePath);
-                //Kiểm tra file này có chứa thuyết minh không?
                 XmlNode scriptNode = scriptDoc.DocumentElement;
-                //Với mỗi Action
+                //Với mỗi Action trong file xml
                 foreach (XmlNode nodeAction in scriptNode.ChildNodes)
                 {
                     if (nodeAction.Name == "Action")
                     {
                         if (FilterAction(nodeAction) && nodeAction.OuterXml == outerXml)
                         {
-                            //If replace direct value
+                            //Nếu là thay giá trị bằng tìm kiếm trong action
                             if (checkBoxReplaceText.Checked)
                             {
                                 //Lấy giá trị cần replace trong xml
@@ -416,7 +415,7 @@ namespace ConfigBDTC
                                 //Thay thế giá trị mới
                                 nodeAction.Attributes[att].Value = value.Replace(txtFindWhat.Text, txtReplaceWith.Text);
                             }
-                            else
+                            else //Nếu là chọn cụ thể attribute cần thay
                             {
                                 foreach (DataGridViewRow row in dataGridViewAttributes.Rows)
                                 {
@@ -427,6 +426,8 @@ namespace ConfigBDTC
                                         nodeAction.Attributes[att].Value = value;
                                     }
                                 }
+
+                                //Nếu Action là FocusAt thì set mặc định duration là 0.5
                                 if (nodeAction.Attributes["Type"].Value == "FocusAt")
                                 {
                                     if (nodeAction.Attributes["Duration"] == null)
@@ -526,18 +527,14 @@ namespace ConfigBDTC
             {
                 listBoxActions_SelectedIndexChanged(null, null);
                 dataGridViewAttributes.ReadOnly = true;
-                labelFindWhat.Visible = true;
-                txtFindWhat.Visible = true;
-                labelReplaceWith.Visible = true;
-                txtReplaceWith.Visible = true;
+                txtFindWhat.Enabled = true;
+                txtReplaceWith.Enabled = true;
             }
             else
             {
                 dataGridViewAttributes.ReadOnly = false;
-                labelFindWhat.Visible = false;
-                txtFindWhat.Visible = false;
-                labelReplaceWith.Visible = false;
-                txtReplaceWith.Visible = false;
+                txtFindWhat.Enabled = false;
+                txtReplaceWith.Enabled = false;
                 txtFindWhat.Text = txtReplaceWith.Text = "";
             }
         }
@@ -757,9 +754,11 @@ namespace ConfigBDTC
             }
         }
 
-        
-
-        
-       
+        private void btnOpenNotepad_Click(object sender, EventArgs e)
+        {
+            string[] result = treeViewScript.SelectedNode.Name.Split(new string[] { "[]" }, StringSplitOptions.None);
+            string filePath = _objDiaHinh._myCurrentDirectory + "\\" + result[1];
+            Process.Start("notepad++.exe", filePath);
+        }
     }
 }

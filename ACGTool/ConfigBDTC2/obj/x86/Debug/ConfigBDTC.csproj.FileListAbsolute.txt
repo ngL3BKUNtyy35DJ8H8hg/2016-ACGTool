@@ -105,7 +105,6 @@ h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.dll
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\BDTCLib.pdb
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\FolderLib.pdb
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\bin\Debug\GanttChart.pdb
-h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.csprojResolveAssemblyReference.cache
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.BDTCAction.resources
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.BDTCTool.resources
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.frmBuildDiaHinh.resources
@@ -118,3 +117,4 @@ h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.frmConfigDia
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.Properties.Resources.resources
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.ucMyMnuTreeView.resources
 h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.csproj.GenerateResource.Cache
+h:\GitHub\2016-ACGTool\ACGTool\ConfigBDTC2\obj\x86\Debug\ConfigBDTC.csprojResolveAssemblyReference.cache

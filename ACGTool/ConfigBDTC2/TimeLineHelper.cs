@@ -79,7 +79,7 @@ namespace ConfigBDTC
             MnuItem objMnuItem = (MnuItem) mnuItemNode.Tag;
             MyTask mnuItemTask = null;
             string taskName = "";
-            //Nếu mnuitem được load từ MnuItemRef thì tạo start và duration
+            //Nếu Mnu item được load từ MnuItemRef thì tạo start và duration
             if (mnuItemNode.Parent != null)
             {
                 MnuItemRefScript objMnuItemRefScript = (MnuItemRefScript)mnuItemNode.Parent.Tag;
@@ -91,8 +91,9 @@ namespace ConfigBDTC
                 //thì <MnuItem ID="Mnu_1.3.2" Name="3_Ta_Mui3_LuiRa.xml" PosX="1000" PosY="220" Width="170" Height="20" Title=""> cũng sẽ có thời gian Start="Start(1)+4"
                 mnuItemTask = CreateTask(mManager, mnuItemNode.Name, taskName, enumGanttChartTimer.None, objMnuItemRefScript.ObjTimerCalc.StartTemplate, start, objMnuItem.Duration, objMnuItem.ToString());
                 mManager.Group(taskDict[mnuItemNode.Parent.Name], mnuItemTask);
+                //mnuItemTask.IsCollapsed = true;
             }
-            else
+            else //Mnu Item cao nhất
             {
                 taskName = string.Format("<MnuItem ID={0}>-[{1}]", objMnuItem.ID, objMnuItem.Name);
                 mnuItemTask = CreateTask(mManager, mnuItemNode.Name, taskName, enumGanttChartTimer.None, "", 0, objMnuItem.Duration, objMnuItem.ToString());
@@ -133,6 +134,9 @@ namespace ConfigBDTC
                         mManager.Relate(taskDict[mnuItemNode.Name + "-->" + objMnuItemRefScript.ObjTimerCalc.IDRefValue], scriptTask);
                     }
                     taskDict.Add(scriptNode.Name, scriptTask);
+                    //Collapsed script là MnuItemRefScript
+                    scriptTask.IsCollapsed = true;
+
                     //mManager.Relate(taskDict[objMnuItem.ID + "." + objMnuItemRefScript.ObjTimerCalc.IDRefValue], task);
                     //taskDict.Add(scriptKey, task);
 
@@ -211,6 +215,8 @@ namespace ConfigBDTC
                         mManager.Group(scriptTask, actionTask);
                         taskDict.Add(actionNode.Name, actionTask);
                     }
+                    //Colllapse script là ScrptFile
+                    scriptTask.IsCollapsed = true;
                 }
 
                 //Tạo group

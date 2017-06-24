@@ -49,6 +49,8 @@
             this.Attribute = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.comboBoxDichTa = new System.Windows.Forms.ComboBox();
             this.checkBoxReplaceText = new System.Windows.Forms.CheckBox();
             this.btnDefaultValues = new System.Windows.Forms.Button();
@@ -69,8 +71,10 @@
             this.richTextBoxScript = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.btnOpenNotepad = new System.Windows.Forms.Button();
             this.btnSaveXml = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label3 = new System.Windows.Forms.Label();
             this.statusStrip1.SuspendLayout();
             this.tabPageCheckXmlFiles.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -105,9 +109,9 @@
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabelAction});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 480);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 587);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(870, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1086, 22);
             this.statusStrip1.TabIndex = 20;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -124,7 +128,7 @@
             this.tabPageCheckXmlFiles.Location = new System.Drawing.Point(4, 22);
             this.tabPageCheckXmlFiles.Name = "tabPageCheckXmlFiles";
             this.tabPageCheckXmlFiles.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageCheckXmlFiles.Size = new System.Drawing.Size(862, 476);
+            this.tabPageCheckXmlFiles.Size = new System.Drawing.Size(1078, 583);
             this.tabPageCheckXmlFiles.TabIndex = 3;
             this.tabPageCheckXmlFiles.Text = "Check Xml Files";
             this.tabPageCheckXmlFiles.UseVisualStyleBackColor = true;
@@ -140,7 +144,7 @@
             this.listViewXmlFiles.GridLines = true;
             this.listViewXmlFiles.Location = new System.Drawing.Point(3, 54);
             this.listViewXmlFiles.Name = "listViewXmlFiles";
-            this.listViewXmlFiles.Size = new System.Drawing.Size(856, 419);
+            this.listViewXmlFiles.Size = new System.Drawing.Size(1072, 526);
             this.listViewXmlFiles.TabIndex = 23;
             this.listViewXmlFiles.UseCompatibleStateImageBehavior = false;
             this.listViewXmlFiles.View = System.Windows.Forms.View.Details;
@@ -167,7 +171,7 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(856, 51);
+            this.panel7.Size = new System.Drawing.Size(1072, 51);
             this.panel7.TabIndex = 22;
             // 
             // btnCheckXmlFiles
@@ -196,7 +200,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(862, 476);
+            this.tabPage2.Size = new System.Drawing.Size(1078, 583);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Script files";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -216,8 +220,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
-            this.splitContainer1.Size = new System.Drawing.Size(856, 470);
-            this.splitContainer1.SplitterDistance = 256;
+            this.splitContainer1.Size = new System.Drawing.Size(1072, 577);
+            this.splitContainer1.SplitterDistance = 314;
             this.splitContainer1.TabIndex = 19;
             // 
             // splitContainer3
@@ -234,8 +238,8 @@
             // splitContainer3.Panel2
             // 
             this.splitContainer3.Panel2.Controls.Add(this.treeViewScript);
-            this.splitContainer3.Size = new System.Drawing.Size(856, 211);
-            this.splitContainer3.SplitterDistance = 519;
+            this.splitContainer3.Size = new System.Drawing.Size(1072, 269);
+            this.splitContainer3.SplitterDistance = 649;
             this.splitContainer3.TabIndex = 1;
             // 
             // dataGridViewAttributes
@@ -251,7 +255,7 @@
             this.dataGridViewAttributes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewAttributes.Location = new System.Drawing.Point(0, 0);
             this.dataGridViewAttributes.Name = "dataGridViewAttributes";
-            this.dataGridViewAttributes.Size = new System.Drawing.Size(519, 111);
+            this.dataGridViewAttributes.Size = new System.Drawing.Size(649, 132);
             this.dataGridViewAttributes.TabIndex = 2;
             this.dataGridViewAttributes.CurrentCellChanged += new System.EventHandler(this.dataGridViewAttributes_CurrentCellChanged);
             // 
@@ -275,57 +279,76 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBoxDichTa);
             this.panel1.Controls.Add(this.checkBoxReplaceText);
-            this.panel1.Controls.Add(this.btnDefaultValues);
-            this.panel1.Controls.Add(this.btnUpdateAll);
-            this.panel1.Controls.Add(this.labelReplaceWith);
-            this.panel1.Controls.Add(this.labelFindWhat);
-            this.panel1.Controls.Add(this.txtReplaceWith);
             this.panel1.Controls.Add(this.txtFindWhat);
+            this.panel1.Controls.Add(this.txtReplaceWith);
+            this.panel1.Controls.Add(this.btnDefaultValues);
+            this.panel1.Controls.Add(this.labelReplaceWith);
+            this.panel1.Controls.Add(this.btnUpdateAll);
+            this.panel1.Controls.Add(this.labelFindWhat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 111);
+            this.panel1.Location = new System.Drawing.Point(0, 132);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(519, 100);
+            this.panel1.Size = new System.Drawing.Size(649, 137);
             this.panel1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(10, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(367, 13);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "2. Nhấn Update All để cập nhật cho toàn bộ Action trong file xml đang chọn";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(10, 12);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(189, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "1. Select Attribute cần chỉnh sửa giá trị";
             // 
             // comboBoxDichTa
             // 
-            this.comboBoxDichTa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBoxDichTa.FormattingEnabled = true;
             this.comboBoxDichTa.Items.AddRange(new object[] {
             "Ta",
             "Dich"});
-            this.comboBoxDichTa.Location = new System.Drawing.Point(296, 7);
+            this.comboBoxDichTa.Location = new System.Drawing.Point(532, 109);
             this.comboBoxDichTa.Name = "comboBoxDichTa";
-            this.comboBoxDichTa.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxDichTa.Size = new System.Drawing.Size(85, 21);
             this.comboBoxDichTa.TabIndex = 23;
             // 
             // checkBoxReplaceText
             // 
             this.checkBoxReplaceText.AutoSize = true;
-            this.checkBoxReplaceText.Location = new System.Drawing.Point(6, 17);
+            this.checkBoxReplaceText.Location = new System.Drawing.Point(9, 57);
             this.checkBoxReplaceText.Name = "checkBoxReplaceText";
-            this.checkBoxReplaceText.Size = new System.Drawing.Size(90, 17);
+            this.checkBoxReplaceText.Size = new System.Drawing.Size(226, 17);
             this.checkBoxReplaceText.TabIndex = 1;
-            this.checkBoxReplaceText.Text = "Replace Text";
+            this.checkBoxReplaceText.Text = "Tìm và thay thế tất cả giá trị trong Attribute";
             this.checkBoxReplaceText.UseVisualStyleBackColor = true;
             this.checkBoxReplaceText.CheckedChanged += new System.EventHandler(this.checkBoxReplaceText_CheckedChanged);
             // 
             // btnDefaultValues
             // 
-            this.btnDefaultValues.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDefaultValues.Location = new System.Drawing.Point(422, 6);
+            this.btnDefaultValues.Location = new System.Drawing.Point(449, 109);
             this.btnDefaultValues.Name = "btnDefaultValues";
-            this.btnDefaultValues.Size = new System.Drawing.Size(82, 23);
+            this.btnDefaultValues.Size = new System.Drawing.Size(77, 23);
             this.btnDefaultValues.TabIndex = 0;
-            this.btnDefaultValues.Text = "Defaults";
+            this.btnDefaultValues.Text = "Default";
             this.btnDefaultValues.UseVisualStyleBackColor = true;
             this.btnDefaultValues.Click += new System.EventHandler(this.btnDefaultValues_Click);
             // 
             // btnUpdateAll
             // 
-            this.btnUpdateAll.Location = new System.Drawing.Point(102, 11);
+            this.btnUpdateAll.Location = new System.Drawing.Point(9, 109);
             this.btnUpdateAll.Name = "btnUpdateAll";
             this.btnUpdateAll.Size = new System.Drawing.Size(82, 23);
             this.btnUpdateAll.TabIndex = 0;
@@ -337,7 +360,7 @@
             // 
             this.labelReplaceWith.AutoSize = true;
             this.labelReplaceWith.BackColor = System.Drawing.Color.Transparent;
-            this.labelReplaceWith.Location = new System.Drawing.Point(10, 71);
+            this.labelReplaceWith.Location = new System.Drawing.Point(257, 86);
             this.labelReplaceWith.Name = "labelReplaceWith";
             this.labelReplaceWith.Size = new System.Drawing.Size(69, 13);
             this.labelReplaceWith.TabIndex = 21;
@@ -347,7 +370,7 @@
             // 
             this.labelFindWhat.AutoSize = true;
             this.labelFindWhat.BackColor = System.Drawing.Color.Transparent;
-            this.labelFindWhat.Location = new System.Drawing.Point(10, 43);
+            this.labelFindWhat.Location = new System.Drawing.Point(273, 58);
             this.labelFindWhat.Name = "labelFindWhat";
             this.labelFindWhat.Size = new System.Drawing.Size(53, 13);
             this.labelFindWhat.TabIndex = 21;
@@ -355,20 +378,20 @@
             // 
             // txtReplaceWith
             // 
-            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReplaceWith.Location = new System.Drawing.Point(88, 68);
+            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReplaceWith.Location = new System.Drawing.Point(332, 83);
             this.txtReplaceWith.Name = "txtReplaceWith";
-            this.txtReplaceWith.Size = new System.Drawing.Size(416, 20);
+            this.txtReplaceWith.Size = new System.Drawing.Size(285, 20);
             this.txtReplaceWith.TabIndex = 22;
             // 
             // txtFindWhat
             // 
-            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFindWhat.Location = new System.Drawing.Point(88, 40);
+            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFindWhat.Location = new System.Drawing.Point(332, 55);
             this.txtFindWhat.Name = "txtFindWhat";
-            this.txtFindWhat.Size = new System.Drawing.Size(416, 20);
+            this.txtFindWhat.Size = new System.Drawing.Size(285, 20);
             this.txtFindWhat.TabIndex = 22;
             // 
             // treeViewScript
@@ -377,7 +400,7 @@
             this.treeViewScript.HideSelection = false;
             this.treeViewScript.Location = new System.Drawing.Point(0, 0);
             this.treeViewScript.Name = "treeViewScript";
-            this.treeViewScript.Size = new System.Drawing.Size(333, 211);
+            this.treeViewScript.Size = new System.Drawing.Size(419, 269);
             this.treeViewScript.TabIndex = 18;
             this.treeViewScript.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewScript_AfterSelect);
             // 
@@ -391,7 +414,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(856, 45);
+            this.panel4.Size = new System.Drawing.Size(1072, 45);
             this.panel4.TabIndex = 24;
             // 
             // comboBoxActionFilter
@@ -467,8 +490,8 @@
             // 
             this.splitContainer2.Panel2.Controls.Add(this.richTextBoxScript);
             this.splitContainer2.Panel2.Controls.Add(this.panel2);
-            this.splitContainer2.Size = new System.Drawing.Size(856, 210);
-            this.splitContainer2.SplitterDistance = 92;
+            this.splitContainer2.Size = new System.Drawing.Size(1072, 259);
+            this.splitContainer2.SplitterDistance = 113;
             this.splitContainer2.TabIndex = 40;
             // 
             // listBoxActions
@@ -478,7 +501,7 @@
             this.listBoxActions.HorizontalScrollbar = true;
             this.listBoxActions.Location = new System.Drawing.Point(0, 0);
             this.listBoxActions.Name = "listBoxActions";
-            this.listBoxActions.Size = new System.Drawing.Size(856, 92);
+            this.listBoxActions.Size = new System.Drawing.Size(1072, 113);
             this.listBoxActions.TabIndex = 0;
             this.listBoxActions.SelectedIndexChanged += new System.EventHandler(this.listBoxActions_SelectedIndexChanged);
             // 
@@ -489,17 +512,19 @@
             this.richTextBoxScript.HideSelection = false;
             this.richTextBoxScript.Location = new System.Drawing.Point(0, 0);
             this.richTextBoxScript.Name = "richTextBoxScript";
-            this.richTextBoxScript.Size = new System.Drawing.Size(777, 114);
+            this.richTextBoxScript.Size = new System.Drawing.Size(993, 142);
             this.richTextBoxScript.TabIndex = 39;
+            this.richTextBoxScript.Text = "";
             // 
             // panel2
             // 
             this.panel2.Controls.Add(this.checkBox1);
+            this.panel2.Controls.Add(this.btnOpenNotepad);
             this.panel2.Controls.Add(this.btnSaveXml);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(777, 0);
+            this.panel2.Location = new System.Drawing.Point(993, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(79, 114);
+            this.panel2.Size = new System.Drawing.Size(79, 142);
             this.panel2.TabIndex = 40;
             // 
             // checkBox1
@@ -511,6 +536,16 @@
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Reset ID";
             this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // btnOpenNotepad
+            // 
+            this.btnOpenNotepad.Location = new System.Drawing.Point(6, 69);
+            this.btnOpenNotepad.Name = "btnOpenNotepad";
+            this.btnOpenNotepad.Size = new System.Drawing.Size(65, 23);
+            this.btnOpenNotepad.TabIndex = 0;
+            this.btnOpenNotepad.Text = "Notepad++";
+            this.btnOpenNotepad.UseVisualStyleBackColor = true;
+            this.btnOpenNotepad.Click += new System.EventHandler(this.btnOpenNotepad_Click);
             // 
             // btnSaveXml
             // 
@@ -530,8 +565,18 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(870, 502);
+            this.tabControl1.Size = new System.Drawing.Size(1086, 609);
             this.tabControl1.TabIndex = 19;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(150, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(293, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Set giá trị mặc định cho loại Action đang chọn theo Địch/Ta";
             // 
             // ucBDTCActions
             // 
@@ -540,7 +585,7 @@
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
             this.Name = "ucBDTCActions";
-            this.Size = new System.Drawing.Size(870, 502);
+            this.Size = new System.Drawing.Size(1086, 609);
             this.Load += new System.EventHandler(this.ucBDTCActions_Load);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -615,6 +660,9 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button btnSaveXml;
         private System.Windows.Forms.TabControl tabControl1;
-
+        private System.Windows.Forms.Button btnOpenNotepad;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -1445,7 +1445,7 @@ namespace Braincase.GanttChart
                                : new RectangleF(new PointF(p2.X, p2.Y - size.Height), size);
             if (clipRectF.IntersectsWith(linerect))
             {
-                graphics.DrawLines(Pens.Black, new PointF[] { p1, p2, p3, p4 });
+                graphics.DrawLines(Pens.Red, new PointF[] { p1, p2, p3, p4 });
                 graphics.FillRectangle(Brushes.Black, p1.X - 1.5f, p1.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p2.X - 1.5f, p2.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p3.X - 1.5f, p3.Y - 1.5f, 3, 3);
@@ -1477,7 +1477,7 @@ namespace Braincase.GanttChart
                                : new RectangleF(new PointF(p5.X, p5.Y - size.Height), size);
             if (clipRectF.IntersectsWith(linerect))
             {
-                graphics.DrawLines(Pens.Black, new PointF[] { p1, p2, p3, p4, p5, p6 });
+                graphics.DrawLines(Pens.Red, new PointF[] { p1, p2, p3, p4, p5, p6 });
                 //graphics.FillRectangle(Brushes.Black, p3.X - 1.5f, p3.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p1.X - 1.5f, p1.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p2.X - 1.5f, p2.Y - 1.5f, 3, 3);
@@ -1508,7 +1508,7 @@ namespace Braincase.GanttChart
                                : new RectangleF(new PointF(p1.X, p1.Y - size.Height), size);
             if (clipRectF.IntersectsWith(linerect))
             {
-                graphics.DrawLines(Pens.Black, new PointF[] { p1, p2, p3, p4 });
+                graphics.DrawLines(Pens.Red, new PointF[] { p1, p2, p3, p4 });
                 graphics.FillRectangle(Brushes.Black, p1.X - 1.5f, p1.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p2.X - 1.5f, p2.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p3.X - 1.5f, p3.Y - 1.5f, 3, 3);
@@ -1536,7 +1536,7 @@ namespace Braincase.GanttChart
                                : new RectangleF(new PointF(p2.X, p2.Y - size.Height), size);
             if (clipRectF.IntersectsWith(linerect))
             {
-                graphics.DrawLines(Pens.Black, new PointF[] { p1, p2, p3, p4 });
+                graphics.DrawLines(Pens.Red, new PointF[] { p1, p2, p3, p4 });
                 graphics.FillRectangle(Brushes.Black, p1.X - 1.5f, p1.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p2.X - 1.5f, p2.Y - 1.5f, 3, 3);
                 graphics.FillRectangle(Brushes.Black, p3.X - 1.5f, p3.Y - 1.5f, 3, 3);
