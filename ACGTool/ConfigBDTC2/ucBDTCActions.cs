@@ -760,5 +760,12 @@ namespace ConfigBDTC
             string filePath = _objDiaHinh._myCurrentDirectory + "\\" + result[1];
             Process.Start("notepad++.exe", filePath);
         }
+
+        private void btnFolder_Click(object sender, EventArgs e)
+        {
+            string[] result = treeViewScript.SelectedNode.Name.Split(new string[] { "[]" }, StringSplitOptions.None);
+            string filePath = _objDiaHinh._myCurrentDirectory + "\\" + result[1];
+            Process.Start("explorer.exe", Path.GetDirectoryName(filePath));
+        }
     }
 }

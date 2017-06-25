@@ -343,6 +343,9 @@ namespace ConfigBDTC
         /// <param name="e"></param>
         private void treeViewMyMnu_AfterSelect(object sender, TreeViewEventArgs e)
         {
+            btnFolder.Enabled = false;
+            btnOpenNotepad.Enabled = false;
+
             List<string> errList = new List<string>();
             _selectNode = e.Node;
             TreeNode node = e.Node;
@@ -372,7 +375,8 @@ namespace ConfigBDTC
                 //ScriptXmlFile objScriptXmlFile = objScrptFileScript.ObjScriptXmlFile;
                 ////Hiển thị timeline
                 //TimeLineHelper.LoadScriptFileContent_TimeLine(objScriptXmlFile, chartMyMnu);
-
+                btnFolder.Enabled = true;
+                btnOpenNotepad.Enabled = true;
                 chartMyMnu.ScrollTo(_taskDict[node.Name]);
             }
             else if (node.Tag is MnuItemRefScript)
@@ -427,7 +431,21 @@ namespace ConfigBDTC
             }
             else
             {
-                MessageBox.Show("Treenode đang chọn không phải là ScrptFileScript");
+                MessageBox.Show("Không phải đường dẫn file. Treenode đang chọn không phải là ScrptFileScript");
+            }
+        }
+
+        private void btnFolder_Click(object sender, EventArgs e)
+        {
+            if (_selectNode.Tag is ScrptFileScript)
+            {
+                ScrptFileScript objScrptFileScript = (ScrptFileScript)_selectNode.Tag;
+                string filePath = TimeLineHelper._objDiaHinh._myCurrentDirectory + "\\" + objScrptFileScript.ScrptFile;
+                Process.Start("explorer.exe", Path.GetDirectoryName(filePath));
+            }
+            else
+            {
+                MessageBox.Show("Không có đường dẫn folder. Treenode đang chọn không phải là ScrptFileScript");
             }
         }
     }

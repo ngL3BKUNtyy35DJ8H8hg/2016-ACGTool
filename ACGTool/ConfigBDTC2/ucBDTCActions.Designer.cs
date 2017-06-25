@@ -49,16 +49,17 @@
             this.Attribute = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxDichTa = new System.Windows.Forms.ComboBox();
             this.checkBoxReplaceText = new System.Windows.Forms.CheckBox();
-            this.btnDefaultValues = new System.Windows.Forms.Button();
-            this.btnUpdateAll = new System.Windows.Forms.Button();
-            this.labelReplaceWith = new System.Windows.Forms.Label();
-            this.labelFindWhat = new System.Windows.Forms.Label();
-            this.txtReplaceWith = new System.Windows.Forms.TextBox();
             this.txtFindWhat = new System.Windows.Forms.TextBox();
+            this.txtReplaceWith = new System.Windows.Forms.TextBox();
+            this.btnDefaultValues = new System.Windows.Forms.Button();
+            this.labelReplaceWith = new System.Windows.Forms.Label();
+            this.btnUpdateAll = new System.Windows.Forms.Button();
+            this.labelFindWhat = new System.Windows.Forms.Label();
             this.treeViewScript = new System.Windows.Forms.TreeView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.comboBoxActionFilter = new System.Windows.Forms.ComboBox();
@@ -74,7 +75,7 @@
             this.btnOpenNotepad = new System.Windows.Forms.Button();
             this.btnSaveXml = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btnFolder = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabPageCheckXmlFiles.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -296,6 +297,16 @@
             this.panel1.Size = new System.Drawing.Size(649, 137);
             this.panel1.TabIndex = 1;
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(150, 114);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(293, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Set giá trị mặc định cho loại Action đang chọn theo Địch/Ta";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -336,6 +347,24 @@
             this.checkBoxReplaceText.UseVisualStyleBackColor = true;
             this.checkBoxReplaceText.CheckedChanged += new System.EventHandler(this.checkBoxReplaceText_CheckedChanged);
             // 
+            // txtFindWhat
+            // 
+            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFindWhat.Location = new System.Drawing.Point(332, 55);
+            this.txtFindWhat.Name = "txtFindWhat";
+            this.txtFindWhat.Size = new System.Drawing.Size(285, 20);
+            this.txtFindWhat.TabIndex = 22;
+            // 
+            // txtReplaceWith
+            // 
+            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtReplaceWith.Location = new System.Drawing.Point(332, 83);
+            this.txtReplaceWith.Name = "txtReplaceWith";
+            this.txtReplaceWith.Size = new System.Drawing.Size(285, 20);
+            this.txtReplaceWith.TabIndex = 22;
+            // 
             // btnDefaultValues
             // 
             this.btnDefaultValues.Location = new System.Drawing.Point(449, 109);
@@ -345,16 +374,6 @@
             this.btnDefaultValues.Text = "Default";
             this.btnDefaultValues.UseVisualStyleBackColor = true;
             this.btnDefaultValues.Click += new System.EventHandler(this.btnDefaultValues_Click);
-            // 
-            // btnUpdateAll
-            // 
-            this.btnUpdateAll.Location = new System.Drawing.Point(9, 109);
-            this.btnUpdateAll.Name = "btnUpdateAll";
-            this.btnUpdateAll.Size = new System.Drawing.Size(82, 23);
-            this.btnUpdateAll.TabIndex = 0;
-            this.btnUpdateAll.Text = "Update All";
-            this.btnUpdateAll.UseVisualStyleBackColor = true;
-            this.btnUpdateAll.Click += new System.EventHandler(this.btnUpdateAll_Click);
             // 
             // labelReplaceWith
             // 
@@ -366,6 +385,16 @@
             this.labelReplaceWith.TabIndex = 21;
             this.labelReplaceWith.Text = "Replace with";
             // 
+            // btnUpdateAll
+            // 
+            this.btnUpdateAll.Location = new System.Drawing.Point(9, 109);
+            this.btnUpdateAll.Name = "btnUpdateAll";
+            this.btnUpdateAll.Size = new System.Drawing.Size(82, 23);
+            this.btnUpdateAll.TabIndex = 0;
+            this.btnUpdateAll.Text = "Update All";
+            this.btnUpdateAll.UseVisualStyleBackColor = true;
+            this.btnUpdateAll.Click += new System.EventHandler(this.btnUpdateAll_Click);
+            // 
             // labelFindWhat
             // 
             this.labelFindWhat.AutoSize = true;
@@ -375,24 +404,6 @@
             this.labelFindWhat.Size = new System.Drawing.Size(53, 13);
             this.labelFindWhat.TabIndex = 21;
             this.labelFindWhat.Text = "Find what";
-            // 
-            // txtReplaceWith
-            // 
-            this.txtReplaceWith.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReplaceWith.Location = new System.Drawing.Point(332, 83);
-            this.txtReplaceWith.Name = "txtReplaceWith";
-            this.txtReplaceWith.Size = new System.Drawing.Size(285, 20);
-            this.txtReplaceWith.TabIndex = 22;
-            // 
-            // txtFindWhat
-            // 
-            this.txtFindWhat.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFindWhat.Location = new System.Drawing.Point(332, 55);
-            this.txtFindWhat.Name = "txtFindWhat";
-            this.txtFindWhat.Size = new System.Drawing.Size(285, 20);
-            this.txtFindWhat.TabIndex = 22;
             // 
             // treeViewScript
             // 
@@ -518,6 +529,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnFolder);
             this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.btnOpenNotepad);
             this.panel2.Controls.Add(this.btnSaveXml);
@@ -568,15 +580,15 @@
             this.tabControl1.Size = new System.Drawing.Size(1086, 609);
             this.tabControl1.TabIndex = 19;
             // 
-            // label3
+            // btnFolder
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(150, 114);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(293, 13);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Set giá trị mặc định cho loại Action đang chọn theo Địch/Ta";
+            this.btnFolder.Location = new System.Drawing.Point(6, 98);
+            this.btnFolder.Name = "btnFolder";
+            this.btnFolder.Size = new System.Drawing.Size(65, 23);
+            this.btnFolder.TabIndex = 2;
+            this.btnFolder.Text = "Folder";
+            this.btnFolder.UseVisualStyleBackColor = true;
+            this.btnFolder.Click += new System.EventHandler(this.btnFolder_Click);
             // 
             // ucBDTCActions
             // 
@@ -664,5 +676,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnFolder;
     }
 }
