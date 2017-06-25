@@ -217,7 +217,7 @@ namespace ConfigBDTC
 
                     //Add các <Script> vào treeview
                     objMnuItem.BindMnuItem_TreeNode(node);
-
+                  
                     //Tiếp tục load nội dung bên trong của MnuItem vào TreeView
                     foreach (TreeNode childNode in node.Nodes)
                     {
@@ -230,6 +230,8 @@ namespace ConfigBDTC
                             errList.AddRange(LoadScrptFileScriptNode(childNode));
                         }
                     }
+                    if (objMnuItem.Title != "")
+                        BDTCHelper.FormatLeafNode(ref node, Color.Red);
                 }
             }
             catch (Exception ex)
@@ -268,7 +270,7 @@ namespace ConfigBDTC
                         return errList;
                     }
 
-                    BDTCHelper.FormatLeafNode(ref node);
+                    BDTCHelper.FormatLeafNode(ref node, Color.Green);
                     //Load nội dung các action của file script .xml
                     foreach (var pairAction in objScrptFileScript.ObjScriptXmlFile.ActionDict)
                     {
@@ -278,7 +280,7 @@ namespace ConfigBDTC
                         string text = pairAction.Value.ToString();
                         TreeNode tvNodeAction = node.Nodes.Add(key, text);
                         tvNodeAction.Tag = pairAction.Value;
-                        BDTCHelper.FormatLeafNode(ref tvNodeAction);
+                        BDTCHelper.FormatLeafNode(ref tvNodeAction, Color.Orange);
                     }
                 }
 

@@ -175,6 +175,13 @@ namespace BDTCLib
             node.SelectedImageIndex = 0;
         }
 
+        public static void FormatNode(ref TreeNode node, Color color)
+        {
+            node.ForeColor = color;
+            node.ImageIndex = 0;
+            node.SelectedImageIndex = 0;
+        }
+
         public static void FormatLeafNode(ref TreeNode node)
         {
             node.ForeColor = Color.DarkRed;

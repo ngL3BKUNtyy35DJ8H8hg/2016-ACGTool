@@ -36,7 +36,7 @@ namespace ConfigBDTC
         public List<string> LoadMyMnu_TreeView(MyMnu objMyMnu)
         {
             List<string> errList = new List<string>();
-            TreeNode tvNodeMnuItem, tvNodeScript;
+            TreeNode tvNodeMnuItem;
             try
             {
                 _objMyMnu = objMyMnu;
@@ -46,7 +46,10 @@ namespace ConfigBDTC
                     //tvNodeMnuItem = treeViewScript.Nodes.Add(pairMnuItem.Key, BDTCHelper.GetCurrentXMLContent(pairMnuItem.Value.CurrentXmlNode).Replace("</MnuItem>", ""));
                     tvNodeMnuItem = treeViewScript.Nodes.Add(pairMnuItem.Key, pairMnuItem.Value.ToString());
                     tvNodeMnuItem.Tag = pairMnuItem.Value;
-                    BDTCHelper.FormatNode(ref tvNodeMnuItem);
+                    if (pairMnuItem.Value.Title != "")
+                        BDTCHelper.FormatNode(ref tvNodeMnuItem, Color.Red);
+                    else
+                        BDTCHelper.FormatNode(ref tvNodeMnuItem);
                     //foreach (KeyValuePair<string, AbstractMnuScript> pairScript in pairMnuItem.Value.MnuScriptDict)
                     //{
                     //    tvNodeScript = tvNodeMnuItem.Nodes.Add(string.Format("{0}.{1}", pairMnuItem.Key, pairScript.Key), BDTCHelper.GetCurrentXMLContent(pairScript.Value.CurrentXmlNode));
