@@ -16,6 +16,10 @@ H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
 H:\GitHub\2016-ACGTool\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb
 h:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
 h:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
-h:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.csprojResolveAssemblyReference.cache
 h:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
 h:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb
+J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
+J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
+J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.csprojResolveAssemblyReference.cache
+J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
+J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb

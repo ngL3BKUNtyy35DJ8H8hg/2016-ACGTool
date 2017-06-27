@@ -98,7 +98,7 @@ namespace BDTCLib
                         }
                         catch (Exception ex)
                         {
-                            
+                            throw ex;
                         }
                         
                         break;

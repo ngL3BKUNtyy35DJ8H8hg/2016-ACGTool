@@ -22,9 +22,9 @@ namespace BDTCLib
             {
                 LoadLastFile();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
+                throw ex;
             }
             
 
