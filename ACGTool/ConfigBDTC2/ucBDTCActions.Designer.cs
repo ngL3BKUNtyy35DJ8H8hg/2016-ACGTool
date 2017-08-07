@@ -76,6 +76,8 @@
             this.btnOpenNotepad = new System.Windows.Forms.Button();
             this.btnSaveXml = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.btnOpenNotepad2 = new System.Windows.Forms.Button();
+            this.btnDeleteSelectedXmlNotUse = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
             this.tabPageCheckXmlFiles.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -167,7 +169,9 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.btnOpenNotepad2);
             this.panel7.Controls.Add(this.btnCheckXmlFiles);
+            this.panel7.Controls.Add(this.btnDeleteSelectedXmlNotUse);
             this.panel7.Controls.Add(this.btnDeleteXmlFile);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 3);
@@ -187,11 +191,12 @@
             // 
             // btnDeleteXmlFile
             // 
-            this.btnDeleteXmlFile.Location = new System.Drawing.Point(205, 12);
+            this.btnDeleteXmlFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteXmlFile.Location = new System.Drawing.Point(630, 12);
             this.btnDeleteXmlFile.Name = "btnDeleteXmlFile";
             this.btnDeleteXmlFile.Size = new System.Drawing.Size(174, 23);
             this.btnDeleteXmlFile.TabIndex = 20;
-            this.btnDeleteXmlFile.Text = "Xóa file .xml không dùng";
+            this.btnDeleteXmlFile.Text = "Xóa tất cả file .xml không dùng";
             this.btnDeleteXmlFile.UseVisualStyleBackColor = true;
             this.btnDeleteXmlFile.Click += new System.EventHandler(this.btnDeleteXmlFile_Click);
             // 
@@ -592,6 +597,27 @@
             this.tabControl1.Size = new System.Drawing.Size(1086, 609);
             this.tabControl1.TabIndex = 19;
             // 
+            // btnOpenNotepad2
+            // 
+            this.btnOpenNotepad2.Location = new System.Drawing.Point(194, 12);
+            this.btnOpenNotepad2.Name = "btnOpenNotepad2";
+            this.btnOpenNotepad2.Size = new System.Drawing.Size(99, 23);
+            this.btnOpenNotepad2.TabIndex = 22;
+            this.btnOpenNotepad2.Text = "Open Notepad++";
+            this.btnOpenNotepad2.UseVisualStyleBackColor = true;
+            this.btnOpenNotepad2.Click += new System.EventHandler(this.btnOpenNotepad2_Click);
+            // 
+            // btnDeleteSelectedXmlNotUse
+            // 
+            this.btnDeleteSelectedXmlNotUse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDeleteSelectedXmlNotUse.Location = new System.Drawing.Point(824, 12);
+            this.btnDeleteSelectedXmlNotUse.Name = "btnDeleteSelectedXmlNotUse";
+            this.btnDeleteSelectedXmlNotUse.Size = new System.Drawing.Size(230, 23);
+            this.btnDeleteSelectedXmlNotUse.TabIndex = 20;
+            this.btnDeleteSelectedXmlNotUse.Text = "Xóa các file .xml không dùng (đang chọn)";
+            this.btnDeleteSelectedXmlNotUse.UseVisualStyleBackColor = true;
+            this.btnDeleteSelectedXmlNotUse.Click += new System.EventHandler(this.btnDeleteSelectedXmlNotUse_Click);
+            // 
             // ucBDTCActions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -679,5 +705,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnFolder;
+        private System.Windows.Forms.Button btnOpenNotepad2;
+        private System.Windows.Forms.Button btnDeleteSelectedXmlNotUse;
     }
 }

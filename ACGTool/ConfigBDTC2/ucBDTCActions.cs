@@ -767,5 +767,26 @@ namespace ConfigBDTC
             string filePath = _objDiaHinh._myCurrentDirectory + "\\" + result[1];
             Process.Start("explorer.exe", Path.GetDirectoryName(filePath));
         }
+
+        private void btnOpenNotepad2_Click(object sender, EventArgs e)
+        {
+            if (listViewXmlFiles.SelectedItems.Count > 0)
+                Process.Start("notepad++.exe", listViewXmlFiles.SelectedItems[0].SubItems[1].Text);
+        }
+
+        private void btnDeleteSelectedXmlNotUse_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc muốn xóa những file .xml (hoặc file .*) đang chọn nhưng không dùng?", "Cảnh báo", MessageBoxButtons.YesNo) ==
+                System.Windows.Forms.DialogResult.Yes)
+            {
+                foreach (ListViewItem item in listViewXmlFiles.SelectedItems)
+                {
+                    if (item.SubItems[2].Text == "Không dùng")
+                        File.Delete(item.SubItems[1].Text);
+                }
+            }
+
+            CheckXmlFiles();
+        }
     }
 }
