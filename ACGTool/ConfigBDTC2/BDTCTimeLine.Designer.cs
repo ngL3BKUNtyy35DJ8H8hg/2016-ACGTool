@@ -39,6 +39,7 @@
             this.splitContainerMyMnuTreeView = new System.Windows.Forms.SplitContainer();
             this.chartMyMnu = new Braincase.GanttChart.Chart();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFolder = new System.Windows.Forms.Button();
             this.btnOpenNotepad = new System.Windows.Forms.Button();
             this.chkIsCollpase = new System.Windows.Forms.CheckBox();
             this.richTextBoxMyMnuLog = new System.Windows.Forms.RichTextBox();
@@ -49,7 +50,7 @@
             this.richTextBoxActionLog = new System.Windows.Forms.RichTextBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPageBDTCActions = new System.Windows.Forms.TabPage();
-            this.btnFolder = new System.Windows.Forms.Button();
+            this.btnOpenMyMnu = new System.Windows.Forms.Button();
             this.panel8.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -199,6 +200,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnOpenMyMnu);
             this.panel1.Controls.Add(this.btnFolder);
             this.panel1.Controls.Add(this.btnOpenNotepad);
             this.panel1.Controls.Add(this.chkIsCollpase);
@@ -207,6 +209,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(713, 49);
             this.panel1.TabIndex = 7;
+            // 
+            // btnFolder
+            // 
+            this.btnFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFolder.Location = new System.Drawing.Point(497, 10);
+            this.btnFolder.Name = "btnFolder";
+            this.btnFolder.Size = new System.Drawing.Size(102, 23);
+            this.btnFolder.TabIndex = 3;
+            this.btnFolder.Text = "Open Folder";
+            this.btnFolder.UseVisualStyleBackColor = true;
+            this.btnFolder.Click += new System.EventHandler(this.btnFolder_Click);
             // 
             // btnOpenNotepad
             // 
@@ -332,16 +345,16 @@
             this.tabPageBDTCActions.Text = "BDTC Actions";
             this.tabPageBDTCActions.UseVisualStyleBackColor = true;
             // 
-            // btnFolder
+            // btnOpenMyMnu
             // 
-            this.btnFolder.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFolder.Location = new System.Drawing.Point(497, 10);
-            this.btnFolder.Name = "btnFolder";
-            this.btnFolder.Size = new System.Drawing.Size(102, 23);
-            this.btnFolder.TabIndex = 3;
-            this.btnFolder.Text = "Open Folder";
-            this.btnFolder.UseVisualStyleBackColor = true;
-            this.btnFolder.Click += new System.EventHandler(this.btnFolder_Click);
+            this.btnOpenMyMnu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenMyMnu.Location = new System.Drawing.Point(313, 10);
+            this.btnOpenMyMnu.Name = "btnOpenMyMnu";
+            this.btnOpenMyMnu.Size = new System.Drawing.Size(178, 23);
+            this.btnOpenMyMnu.TabIndex = 4;
+            this.btnOpenMyMnu.Text = "Open MyMnu.xml by Notepad++";
+            this.btnOpenMyMnu.UseVisualStyleBackColor = true;
+            this.btnOpenMyMnu.Click += new System.EventHandler(this.btnOpenMyMnu_Click);
             // 
             // BDTCTimeLine
             // 
@@ -403,6 +416,7 @@
         private System.Windows.Forms.CheckBox chkIsCollpase;
         private System.Windows.Forms.Button btnOpenNotepad;
         private System.Windows.Forms.Button btnFolder;
+        private System.Windows.Forms.Button btnOpenMyMnu;
     }
 }
 

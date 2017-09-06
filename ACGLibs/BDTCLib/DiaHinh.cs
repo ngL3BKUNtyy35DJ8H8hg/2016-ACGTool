@@ -94,13 +94,13 @@ namespace BDTCLib
                         //change current directory to use the Path.GetFullPath funtion exactly
                         try
                         {
-                            Environment.CurrentDirectory = _myCurrentDirectory;
+                            Environment.CurrentDirectory = Path.GetDirectoryName(_filePath);
                         }
                         catch (Exception ex)
                         {
                             throw ex;
                         }
-                        
+
                         break;
                     case "myDefaFileName":
                         _myDefaFileName = att.Value;

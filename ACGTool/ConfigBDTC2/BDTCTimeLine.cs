@@ -433,7 +433,7 @@ namespace ConfigBDTC
             }
             else
             {
-                MessageBox.Show("Không phải đường dẫn file. Treenode đang chọn không phải là ScrptFileScript");
+                MessageBox.Show("Xem lại đường dẫn hoặc Notepad++");
             }
         }
 
@@ -447,7 +447,19 @@ namespace ConfigBDTC
             }
             else
             {
-                MessageBox.Show("Không có đường dẫn folder. Treenode đang chọn không phải là ScrptFileScript");
+                MessageBox.Show("Không có đường dẫn folder");
+            }
+        }
+
+        private void btnOpenMyMnu_Click(object sender, EventArgs e)
+        {
+            if (TimeLineHelper._objMyMnu.MyMnuXmlFile != "")
+            {
+                Process.Start("notepad++.exe", TimeLineHelper._objMyMnu.MyMnuXmlFile);
+            }
+            else
+            {
+                MessageBox.Show("Xem lại đường dẫn hoặc Notepad++");
             }
         }
     }

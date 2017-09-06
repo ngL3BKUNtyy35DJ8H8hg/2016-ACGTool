@@ -171,7 +171,6 @@ namespace ConfigBDTC
                     taskDict.Add(scriptNode.Name, scriptTask);
                     //mManager.Relate(taskDict[objMnuItem.ID + "." + objScrptFileScript.ObjTimerCalc.IDRefValue], task);
                     //taskDict.Add(scriptKey, task);
-                    
 
                     //Tạo Task gồm các action trong file script
                     foreach (TreeNode actionNode in scriptNode.Nodes)
@@ -218,12 +217,9 @@ namespace ConfigBDTC
                     //Colllapse script là ScrptFile
                     scriptTask.IsCollapsed = true;
                 }
-
                 //Tạo group
                 mManager.Group(mnuItemTask, scriptTask);
             }
-            
-            
         }
     }
 

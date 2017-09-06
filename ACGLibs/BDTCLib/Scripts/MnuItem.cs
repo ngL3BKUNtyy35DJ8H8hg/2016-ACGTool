@@ -55,6 +55,7 @@ namespace BDTCLib.Scripts
             }
             catch (Exception ex)
             {
+                MessageBox.Show("File MyMnu.xml: " + ex.Message);
                 throw ex;
             }
         }
