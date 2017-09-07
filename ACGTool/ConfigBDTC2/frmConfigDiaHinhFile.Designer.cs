@@ -104,6 +104,7 @@
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnCheckScripts = new System.Windows.Forms.Button();
+            this.btnOpenMyMnu = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.tabControlCheckExistPath.SuspendLayout();
@@ -493,6 +494,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.btnOpenMyMnu);
             this.panel4.Controls.Add(this.checkBoxDeleteXFile);
             this.panel4.Controls.Add(this.labelMessageD3DModelMesh);
             this.panel4.Controls.Add(this.btnRemoveNotUsed3DFile);
@@ -796,6 +798,17 @@
             this.btnCheckScripts.UseVisualStyleBackColor = true;
             this.btnCheckScripts.Click += new System.EventHandler(this.btnCheckScripts_Click);
             // 
+            // btnOpenMyMnu
+            // 
+            this.btnOpenMyMnu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenMyMnu.Location = new System.Drawing.Point(742, 13);
+            this.btnOpenMyMnu.Name = "btnOpenMyMnu";
+            this.btnOpenMyMnu.Size = new System.Drawing.Size(80, 23);
+            this.btnOpenMyMnu.TabIndex = 22;
+            this.btnOpenMyMnu.Text = "Open file";
+            this.btnOpenMyMnu.UseVisualStyleBackColor = true;
+            this.btnOpenMyMnu.Click += new System.EventHandler(this.btnOpenMyMnu_Click);
+            // 
             // frmConfigDiaHinhFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -910,5 +923,6 @@
         internal System.Windows.Forms.Button btnBrowseAccessFile;
         private System.Windows.Forms.ColumnHeader columnHeaderSize;
         private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.Button btnOpenMyMnu;
     }
 }

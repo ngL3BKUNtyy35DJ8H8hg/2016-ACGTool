@@ -11,3 +11,14 @@ c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\AC
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.pdb
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.dll
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.pdb
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\ACGLib.pdb
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\mscorlib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\normidna.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\normnfc.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\normnfd.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\normnfkc.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\bin\Debug\normnfkd.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.csprojResolveAssemblyReference.cache
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\ACGLib\obj\Debug\ACGLib.pdb

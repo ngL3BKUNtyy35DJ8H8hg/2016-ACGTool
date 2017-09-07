@@ -81,6 +81,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="2015\Decompiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="2015\Decompiler.designer.cs">
+      <DependentUpon>Decompiler.cs</DependentUpon>
+    </Compile>
     <Compile Include="ACGMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,12 +118,6 @@
     <Compile Include="Classes\LinqToSql\RepositoryClass.cs" />
     <Compile Include="Classes\LinqToSql\RepositoryClass_VB.cs" />
     <Compile Include="Classes\Procedure.cs" />
-    <Compile Include="2015\Decompiler.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="2015\Decompiler.Designer.cs">
-      <DependentUpon>Decompiler.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmACG.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +202,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="2015\Decompiler.resx">
+      <DependentUpon>Decompiler.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ACGMain.resx">
       <DependentUpon>ACGMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,9 +213,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BDTCTool.resx">
       <DependentUpon>BDTCTool.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="2015\Decompiler.resx">
-      <DependentUpon>Decompiler.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmACG.resx">
       <DependentUpon>frmACG.cs</DependentUpon>
@@ -293,6 +293,9 @@
       <Project>{CC0E1C4D-AE46-459F-A816-C6934120B33E}</Project>
       <Name>BDTCLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

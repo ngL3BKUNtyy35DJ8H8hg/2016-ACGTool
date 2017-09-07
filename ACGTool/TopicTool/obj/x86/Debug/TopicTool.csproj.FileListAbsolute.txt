@@ -54,3 +54,16 @@ H:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.cs
 H:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Form1.resources
 H:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Properties.Resources.resources
 H:\GitHub\2016-ACGTool\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csproj.GenerateResource.Cache
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csprojResolveAssemblyReference.cache
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csproj.ResolveComReference.cache
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Form1.resources
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.Properties.Resources.resources
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.csproj.GenerateResource.Cache
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.exe
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\obj\x86\Debug\TopicTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.exe.config
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.exe
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\TopicTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.dll
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\TopicTool\bin\Debug\VBTopicTool.xml

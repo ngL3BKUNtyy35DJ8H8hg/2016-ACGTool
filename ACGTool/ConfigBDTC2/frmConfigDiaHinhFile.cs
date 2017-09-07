@@ -11,6 +11,7 @@ using System.Xml.Serialization;
 using System.Xml;
 using System.IO;
 using BDTCLib;
+using System.Diagnostics;
 
 namespace ConfigBDTC
 {
@@ -364,10 +365,6 @@ namespace ConfigBDTC
         {
             if (txtAccessFile.Text != "")
             {
-                //string absFile = fileDialog.FileName;
-                //string curFolder = listViewDiaHinh.Items["myCurrentDirectory"].SubItems[1].Text;
-                //string relFile = BDTCHelper.ConvertAbsoluteToRelativePath(absFile, curFolder);
-
                 string oldValue = listViewDiaHinh.Items["myKHCnnString"].SubItems[1].Text;
                 string newValue = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + txtAccessFile.Text;
 
@@ -408,6 +405,20 @@ namespace ConfigBDTC
         private void btnCheckScripts_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnOpenMyMnu_Click(object sender, EventArgs e)
+        {
+            
+           string path = listViewDiaHinh.Items["myD3DModelMeshFile"].SubItems[2].Text;
+            if (path != "")
+            {
+                Process.Start("notepad++.exe", path);
+            }
+            else
+            {
+                MessageBox.Show("Xem lại đường dẫn hoặc Notepad++");
+            }
         }
     }
 }

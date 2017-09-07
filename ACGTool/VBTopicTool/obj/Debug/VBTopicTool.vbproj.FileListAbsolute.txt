@@ -14,3 +14,11 @@ c:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.vbproj.Generate
 c:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.dll
 c:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.xml
 c:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\bin\Debug\VBTopicTool.dll
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\bin\Debug\VBTopicTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\bin\Debug\VBTopicTool.xml
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.Resources.resources
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.vbproj.GenerateResource.Cache
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.dll
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.xml
+i:\GitHub\2016-ACGTool\ACGTool\VBTopicTool\obj\Debug\VBTopicTool.pdb

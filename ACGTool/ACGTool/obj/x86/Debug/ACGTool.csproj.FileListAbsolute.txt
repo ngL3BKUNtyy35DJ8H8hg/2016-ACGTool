@@ -83,3 +83,31 @@ c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ACGTool\obj\x86\Deb
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.UserControls.ucImportExcel.resources
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.ViewPhysicalDevice.resources
 c:\Programming\2016\ACG Project\Sources\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.csproj.GenerateResource.Cache
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\ACGTool.exe.config
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.csproj.ResolveComReference.cache
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.exe
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\ACGTool.exe
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\ACGTool.pdb
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\ACGLib.dll
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\BDTCLib.dll
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\ACGLib.pdb
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\bin\Debug\BDTCLib.pdb
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.csprojResolveAssemblyReference.cache
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.ACGMain.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.BDTCAction.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.BDTCTool.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.Decompiler.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmACG.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmCopyPasteBDTC.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmMAIN.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmPDF.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmReadAccess.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmReadXYZ.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmRebuildBDTC.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.frmWorkflowManagement.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.PowerDesigner.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.Properties.Resources.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.UserControls.ucImportExcel.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.ViewPhysicalDevice.resources
+i:\GitHub\2016-ACGTool\ACGTool\ACGTool\obj\x86\Debug\ACGTool.csproj.GenerateResource.Cache

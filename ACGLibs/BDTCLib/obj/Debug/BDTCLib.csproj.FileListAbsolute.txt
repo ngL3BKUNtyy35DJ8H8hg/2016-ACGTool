@@ -23,3 +23,13 @@ J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
 J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.csprojResolveAssemblyReference.cache
 J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
 J:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\BDTCLib.pdb
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\mscorlib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\normidna.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\normnfc.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\normnfd.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\normnfkc.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\bin\Debug\normnfkd.nlp
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.dll
+i:\GitHub\2016-ACGTool\ACGLibs\BDTCLib\obj\Debug\BDTCLib.pdb

@@ -238,22 +238,22 @@ namespace ACGTool
             string replace = "Convert.ToString";
             content = content.Replace(find, replace);
 
+            find = "Conversions.ToDouble";
+            replace = "Convert.ToDouble";
+            content = content.Replace(find, replace);
+
             find = "Conversions.ToSingle";
             replace = "Convert.ToSingle";
             content = content.Replace(find, replace);
 
             find = "Conversions.ToInteger";
             replace = "Convert.ToInt32";
-
             content = content.Replace(find, replace);
 
             find = "Conversions.ToBoolean";
             replace = "Convert.ToBoolean";
             content = content.Replace(find, replace);
 
-            find = "Conversions.ToBoolean";
-            replace = "Convert.ToBoolean";
-            content = content.Replace(find, replace);
             return content;
         }
 
@@ -1261,7 +1261,7 @@ namespace ACGTool
 
             //LoadFile
             FileInfo fileInfo = new FileInfo(Application.ExecutablePath);
-            string tempDesignFile = fileInfo.Directory + "\\" + "Temp.Design.cs";
+            string tempDesignFile = fileInfo.Directory + "\\" + "Temp.Designer.cs";
             string tempDesignContent = File.ReadAllText(tempDesignFile);
 
             tempDesignContent = tempDesignContent.Replace("TEMP_NAMESPACE", namespace_name);
