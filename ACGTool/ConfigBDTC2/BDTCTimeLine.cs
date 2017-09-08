@@ -113,18 +113,19 @@ namespace ConfigBDTC
         
         private void LoadFile(string filePath)
         {
+            List<string> errList = new List<string>();
             try
             {
                 richTextBoxMyMnuLog.Text = "";
                 TimeLineHelper._objDiaHinh = new DiaHinh(filePath);
                 TimeLineHelper._objMyMnu = new MyMnu(TimeLineHelper._objDiaHinh);
-                List<string> errList = TimeLineHelper._objMyMnu.LoadXmlContent();
+                errList = TimeLineHelper._objMyMnu.LoadXmlContent();
 
                 //Load MnyMnu into TreeView
-                _objUcMyMnuTreeView.LoadMyMnu_TreeView(TimeLineHelper._objMyMnu);
+                errList.AddRange(_objUcMyMnuTreeView.LoadMyMnu_TreeView(TimeLineHelper._objMyMnu));
 
                 //Load Script Files into TreeView
-                _objUcScriptXmlFileTreeView.LoadXmlFiles_TreeView(ref TimeLineHelper._objMyMnu);
+                errList.AddRange(_objUcScriptXmlFileTreeView.LoadXmlFiles_TreeView(ref TimeLineHelper._objMyMnu));
 
                 if (errList.Count > 0)
                 {
@@ -143,7 +144,17 @@ namespace ConfigBDTC
             }
             catch (Exception ex)
             {
-                
+                if (errList.Count > 0)
+                {
+                    richTextBoxMyMnuLog.Text += string.Join("\n", errList.ToArray());
+                }
+                else
+                {
+                    if (richTextBoxMyMnuLog.Text == "")
+                    {
+                        richTextBoxMyMnuLog.Text += "Load successful!";
+                    }
+                }
                 throw ex;
             }
             

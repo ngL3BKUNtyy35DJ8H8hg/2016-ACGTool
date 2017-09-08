@@ -38,6 +38,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="GanttChart, Version=1.3.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\GanttChart.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -170,10 +174,6 @@
     <ProjectReference Include="..\..\ACGLibs\FolderLib\FolderLib.csproj">
       <Project>{15CC93DF-9B85-4583-A503-F80764AA9D78}</Project>
       <Name>FolderLib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\ACGLibs\GanttChart\GanttChart.csproj">
-      <Project>{F98F97D5-4F29-4531-AD05-D90F8E84C9AA}</Project>
-      <Name>GanttChart</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
